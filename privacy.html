@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | glp3md</title>
+  <meta name="description" content="Privacy Policy for glp3md — how we collect, use, and protect your personal information." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1318;
+      --surface: #111820;
+      --border: rgba(255,255,255,0.07);
+      --accent: #4af0c4;
+      --green: #4ade80;
+      --text: #e8edf2;
+      --text-muted: #6b7f8e;
+      --text-dim: #3a4d5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 12, 16, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--green); }
+
+    .nav-back {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--accent); }
+
+    /* ── CONTENT ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .page-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .page-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .effective-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: var(--text);
+      margin: 2.5rem 0 0.75rem;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+    }
+
+    ul li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--green); }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+    .footer-links a.active { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="/">glp3<span>md</span></a>
+    <a class="nav-back" href="/">← Back to waitlist</a>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective Date: April 13, 2026</p>
+
+    <p>glp3md ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>When you join our waitlist, we collect the following information:</p>
+    <ul>
+      <li><strong style="color:var(--text); font-weight:400;">First name</strong></li>
+      <li><strong style="color:var(--text); font-weight:400;">Email address</strong></li>
+    </ul>
+    <p>We do not collect sensitive medical information, protected health information (PHI), payment information, or any other personal data beyond what is listed above.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use the information you provide solely to:</p>
+    <ul>
+      <li>Add you to the retatrutide interest waitlist</li>
+      <li>Notify you when retatrutide receives FDA approval or becomes available for clinical use</li>
+      <li>Send relevant updates about the drug's regulatory and clinical status</li>
+    </ul>
+    <p>We will not use your information for any other purpose without your explicit consent.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We use <strong style="color:var(--text); font-weight:400;">Loops</strong> (loops.so) to manage our waitlist contacts and send email communications. Your first name and email address are transmitted to Loops for this purpose only. We do not authorize Loops to use your information for any other purpose.</p>
+    <p>We do not sell, rent, trade, or otherwise share your personal information with any other third parties for marketing or commercial purposes.</p>
+
+    <h2>4. HIPAA Compliance</h2>
+    <div class="highlight-box">
+      <p>glp3md handles all personal information in accordance with HIPAA privacy standards. The information collected on this Site — first name and email address — is used solely for waitlist notifications and does not constitute protected health information (PHI). We do not store, transmit, or process PHI.</p>
+    </div>
+
+    <h2>5. Data Security</h2>
+    <p>We implement industry-standard security measures to protect your information, including 256-bit SSL/TLS encryption for all data transmission. Your name and email are stored securely by Loops in compliance with their security and privacy practices. Our waitlist API endpoint is protected server-side and your data is never exposed in client-side code.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>We retain your information for as long as you remain on the waitlist or until you request its removal. Once retatrutide becomes available and waitlist notifications have been sent, inactive contacts will be reviewed and removed on a reasonable schedule.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you</li>
+      <li>Request correction of any inaccurate information</li>
+      <li>Request deletion of your information at any time</li>
+      <li>Opt out of all communications using the unsubscribe link included in every email we send</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:privacy@glp3md.com">privacy@glp3md.com</a>.</p>
+
+    <h2>8. Cookies &amp; Tracking</h2>
+    <p>This Site does not use advertising cookies, tracking pixels, or third-party analytics. Basic browser session storage may be used for standard page functionality. We do not build user profiles or track your behavior across other websites.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>This Site is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided us with their information, please contact us and we will promptly delete it.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically. Material changes will be communicated to waitlist members via email. Continued use of the Site after changes are posted constitutes your acceptance of the revised policy.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any privacy-related questions, concerns, or data deletion requests, please contact us at <a href="mailto:privacy@glp3md.com">privacy@glp3md.com</a>.</p>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <a class="footer-logo" href="/">glp3<span>md</span></a>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html" class="active">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

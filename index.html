@@ -755,6 +755,24 @@
       line-height: 1.65;
     }
 
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
@@ -1023,9 +1041,15 @@
   <footer>
     <div class="footer-grid">
       <a class="footer-logo" href="#">glp3<span>md</span></a>
-      <p class="footer-disclaimer">
+      <div>
+        <p class="footer-disclaimer">
         Retatrutide is an investigational drug that has not yet been approved by the U.S. Food and Drug Administration (FDA). The information provided on this website is for informational and educational purposes only and does not constitute medical advice. The content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the guidance of your physician or other qualified health provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on this website. glp3md does not guarantee that Retatrutide will receive FDA approval or that it will be available for clinical use. By joining the waitlist, you are expressing interest in learning more about this investigational medication and are not entering into any treatment agreement or financial commitment. Individual results may vary. The weight loss outcomes referenced on this site are based on Phase 3 clinical trial data and do not represent typical results for all patients. Participation in any treatment program would require a full medical evaluation by a licensed healthcare provider. Personal information submitted to this site is handled in accordance with HIPAA privacy standards and is never sold or shared with third parties.
       </p>
+        <div class="footer-links">
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </div>
+      </div>
     </div>
   </footer>
 
