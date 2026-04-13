@@ -144,6 +144,14 @@
       padding: 0.25rem 0.65rem;
       border-radius: 2px;
       text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-badge:hover {
+      background: var(--accent);
+      color: var(--bg);
     }
 
     /* ── HERO ── */
@@ -797,7 +805,7 @@
   <!-- NAV -->
   <nav>
     <a class="logo" href="#">glp3<span>md</span></a>
-    <span class="nav-badge">FDA Pending</span>
+    <a class="nav-badge" href="#cta">FDA Pending — Sign Up</a>
   </nav>
 
   <!-- HERO -->
@@ -1008,7 +1016,7 @@
   </section>
 
   <!-- BOTTOM CTA -->
-  <section class="cta-section">
+  <section class="cta-section" id="cta">
     <div class="section-label" style="justify-content:center; margin-bottom:1.5rem;">
       <span style="display:flex;align-items:center;gap:0.75rem;">
         <span style="display:block;width:2rem;height:1px;background:var(--text-dim)"></span>
