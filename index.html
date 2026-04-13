@@ -833,11 +833,11 @@
         <div class="stat-label">Mean Weight Loss · TRIUMPH-4</div>
       </div>
       <div class="stat">
-        <div class="stat-number">68 wk</div>
+        <div class="stat-number" id="stat-68">0 wk</div>
         <div class="stat-label">Phase 3 Trial Duration</div>
       </div>
       <div class="stat">
-        <div class="stat-number">3×</div>
+        <div class="stat-number" id="stat-3x">0×</div>
         <div class="stat-label">Hormone Targets vs. GLP-1 alone</div>
       </div>
     </div>
@@ -1125,23 +1125,27 @@
 
     scheduleIncrement();
 
-    // Animate 28.7% stat count-up on load
+    // Animate stat count-ups on load
     (function () {
-      const el = document.getElementById('stat-287');
-      if (!el) return;
-      const target = 28.7;
-      const duration = 1800;
-      const startTime = performance.now();
-
       function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
 
-      function tick(now) {
-        const progress = Math.min((now - startTime) / duration, 1);
-        el.textContent = (easeOut(progress) * target).toFixed(1) + '%';
-        if (progress < 1) requestAnimationFrame(tick);
+      function animateStat(id, duration, renderFn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const startTime = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          el.textContent = renderFn(easeOut(progress));
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
       }
 
-      setTimeout(() => requestAnimationFrame(tick), 500);
+      setTimeout(function () {
+        animateStat('stat-287', 1800, function (p) { return (p * 28.7).toFixed(1) + '%'; });
+        animateStat('stat-68',  1600, function (p) { return Math.round(p * 68) + ' wk'; });
+        animateStat('stat-3x',  1400, function (p) { return (p * 3).toFixed(1) + '×'; });
+      }, 500);
     })();
 
     // Animate bars on scroll
