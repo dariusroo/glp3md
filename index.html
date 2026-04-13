@@ -307,6 +307,47 @@
       margin-top: 0.6rem;
     }
 
+    /* ── TRUST BADGES ── */
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .trust-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+      padding: 0.28rem 0.6rem;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .trust-badge::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: var(--text-dim);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .trust-badge.hipaa {
+      color: var(--green);
+      border-color: rgba(74, 222, 128, 0.2);
+    }
+
+    .trust-badge.hipaa::before {
+      background: var(--green);
+    }
+
     .success-msg {
       display: none;
       align-items: center;
@@ -721,7 +762,13 @@
       <div class="success-msg" id="hero-success">
         ✓ &nbsp;You're on the list. We'll notify you when retatrutide becomes available.
       </div>
-      <p class="form-note">No spam. No prescription yet. Just a heads-up when the FDA approves.</p>
+      <p class="form-note">Your information is handled in accordance with HIPAA privacy standards. No spam, no PHI stored.</p>
+      <div class="trust-badges">
+        <span class="trust-badge hipaa">HIPAA Compliant</span>
+        <span class="trust-badge">256-bit SSL</span>
+        <span class="trust-badge">No PHI Stored</span>
+        <span class="trust-badge">Privacy Protected</span>
+      </div>
     </div>
   </section>
 
@@ -898,7 +945,12 @@
     <div class="success-msg" id="cta-success" style="justify-content:center; margin-top:1rem;">
       ✓ &nbsp;You're on the list.
     </div>
-    <p class="form-note" style="margin-top:0.75rem;">Physician-supervised. Legitimate prescription access. No grey market.</p>
+    <p class="form-note" style="margin-top:0.75rem;">Physician-supervised. HIPAA-compliant data handling. No grey market.</p>
+    <div class="trust-badges" style="justify-content:center; margin-top:0.75rem;">
+      <span class="trust-badge hipaa">HIPAA Compliant</span>
+      <span class="trust-badge">256-bit SSL</span>
+      <span class="trust-badge">No PHI Stored</span>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -910,6 +962,8 @@
         drug currently in Phase 3 clinical trials and is not FDA approved. Nothing on this site
         constitutes medical advice or a guarantee of prescription access. Information is derived
         from publicly available clinical trial data published by Eli Lilly and Company.
+        Personal information submitted to this site is handled in accordance with HIPAA privacy
+        standards and is never sold or shared with third parties.
       </p>
     </div>
   </footer>
