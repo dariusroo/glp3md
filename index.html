@@ -849,10 +849,9 @@
       </div>
       <div class="waitlist-label">Join the waitlist — notify me at approval</div>
       <div id="hero-fields">
-        <input class="form-input-name" id="hero-name" type="text" placeholder="First name" />
         <div class="form-row">
           <input class="form-input" id="hero-email" type="email" placeholder="your@email.com" />
-          <button class="form-btn" onclick="submitWaitlist('hero-name','hero-email','hero-success','hero-fields')">Notify Me</button>
+          <button class="form-btn" onclick="submitWaitlist('hero-email','hero-success','hero-fields')">Notify Me</button>
         </div>
       </div>
       <div class="success-msg" id="hero-success">
@@ -1035,10 +1034,9 @@
     <p>Join the waitlist now. When retatrutide is approved, you'll be among the first to access it through a licensed physician.</p>
 
     <div id="cta-fields">
-      <input class="form-input-name" id="cta-name" type="text" placeholder="First name" style="max-width:420px; margin: 0 auto;" />
       <div class="cta-form-row">
         <input class="form-input" id="cta-email" type="email" placeholder="your@email.com" style="border-right:none; border-radius:3px 0 0 3px;" />
-        <button class="form-btn" onclick="submitWaitlist('cta-name','cta-email','cta-success','cta-fields')" style="border-radius:0 3px 3px 0;">Notify Me</button>
+        <button class="form-btn" onclick="submitWaitlist('cta-email','cta-success','cta-fields')" style="border-radius:0 3px 3px 0;">Notify Me</button>
       </div>
     </div>
     <div class="success-msg" id="cta-success" style="justify-content:center; margin-top:1rem;">
@@ -1070,21 +1068,12 @@
 
   <script>
     // Loops waitlist integration
-    async function submitWaitlist(nameId, emailId, successId, fieldsId) {
-      const nameInput = document.getElementById(nameId);
+    async function submitWaitlist(emailId, successId, fieldsId) {
       const emailInput = document.getElementById(emailId);
       const success = document.getElementById(successId);
       const fields = document.getElementById(fieldsId);
 
-      const firstName = nameInput.value.trim();
       const email = emailInput.value.trim();
-
-      if (!firstName) {
-        nameInput.style.borderColor = 'rgba(255,107,107,0.6)';
-        nameInput.focus();
-        setTimeout(() => nameInput.style.borderColor = '', 1500);
-        return;
-      }
 
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         emailInput.style.borderColor = 'rgba(255,107,107,0.6)';
@@ -1100,7 +1089,7 @@
         const res = await fetch('/api/waitlist', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, firstName })
+          body: JSON.stringify({ email })
         });
 
         if (!res.ok) throw new Error('API error');
