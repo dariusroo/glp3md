@@ -315,46 +315,6 @@
       margin-top: 0.6rem;
     }
 
-    /* ── TRUST BADGES ── */
-    .trust-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.75rem;
-    }
-
-    .trust-badge {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.58rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      border: 1px solid var(--border);
-      padding: 0.28rem 0.6rem;
-      border-radius: 2px;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .trust-badge::before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 4px;
-      background: var(--text-dim);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .trust-badge.hipaa {
-      color: var(--green);
-      border-color: rgba(74, 222, 128, 0.2);
-    }
-
-    .trust-badge.hipaa::before {
-      background: var(--green);
-    }
 
 
     /* ── NAME INPUT ── */
@@ -820,12 +780,6 @@
         ✓ &nbsp;You're on the list. We'll notify you when retatrutide becomes available.
       </div>
       <p class="form-note">Your information is stored securely and never sold or shared. No PHI collected.</p>
-      <div class="trust-badges">
-        <span class="trust-badge hipaa">Secure &amp; Private</span>
-        <span class="trust-badge">256-bit SSL</span>
-        <span class="trust-badge">No PHI Stored</span>
-        <span class="trust-badge">Privacy Protected</span>
-      </div>
     </div>
   </section>
 
@@ -1003,11 +957,6 @@
     </div>
     <div class="success-msg" id="cta-success" style="justify-content:center; margin-top:1rem;">
       ✓ &nbsp;You're on the list.
-    </div>
-    <div class="trust-badges" style="justify-content:center; margin-top:0.75rem;">
-      <span class="trust-badge hipaa">Secure &amp; Private</span>
-      <span class="trust-badge">256-bit SSL</span>
-      <span class="trust-badge">No PHI Stored</span>
     </div>
   </section>
 
