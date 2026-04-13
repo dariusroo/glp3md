@@ -829,7 +829,7 @@
 
     <div class="stat-bar">
       <div class="stat">
-        <div class="stat-number">28.7%</div>
+        <div class="stat-number" id="stat-287">0.0%</div>
         <div class="stat-label">Mean Weight Loss · TRIUMPH-4</div>
       </div>
       <div class="stat">
@@ -1124,6 +1124,25 @@
     }
 
     scheduleIncrement();
+
+    // Animate 28.7% stat count-up on load
+    (function () {
+      const el = document.getElementById('stat-287');
+      if (!el) return;
+      const target = 28.7;
+      const duration = 1800;
+      const startTime = performance.now();
+
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+      function tick(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        el.textContent = (easeOut(progress) * target).toFixed(1) + '%';
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+
+      setTimeout(() => requestAnimationFrame(tick), 500);
+    })();
 
     // Animate bars on scroll
     const observer = new IntersectionObserver((entries) => {
