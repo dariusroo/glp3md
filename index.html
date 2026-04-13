@@ -348,6 +348,62 @@
       background: var(--green);
     }
 
+    /* ── SPOT COUNTER ── */
+    .spot-counter {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+    }
+
+    .spot-count {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--accent);
+      vertical-align: middle;
+    }
+
+    .spot-bar {
+      height: 2px;
+      background: var(--border);
+      max-width: 480px;
+      border-radius: 1px;
+      margin-top: 0.5rem;
+      overflow: hidden;
+    }
+
+    .spot-bar-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 1px;
+      width: 33.88%;
+      transition: width 0.5s ease;
+    }
+
+    /* ── NAME INPUT ── */
+    .form-input-name {
+      display: block;
+      max-width: 480px;
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.85rem 1.1rem;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s;
+      margin-bottom: 4px;
+    }
+
+    .form-input-name::placeholder { color: var(--text-dim); }
+    .form-input-name:focus { border-color: rgba(74, 240, 196, 0.4); }
+
     .success-msg {
       display: none;
       align-items: center;
@@ -754,10 +810,17 @@
     </div>
 
     <div class="waitlist">
+      <div class="spot-counter">
+        <span class="spot-count" id="spot-count">847</span> of 2,500 spots claimed
+        <div class="spot-bar"><div class="spot-bar-fill" id="spot-bar-fill"></div></div>
+      </div>
       <div class="waitlist-label">Join the waitlist — notify me at approval</div>
-      <div class="form-row">
-        <input class="form-input" id="hero-email" type="email" placeholder="your@email.com" />
-        <button class="form-btn" onclick="submitWaitlist('hero-email','hero-success')">Notify Me</button>
+      <div id="hero-fields">
+        <input class="form-input-name" id="hero-name" type="text" placeholder="First name" />
+        <div class="form-row">
+          <input class="form-input" id="hero-email" type="email" placeholder="your@email.com" />
+          <button class="form-btn" onclick="submitWaitlist('hero-name','hero-email','hero-success','hero-fields')">Notify Me</button>
+        </div>
       </div>
       <div class="success-msg" id="hero-success">
         ✓ &nbsp;You're on the list. We'll notify you when retatrutide becomes available.
@@ -938,9 +1001,12 @@
     <h2>Join the retatrutide waitlist<br>before <em>everyone</em> else does.</h2>
     <p>Join the waitlist now. When retatrutide is approved, you'll be among the first to access it through a licensed physician.</p>
 
-    <div class="cta-form-row">
-      <input class="form-input" id="cta-email" type="email" placeholder="your@email.com" style="border-right:none; border-radius:3px 0 0 3px;" />
-      <button class="form-btn" onclick="submitWaitlist('cta-email','cta-success')" style="border-radius:0 3px 3px 0;">Notify Me</button>
+    <div id="cta-fields">
+      <input class="form-input-name" id="cta-name" type="text" placeholder="First name" style="max-width:420px;" />
+      <div class="cta-form-row">
+        <input class="form-input" id="cta-email" type="email" placeholder="your@email.com" style="border-right:none; border-radius:3px 0 0 3px;" />
+        <button class="form-btn" onclick="submitWaitlist('cta-name','cta-email','cta-success','cta-fields')" style="border-radius:0 3px 3px 0;">Notify Me</button>
+      </div>
     </div>
     <div class="success-msg" id="cta-success" style="justify-content:center; margin-top:1rem;">
       ✓ &nbsp;You're on the list.
@@ -964,26 +1030,73 @@
   </footer>
 
   <script>
-    // Simple waitlist handler — replace with your email service (Mailchimp, ConvertKit, etc.)
-    function submitWaitlist(inputId, successId) {
-      const input = document.getElementById(inputId);
+    // Loops waitlist integration
+    async function submitWaitlist(nameId, emailId, successId, fieldsId) {
+      const nameInput = document.getElementById(nameId);
+      const emailInput = document.getElementById(emailId);
       const success = document.getElementById(successId);
-      const email = input.value.trim();
+      const fields = document.getElementById(fieldsId);
 
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        input.style.borderColor = 'rgba(255,107,107,0.6)';
-        input.focus();
-        setTimeout(() => input.style.borderColor = '', 1500);
+      const firstName = nameInput.value.trim();
+      const email = emailInput.value.trim();
+
+      if (!firstName) {
+        nameInput.style.borderColor = 'rgba(255,107,107,0.6)';
+        nameInput.focus();
+        setTimeout(() => nameInput.style.borderColor = '', 1500);
         return;
       }
 
-      // TODO: replace with fetch() call to your email service API
-      // e.g. Mailchimp, ConvertKit, Loops, Beehiiv
-      console.log('Waitlist signup:', email);
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailInput.style.borderColor = 'rgba(255,107,107,0.6)';
+        emailInput.focus();
+        setTimeout(() => emailInput.style.borderColor = '', 1500);
+        return;
+      }
 
-      input.parentElement.style.display = 'none';
-      success.classList.add('visible');
+      const btn = fields.querySelector('.form-btn');
+      if (btn) { btn.textContent = '...'; btn.disabled = true; }
+
+      try {
+        const res = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, firstName })
+        });
+
+        if (!res.ok) throw new Error('API error');
+
+        fields.style.display = 'none';
+        success.classList.add('visible');
+        spotCount++;
+        updateCounter();
+      } catch (err) {
+        if (btn) { btn.textContent = 'Notify Me'; btn.disabled = false; }
+        emailInput.style.borderColor = 'rgba(255,107,107,0.6)';
+        setTimeout(() => emailInput.style.borderColor = '', 2000);
+      }
     }
+
+    // Spot counter
+    let spotCount = 847;
+    const spotCountEl = document.getElementById('spot-count');
+    const spotBarFill = document.getElementById('spot-bar-fill');
+
+    function updateCounter() {
+      if (spotCountEl) spotCountEl.textContent = spotCount.toLocaleString();
+      if (spotBarFill) spotBarFill.style.width = ((spotCount / 2500) * 100).toFixed(2) + '%';
+    }
+
+    function scheduleIncrement() {
+      const delay = (Math.random() * 4 + 8) * 1000;
+      setTimeout(() => {
+        spotCount++;
+        updateCounter();
+        scheduleIncrement();
+      }, delay);
+    }
+
+    scheduleIncrement();
 
     // Animate bars on scroll
     const observer = new IntersectionObserver((entries) => {
