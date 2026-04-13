@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>glp3md — Retatrutide Prescription Access</title>
+  <meta name="description" content="Retatrutide is the first triple agonist (GLP-1 + GIP + glucagon) obesity medication in late-stage FDA trials. Join the waitlist for physician-supervised access when approved." />
+  <meta name="keywords" content="retatrutide, GLP-1, triple agonist, weight loss, obesity medicine, TRIUMPH trial, retatrutide prescription" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1318;
+      --surface: #111820;
+      --border: rgba(255,255,255,0.07);
+      --accent: #4af0c4;
+      --green: #4ade80;
+      --accent-dim: rgba(74, 240, 196, 0.12);
+      --accent-glow: rgba(74, 240, 196, 0.25);
+      --text: #e8edf2;
+      --text-muted: #6b7f8e;
+      --text-dim: #3a4d5c;
+      --gold: #c9a96e;
+      --danger: #ff6b6b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 12, 16, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--green); }
+
+    .nav-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 2rem 5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.2s;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.4s;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.6s;
+    }
+
+    /* ── STAT BAR ── */
+    .stat-bar {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 3.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.7s;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.5rem;
+      flex: 1;
+    }
+
+    .stat:first-child { border-radius: 4px 0 0 4px; }
+    .stat:last-child { border-radius: 0 4px 4px 0; }
+
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── WAITLIST FORM ── */
+    .waitlist {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.9s;
+    }
+
+    .waitlist-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 0;
+      max-width: 480px;
+    }
+
+    .form-input {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-right: none;
+      border-radius: 3px 0 0 3px;
+      padding: 0.85rem 1.1rem;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input::placeholder { color: var(--text-dim); }
+    .form-input:focus { border-color: rgba(74, 240, 196, 0.4); }
+
+    .form-btn {
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 0 3px 3px 0;
+      padding: 0.85rem 1.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .form-btn:hover { background: #6ff5d0; }
+    .form-btn:active { transform: scale(0.98); }
+
+    .form-note {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      margin-top: 0.6rem;
+    }
+
+    .success-msg {
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--accent);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      padding: 1rem 0;
+    }
+
+    .success-msg.visible { display: flex; }
+
+    /* ── DIVIDER ── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+
+    /* ── SCIENCE SECTION ── */
+    .science {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    .science-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 3rem;
+    }
+
+    .science-card {
+      background: var(--surface);
+      padding: 2rem;
+      transition: background 0.2s;
+    }
+
+    .science-card:hover { background: var(--bg2); }
+
+    .science-card-icon {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .science-card-icon::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .science-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .science-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ── TRIAL DATA ── */
+    .trial {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .trial-highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+
+    .trial-highlight blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .trial-source {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2.5rem;
+      font-size: 0.88rem;
+    }
+
+    .comparison-table th {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: middle;
+    }
+
+    .comparison-table tr:last-child td { border-bottom: none; }
+
+    .comparison-table tr.highlight-row td {
+      color: var(--text);
+      background: var(--accent-dim);
+    }
+
+    .comparison-table tr.highlight-row td:first-child {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .bar-bg {
+      flex: 1;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: var(--text-dim);
+      transition: width 1s ease;
+    }
+
+    .bar-fill.accent { background: var(--accent); }
+    .bar-val {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: inherit;
+      min-width: 3.5rem;
+      text-align: right;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline-section {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 6rem 2rem;
+    }
+
+    .timeline-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .timeline {
+      margin-top: 3rem;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .timeline-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--text-dim);
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+      z-index: 1;
+    }
+
+    .timeline-dot.done {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .timeline-dot.active {
+      background: var(--bg);
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .timeline-content {}
+
+    .timeline-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── BOTTOM CTA ── */
+    .cta-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: var(--text-muted);
+      max-width: 440px;
+      margin: 0 auto 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    .cta-form-row {
+      display: flex;
+      gap: 0;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--green); }
+
+    .footer-disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      max-width: 480px;
+      line-height: 1.65;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      .stat-bar { flex-direction: column; gap: 1px; }
+      .stat:first-child { border-radius: 4px 4px 0 0; }
+      .stat:last-child  { border-radius: 0 0 4px 4px; }
+      .science-grid { grid-template-columns: 1fr; }
+      .form-row, .cta-form-row { flex-direction: column; }
+      .form-input { border-right: 1px solid var(--border); border-bottom: none; border-radius: 3px 3px 0 0; }
+      .form-btn { border-radius: 0 0 3px 3px; padding: 0.85rem; }
+      nav { padding: 1rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo" href="#">glp3<span>md</span></a>
+    <span class="nav-badge">FDA Pending</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Triple Agonist · GLP-1 + GIP + Glucagon</div>
+
+    <h1>The next generation<br>of weight loss<br><em>is almost here.</em></h1>
+
+    <p class="hero-sub">
+      Retatrutide produced 28.7% mean body weight loss in Phase 3 trials —
+      the highest ever recorded for an obesity medication. FDA approval is expected
+      in 2027. Be first in line for physician-supervised access.
+    </p>
+
+    <div class="stat-bar">
+      <div class="stat">
+        <div class="stat-number">28.7%</div>
+        <div class="stat-label">Mean Weight Loss · TRIUMPH-4</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">68 wk</div>
+        <div class="stat-label">Phase 3 Trial Duration</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">3×</div>
+        <div class="stat-label">Hormone Targets vs. GLP-1 alone</div>
+      </div>
+    </div>
+
+    <div class="waitlist">
+      <div class="waitlist-label">Join the waitlist — notify me at approval</div>
+      <div class="form-row">
+        <input class="form-input" id="hero-email" type="email" placeholder="your@email.com" />
+        <button class="form-btn" onclick="submitWaitlist('hero-email','hero-success')">Notify Me</button>
+      </div>
+      <div class="success-msg" id="hero-success">
+        ✓ &nbsp;You're on the list. We'll notify you when retatrutide becomes available.
+      </div>
+      <p class="form-note">No spam. No prescription yet. Just a heads-up when the FDA approves.</p>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- SCIENCE -->
+  <section class="science">
+    <div class="section-label">The Science</div>
+
+    <h2>Why triple agonism<br>changes everything</h2>
+    <p style="color:var(--text-muted); max-width:560px; margin-top:1rem; font-size:0.95rem;">
+      Every approved GLP-1 medication works by targeting one or two metabolic pathways.
+      Retatrutide targets three simultaneously — producing weight loss that dwarfs anything
+      previously seen in a Phase 3 obesity trial.
+    </p>
+
+    <div class="science-grid">
+      <div class="science-card">
+        <div class="science-card-icon">GLP-1</div>
+        <h3>Appetite Suppression</h3>
+        <p>GLP-1 receptor agonism slows gastric emptying and signals satiety to the brain,
+           reducing caloric intake. This is the same mechanism behind semaglutide and tirzepatide.</p>
+      </div>
+      <div class="science-card">
+        <div class="science-card-icon">GIP</div>
+        <h3>Insulin Sensitivity</h3>
+        <p>GIP receptor agonism improves insulin secretion and adipose tissue metabolism,
+           enhancing the body's ability to utilize nutrients efficiently. Shared with tirzepatide.</p>
+      </div>
+      <div class="science-card">
+        <div class="science-card-icon">Glucagon</div>
+        <h3>Energy Expenditure</h3>
+        <p>Glucagon receptor agonism increases resting metabolic rate and promotes fat oxidation
+           in the liver. This is retatrutide's key differentiator — no other approved drug does this.</p>
+      </div>
+      <div class="science-card">
+        <div class="science-card-icon">Result</div>
+        <h3>Unprecedented Efficacy</h3>
+        <p>The combination produces weight loss that approaches surgical outcomes in some patients —
+           without surgery. TRIUMPH-4 reported complete knee pain relief in 1 in 8 participants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIAL DATA -->
+  <section class="trial">
+    <div class="section-label">TRIUMPH Phase 3 Data</div>
+
+    <h2>What the trials show</h2>
+
+    <div class="trial-highlight">
+      <blockquote>
+        "Patients on the 12mg dose lost an average of 28.7% of their body weight
+        over 68 weeks — the highest weight loss ever reported in a Phase 3 obesity trial."
+      </blockquote>
+      <div class="trial-source">TRIUMPH-4 · Eli Lilly · December 2025</div>
+    </div>
+
+    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1rem;">
+      How retatrutide compares to currently approved medications at maximum doses:
+    </p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Medication</th>
+          <th>Mechanism</th>
+          <th>Mean Weight Loss</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Semaglutide (Wegovy)</td>
+          <td>GLP-1</td>
+          <td>
+            <div class="bar-wrap">
+              <div class="bar-bg"><div class="bar-fill" style="width:54%"></div></div>
+              <span class="bar-val">~15%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Tirzepatide (Zepbound)</td>
+          <td>GLP-1 + GIP</td>
+          <td>
+            <div class="bar-wrap">
+              <div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div>
+              <span class="bar-val">~20%</span>
+            </div>
+          </td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Retatrutide <em style="font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;">(investigational)</em></td>
+          <td>GLP-1 + GIP + Glucagon</td>
+          <td>
+            <div class="bar-wrap">
+              <div class="bar-bg"><div class="bar-fill accent" style="width:100%"></div></div>
+              <span class="bar-val">28.7%</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-family:'DM Mono',monospace; font-size:0.62rem; color:var(--text-dim); margin-top:1rem; letter-spacing:0.05em;">
+      Data from published Phase 2 and Phase 3 clinical trials. Retatrutide is investigational and not FDA approved.
+      Direct comparisons across trials should be interpreted cautiously.
+    </p>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="timeline-inner">
+      <div class="section-label">Regulatory Timeline</div>
+      <h2>When can you get it?</h2>
+      <p style="color:var(--text-muted); font-size:0.92rem; margin-top:1rem; max-width:520px;">
+        Based on Eli Lilly's public statements and standard FDA review timelines.
+        These are projections, not confirmed dates.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot done"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">December 2025</div>
+            <div class="timeline-title">TRIUMPH-4 Results Published</div>
+            <div class="timeline-desc">28.7% mean weight loss at 68 weeks confirmed. Seven additional Phase 3 readouts expected through 2026.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2026</div>
+            <div class="timeline-title">Remaining Phase 3 Readouts</div>
+            <div class="timeline-desc">Seven TRIUMPH trials covering obesity, type 2 diabetes, sleep apnea, MASH, and cardiovascular outcomes expected to complete.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Late 2026 · Early 2027</div>
+            <div class="timeline-title">NDA Filing with FDA</div>
+            <div class="timeline-desc">Eli Lilly expected to submit a New Drug Application once Phase 3 data package is complete.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2027</div>
+            <div class="timeline-title">Anticipated FDA Approval</div>
+            <div class="timeline-desc">Under standard 10-month review, approval could come Q1–Q2 2027. Priority review designation could accelerate this timeline.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="cta-section">
+    <div class="section-label" style="justify-content:center; margin-bottom:1.5rem;">
+      <span style="display:flex;align-items:center;gap:0.75rem;">
+        <span style="display:block;width:2rem;height:1px;background:var(--text-dim)"></span>
+        Get Notified
+        <span style="display:block;width:2rem;height:1px;background:var(--text-dim)"></span>
+      </span>
+    </div>
+    <h2>Don't wait until<br><em>everyone</em> is waiting.</h2>
+    <p>Join the waitlist now. When retatrutide is approved, you'll be among the first to access it through a licensed physician.</p>
+
+    <div class="cta-form-row">
+      <input class="form-input" id="cta-email" type="email" placeholder="your@email.com" style="border-right:none; border-radius:3px 0 0 3px;" />
+      <button class="form-btn" onclick="submitWaitlist('cta-email','cta-success')" style="border-radius:0 3px 3px 0;">Notify Me</button>
+    </div>
+    <div class="success-msg" id="cta-success" style="justify-content:center; margin-top:1rem;">
+      ✓ &nbsp;You're on the list.
+    </div>
+    <p class="form-note" style="margin-top:0.75rem;">Physician-supervised. Legitimate prescription access. No grey market.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <a class="footer-logo" href="#">glp3<span>md</span></a>
+      <p class="footer-disclaimer">
+        glp3md is a patient education and waitlist platform. Retatrutide is an investigational
+        drug currently in Phase 3 clinical trials and is not FDA approved. Nothing on this site
+        constitutes medical advice or a guarantee of prescription access. Information is derived
+        from publicly available clinical trial data published by Eli Lilly and Company.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple waitlist handler — replace with your email service (Mailchimp, ConvertKit, etc.)
+    function submitWaitlist(inputId, successId) {
+      const input = document.getElementById(inputId);
+      const success = document.getElementById(successId);
+      const email = input.value.trim();
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        input.style.borderColor = 'rgba(255,107,107,0.6)';
+        input.focus();
+        setTimeout(() => input.style.borderColor = '', 1500);
+        return;
+      }
+
+      // TODO: replace with fetch() call to your email service API
+      // e.g. Mailchimp, ConvertKit, Loops, Beehiiv
+      console.log('Waitlist signup:', email);
+
+      input.parentElement.style.display = 'none';
+      success.classList.add('visible');
+    }
+
+    // Animate bars on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.bar-fill').forEach(b => {
+            b.style.width = b.style.width;
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.comparison-table').forEach(t => observer.observe(t));
+  </script>
+
+</body>
+</html>
