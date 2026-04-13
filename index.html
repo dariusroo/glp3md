@@ -356,40 +356,6 @@
       background: var(--green);
     }
 
-    /* ── SPOT COUNTER ── */
-    .spot-counter {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 0.85rem;
-    }
-
-    .spot-count {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: var(--accent);
-      vertical-align: middle;
-    }
-
-    .spot-bar {
-      height: 2px;
-      background: var(--border);
-      max-width: 480px;
-      border-radius: 1px;
-      margin-top: 0.5rem;
-      overflow: hidden;
-    }
-
-    .spot-bar-fill {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 1px;
-      width: 33.88%;
-      transition: width 0.5s ease;
-    }
 
     /* ── NAME INPUT ── */
     .form-input-name {
@@ -843,10 +809,6 @@
     </div>
 
     <div class="waitlist">
-      <div class="spot-counter">
-        <span class="spot-count" id="spot-count">847</span> of 2,500 spots claimed
-        <div class="spot-bar"><div class="spot-bar-fill" id="spot-bar-fill"></div></div>
-      </div>
       <div class="waitlist-label">Join the waitlist — notify me at approval</div>
       <div id="hero-fields">
         <div class="form-row">
@@ -1095,8 +1057,6 @@
 
         fields.style.display = 'none';
         success.classList.add('visible');
-        spotCount++;
-        updateCounter();
       } catch (err) {
         if (btn) { btn.textContent = 'Notify Me'; btn.disabled = false; }
         emailInput.style.borderColor = 'rgba(255,107,107,0.6)';
@@ -1104,26 +1064,6 @@
       }
     }
 
-    // Spot counter
-    let spotCount = 847;
-    const spotCountEl = document.getElementById('spot-count');
-    const spotBarFill = document.getElementById('spot-bar-fill');
-
-    function updateCounter() {
-      if (spotCountEl) spotCountEl.textContent = spotCount.toLocaleString();
-      if (spotBarFill) spotBarFill.style.width = ((spotCount / 2500) * 100).toFixed(2) + '%';
-    }
-
-    function scheduleIncrement() {
-      const delay = (Math.random() * 4 + 8) * 1000;
-      setTimeout(() => {
-        spotCount++;
-        updateCounter();
-        scheduleIncrement();
-      }, delay);
-    }
-
-    scheduleIncrement();
 
     // Animate stat count-ups on load
     (function () {
