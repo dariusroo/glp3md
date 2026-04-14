@@ -73,6 +73,24 @@
 
     .nav-back:hover { color: var(--accent); }
 
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--accent); }
+
     /* ── CONTENT ── */
     .page-wrap {
       max-width: 720px;
@@ -201,7 +219,10 @@
 
   <nav>
     <a class="logo" href="/">glp3<span>md</span></a>
-    <a class="nav-back" href="/">← Back to waitlist</a>
+    <div class="nav-right">
+      <a class="nav-link" href="/blog/">Blog</a>
+      <a class="nav-back" href="/">← Back to waitlist</a>
+    </div>
   </nav>
 
   <div class="page-wrap">

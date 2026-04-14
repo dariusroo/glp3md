@@ -154,6 +154,24 @@
       color: var(--bg);
     }
 
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--accent); }
+
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
@@ -718,7 +736,10 @@
   <!-- NAV -->
   <nav>
     <a class="logo" href="#">glp3<span>md</span></a>
-    <a class="nav-badge" href="#cta">FDA Pending — Join Waitlist</a>
+    <div class="nav-right">
+      <a class="nav-link" href="/blog/">Blog</a>
+      <a class="nav-badge" href="#cta">FDA Pending — Join Waitlist</a>
+    </div>
   </nav>
 
   <!-- HERO -->

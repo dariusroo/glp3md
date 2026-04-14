@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRIUMPH-4 Results Explained: What 28.7% Mean Weight Loss Actually Means | glp3md</title>
+  <meta name="description" content="A plain-language breakdown of the TRIUMPH-4 Phase 3 clinical trial — the data behind retatrutide's record-setting 28.7% mean body weight loss at 68 weeks." />
+  <link rel="canonical" href="https://glp3md.com/blog/triumph-4-results-explained/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "TRIUMPH-4 Results Explained: What 28.7% Mean Weight Loss Actually Means",
+    "description": "A plain-language breakdown of the TRIUMPH-4 Phase 3 clinical trial and retatrutide's record-setting 28.7% mean body weight loss.",
+    "url": "https://glp3md.com/blog/triumph-4-results-explained/",
+    "publisher": { "@type": "Organization", "name": "glp3md", "url": "https://glp3md.com" },
+    "datePublished": "2026-04-13",
+    "dateModified": "2026-04-13"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1318;
+      --surface: #111820;
+      --border: rgba(255,255,255,0.07);
+      --accent: #4af0c4;
+      --green: #4ade80;
+      --text: #e8edf2;
+      --text-muted: #6b7f8e;
+      --text-dim: #3a4d5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 12, 16, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--green); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--accent); }
+
+    .nav-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-badge:hover { background: var(--accent); color: var(--bg); }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .post-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .post-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .post-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.55rem;
+      color: var(--text);
+      margin: 2.5rem 0 0.75rem;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.85;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.1rem 1.25rem;
+    }
+
+    ul li, ol li {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 0.35rem;
+    }
+
+    strong { color: var(--text); font-weight: 400; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.75rem 0;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding: 0.75rem 0 0.75rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    blockquote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    blockquote cite {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--text-dim);
+      font-style: normal;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    .post-cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--accent);
+      border-radius: 4px;
+      padding: 2rem;
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .post-cta-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .post-cta h2 { font-size: 1.6rem; margin: 0 0 0.6rem; }
+    .post-cta p { font-size: 0.88rem; margin-bottom: 1.25rem; }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 0.7rem 1.75rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .cta-btn:hover { opacity: 0.85; text-decoration: none; }
+
+    .disclaimer {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      line-height: 1.7;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--green); }
+
+    .footer-links { display: flex; gap: 1.5rem; }
+
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    @media (max-width: 500px) {
+      .stat-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="/">glp3<span>md</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="/blog/">Blog</a>
+      <a class="nav-badge" href="/#cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="post-eyebrow">Clinical Trials</div>
+    <h1>TRIUMPH-4 Results Explained: What 28.7% Mean Weight Loss Actually Means</h1>
+    <p class="post-meta">April 2026 &nbsp;·&nbsp; 6 min read</p>
+
+    <p>When Eli Lilly published the TRIUMPH-4 Phase 3 results, the headline number was 28.7% mean total body weight loss at 68 weeks. That figure made retatrutide the most effective anti-obesity medication ever studied in a Phase 3 trial. Here's what the data actually shows — and what it doesn't.</p>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-number">28.7%</div>
+        <div class="stat-label">Mean weight loss</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">68 wk</div>
+        <div class="stat-label">Trial duration</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Phase 3</div>
+        <div class="stat-label">Trial stage</div>
+      </div>
+    </div>
+
+    <h2>What Is TRIUMPH-4?</h2>
+    <p>TRIUMPH-4 is a randomized, double-blind, placebo-controlled Phase 3 clinical trial evaluating retatrutide for the treatment of obesity in adults without type 2 diabetes. It is part of the broader TRIUMPH trial program that Eli Lilly designed to support retatrutide's New Drug Application (NDA) to the FDA.</p>
+    <p>Participants were randomized to receive retatrutide at various doses or placebo, with all participants also receiving lifestyle counseling. The primary endpoint was percentage change from baseline in body weight at 68 weeks.</p>
+
+    <h2>The 28.7% Number: What It Means</h2>
+    <p>Mean weight loss is an average across the entire treatment population. In TRIUMPH-4, the highest dose cohort of retatrutide achieved 28.7% mean total body weight loss. This is a population-level statistic — individual results varied, with some participants losing more and some losing less.</p>
+
+    <div class="highlight-box">
+      <p>For reference: a 250 lb person losing 28.7% of body weight would reach approximately 178 lbs — a loss of roughly 72 lbs. This puts retatrutide's outcomes in the same range as bariatric surgery, which typically produces 25–35% total body weight loss.</p>
+    </div>
+
+    <h2>Why This Is Historically Significant</h2>
+    <p>Prior to the GLP-1 era, FDA-approved anti-obesity medications produced roughly 5–10% mean weight loss. The benchmark shifted with semaglutide (STEP trials, ~15%) and tirzepatide (SURMOUNT trials, ~21%). Retatrutide's 28.7% represents another step-change in what pharmacotherapy can achieve.</p>
+
+    <blockquote>
+      <p>"These results suggest that the addition of glucagon receptor agonism to the GLP-1/GIP backbone meaningfully increases weight loss outcomes beyond what dual agonism achieves."</p>
+      <cite>— New England Journal of Medicine, TRIUMPH-4 publication</cite>
+    </blockquote>
+
+    <h2>What "Phase 3 Complete" Means for the Timeline</h2>
+    <p>Phase 3 trial completion means Eli Lilly has gathered the efficacy and safety data required to file a New Drug Application with the FDA. The NDA submission includes all trial data, manufacturing information, and proposed labeling. From NDA submission to FDA decision typically takes 10–12 months under standard review, or 6 months under Priority Review designation.</p>
+
+    <h2>Limitations of the Data</h2>
+    <p>Several important caveats apply when interpreting TRIUMPH-4 results:</p>
+    <ul>
+      <li><strong>No head-to-head comparison:</strong> TRIUMPH-4 does not directly compare retatrutide to tirzepatide or semaglutide — only to placebo. Cross-trial comparisons should be made with caution.</li>
+      <li><strong>Lifestyle intervention component:</strong> All participants received lifestyle counseling, which contributes to outcomes. Drug effect alone is not isolable from the trial design.</li>
+      <li><strong>68-week endpoint:</strong> Long-term durability data beyond 68 weeks is still accumulating. Weight regain upon discontinuation is expected, as with all GLP-1 class drugs.</li>
+      <li><strong>Non-diabetic population:</strong> TRIUMPH-4 studied patients without type 2 diabetes. Results in a diabetic population may differ.</li>
+    </ul>
+
+    <h2>What Comes Next</h2>
+    <p>With Phase 3 complete and the NDA under FDA review, the expected approval window based on typical review timelines is 2026–2027. If approved, retatrutide would enter the market alongside tirzepatide and semaglutide, giving physicians and patients a third major option — and the most potent one yet.</p>
+
+    <div class="post-cta">
+      <div class="post-cta-eyebrow">Waitlist Now Open</div>
+      <h2>Get priority access at FDA approval.</h2>
+      <p>Join the waitlist for physician-supervised retatrutide prescription access.</p>
+      <a class="cta-btn" href="/#cta">Join the Waitlist</a>
+    </div>
+
+    <p class="disclaimer">This article is for educational purposes only and does not constitute medical advice. Retatrutide is an investigational drug and is not FDA approved as of publication. Clinical data referenced is from publicly available trial publications. Consult a qualified healthcare provider before making any treatment decisions.</p>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <a class="footer-logo" href="/">glp3<span>md</span></a>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
