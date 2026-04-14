@@ -279,7 +279,7 @@
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
       letter-spacing: 0.15em;
-      color: var(--text-muted);
+      color: var(--text);
       text-transform: uppercase;
       margin-bottom: 0.75rem;
     }
@@ -292,8 +292,8 @@
 
     .form-input {
       flex: 1;
-      background: var(--surface);
-      border: 1px solid var(--border);
+      background: #1a2530;
+      border: 1px solid rgba(255,255,255,0.22);
       border-right: none;
       border-radius: 3px 0 0 3px;
       padding: 0.85rem 1.1rem;
@@ -302,11 +302,11 @@
       font-size: 0.9rem;
       font-weight: 300;
       outline: none;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
 
-    .form-input::placeholder { color: var(--text-dim); }
-    .form-input:focus { border-color: rgba(74, 240, 196, 0.4); }
+    .form-input::placeholder { color: #7a94a6; }
+    .form-input:focus { border-color: rgba(74, 240, 196, 0.6); box-shadow: 0 0 0 3px rgba(74, 240, 196, 0.1); }
 
     .form-btn {
       background: var(--accent);
@@ -329,7 +329,7 @@
 
     .form-note {
       font-size: 0.72rem;
-      color: var(--text-dim);
+      color: var(--text-muted);
       margin-top: 0.6rem;
     }
 
