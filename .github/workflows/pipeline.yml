@@ -2,7 +2,7 @@ name: Content Pipeline
 
 on:
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '0 8 * * 1,3,5'
   workflow_dispatch:
 
 env:
@@ -40,20 +40,16 @@ jobs:
           GOOGLE_ALERT_RSS_2: ${{ secrets.GOOGLE_ALERT_RSS_2 }}
         run: node scripts/pipeline.js
 
-      - name: Commit generated articles to draft branch
+      - name: Commit and publish generated articles
         run: |
           git config user.email "hello@glp3md.com"
           git config user.name "glp3md pipeline"
-          BRANCH="pipeline-drafts/$(date +%Y-%m-%d)"
-          git checkout -b "$BRANCH"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "pipeline: draft articles $(date +%Y-%m-%d)"
-            git push origin "$BRANCH"
-            echo "Draft branch pushed: $BRANCH"
-            echo "Review on Vercel preview before merging to main."
+            git commit -m "pipeline: add generated articles $(date +%Y-%m-%d)"
+            git push
           fi
 
       - name: Upload pipeline summary
