@@ -315,5 +315,32 @@
     "priority": "normal",
     "news_triggered": false,
     "status": "pending"
+  },
+  {
+    "slug": "retatrutide-dosing-schedule",
+    "title": "Retatrutide Dosing: Doses, Escalation Schedule, and Administration",
+    "primary_keyword": "retatrutide dosing",
+    "secondary_keywords": [
+      "retatrutide side effects",
+      "retatrutide cost",
+      "retatrutide availability"
+    ],
+    "h2_questions": [
+      "What doses of retatrutide were tested in clinical trials?",
+      "How is the retatrutide dose escalation schedule structured?",
+      "How is retatrutide administered?",
+      "Will the approved dosing differ from what was used in trials?"
+    ],
+    "key_data_points": [
+      "Phase 2 tested doses of 1mg, 3mg, 6mg, 8mg, and 12mg weekly",
+      "Dose escalation conducted over several weeks to improve GI tolerability",
+      "Administered via once-weekly subcutaneous injection",
+      "12mg cohort showed highest efficacy (24.2% weight loss)",
+      "Final approved dosing pending Phase 3 outcomes and FDA review"
+    ],
+    "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending"
   }
 ]
