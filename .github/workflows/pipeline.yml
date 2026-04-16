@@ -40,16 +40,20 @@ jobs:
           GOOGLE_ALERT_RSS_2: ${{ secrets.GOOGLE_ALERT_RSS_2 }}
         run: node scripts/pipeline.js
 
-      - name: Commit generated articles
+      - name: Commit generated articles to draft branch
         run: |
           git config user.email "hello@glp3md.com"
           git config user.name "glp3md pipeline"
+          BRANCH="pipeline-drafts/$(date +%Y-%m-%d)"
+          git checkout -b "$BRANCH"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "pipeline: add generated articles $(date +%Y-%m-%d)"
-            git push
+            git commit -m "pipeline: draft articles $(date +%Y-%m-%d)"
+            git push origin "$BRANCH"
+            echo "Draft branch pushed: $BRANCH"
+            echo "Review on Vercel preview before merging to main."
           fi
 
       - name: Upload pipeline summary
