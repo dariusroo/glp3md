@@ -224,6 +224,66 @@ async function stage1_newsMonitoring() {
     console.log('  Google Alerts RSS: skipped (no GOOGLE_ALERT_RSS env vars set)');
   }
 
+  // 1e. FDA Press Releases RSS
+  const beforeFda = newItems.length;
+  try {
+    console.log('  Fetching FDA Press Releases RSS...');
+    const fdaKeywords = ['retatrutide', 'ly3437943', 'lilly obesity', 'triple agonist'];
+    const fdaParser = new Parser();
+    const fdaFeed   = await fdaParser.parseURL('https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml');
+    const cutoff    = daysAgo(7);
+    for (const item of fdaFeed.items || []) {
+      const url = item.link || item.guid;
+      if (!url || processedUrls.has(url)) continue;
+      if (item.pubDate && new Date(item.pubDate) < cutoff) continue;
+      const text = `${item.title || ''} ${item.contentSnippet || item.content || ''}`.toLowerCase();
+      if (!fdaKeywords.some(kw => text.includes(kw))) continue;
+      console.log(`  ⚠️  HIGH PRIORITY: FDA — ${item.title}`);
+      newItems.push({
+        url,
+        title: item.title || '',
+        description: item.contentSnippet || '',
+        source: 'fda_rss',
+        priority: 'high',
+        date: item.pubDate || ''
+      });
+      processedUrls.add(url);
+    }
+    console.log(`  FDA RSS: ${newItems.length - beforeFda} new matched items`);
+  } catch (e) {
+    console.error('  FDA RSS error:', e.message);
+  }
+
+  // 1f. Eli Lilly Investor Relations RSS
+  const beforeLilly = newItems.length;
+  try {
+    console.log('  Fetching Eli Lilly IR RSS...');
+    const lillyKeywords = ['retatrutide', 'ly3437943', 'triumph', 'triple agonist obesity'];
+    const lillyParser = new Parser();
+    const lillyFeed   = await lillyParser.parseURL('https://investor.lilly.com/rss/news-releases.xml');
+    const cutoff      = daysAgo(7);
+    for (const item of lillyFeed.items || []) {
+      const url = item.link || item.guid;
+      if (!url || processedUrls.has(url)) continue;
+      if (item.pubDate && new Date(item.pubDate) < cutoff) continue;
+      const text = `${item.title || ''} ${item.contentSnippet || item.content || ''}`.toLowerCase();
+      if (!lillyKeywords.some(kw => text.includes(kw))) continue;
+      console.log(`  ⚠️  HIGH PRIORITY: Eli Lilly IR — ${item.title}`);
+      newItems.push({
+        url,
+        title: item.title || '',
+        description: item.contentSnippet || '',
+        source: 'lilly_ir_rss',
+        priority: 'high',
+        date: item.pubDate || ''
+      });
+      processedUrls.add(url);
+    }
+    console.log(`  Lilly IR RSS: ${newItems.length - beforeLilly} new matched items`);
+  } catch (e) {
+    console.error('  Lilly IR RSS error:', e.message);
+  }
+
   // 1e. ClinicalTrials.gov
   let trialsMonitored = 0;
   let trialChanges = 0;
