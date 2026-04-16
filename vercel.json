@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.glp3md.com/$1",
+      "permanent": true
+    }
+  ]
 }
