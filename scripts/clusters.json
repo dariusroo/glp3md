@@ -182,5 +182,83 @@
     "priority": "normal",
     "news_triggered": false,
     "status": "review"
+  },
+  {
+    "slug": "retatrutide-fda-approval-status",
+    "title": "Retatrutide FDA Approval: Current Status, Timeline, and What to Expect",
+    "primary_keyword": "retatrutide fda approval",
+    "secondary_keywords": [
+      "retatrutide",
+      "retatrutide weight loss",
+      "retatrutide results"
+    ],
+    "h2_questions": [
+      "What is retatrutide and how does it work?",
+      "What is the current FDA approval status of retatrutide?",
+      "What do Phase 2 and Phase 3 trial results show about retatrutide?",
+      "How can patients access retatrutide through a physician-supervised waitlist before approval?"
+    ],
+    "key_data_points": [
+      "Phase 2 trial showed up to 24.2% body weight reduction at 48 weeks",
+      "Triple agonist: GLP-1, GIP, and glucagon receptors",
+      "Eli Lilly is the developer; Phase 3 trials underway as of 2024",
+      "No FDA approval as of 2025; approval timeline estimated 2026–2027"
+    ],
+    "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-side-effects",
+    "title": "Retatrutide Side Effects: What Clinical Trials Reveal So Far",
+    "primary_keyword": "retatrutide side effects",
+    "secondary_keywords": [
+      "retatrutide dosing",
+      "retatrutide",
+      "retatrutide results"
+    ],
+    "h2_questions": [
+      "What are the most common side effects of retatrutide reported in trials?",
+      "Are retatrutide side effects dose-dependent?",
+      "How do retatrutide side effects compare to other GLP-1 medications?",
+      "What does physician supervision mean for managing retatrutide side effects?"
+    ],
+    "key_data_points": [
+      "Most common: nausea, vomiting, diarrhea, constipation — consistent with GLP-1 class",
+      "Side effects more frequent at higher doses (12 mg cohort)",
+      "Discontinuation rates due to adverse events were low in Phase 2",
+      "Glucagon agonism may add distinct metabolic effects not seen with GLP-1-only agents"
+    ],
+    "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-dosing-and-weight-loss-results",
+    "title": "Retatrutide Dosing and Weight Loss Results: What the Data Shows",
+    "primary_keyword": "retatrutide weight loss",
+    "secondary_keywords": [
+      "retatrutide dosing",
+      "retatrutide results",
+      "retatrutide cost"
+    ],
+    "h2_questions": [
+      "What dosing regimens were tested in retatrutide clinical trials?",
+      "What weight loss results were achieved at each dose level?",
+      "How long does it take to see results with retatrutide?",
+      "What will physician-supervised dosing look like once retatrutide is approved?"
+    ],
+    "key_data_points": [
+      "Doses tested: 1 mg, 4 mg, 8 mg, 12 mg in Phase 2",
+      "12 mg dose produced mean 24.2% body weight loss at 48 weeks",
+      "Dose escalation schedules used to minimize GI side effects",
+      "Phase 3 trials will define the final approved dosing protocol"
+    ],
+    "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending"
   }
 ]
