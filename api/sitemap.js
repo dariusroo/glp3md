@@ -1,6 +1,7 @@
-export default function handler(req, res) {
-  const fs = require('fs');
-  const path = require('path');
+const fs = require('fs');
+const path = require('path');
+
+module.exports = function handler(req, res) {
 
   const staticPages = [
     { url: 'https://www.glp3md.com/', priority: '1.0', changefreq: 'weekly' },
