@@ -451,7 +451,7 @@ async function stage3_articleGeneration() {
   const generated = [];
   let updatedBlogIndex = fs.readFileSync(BLOG_INDEX, 'utf8');
 
-  for (const cluster of pending) {
+  for (const cluster of pending.slice(0, 1)) {
     console.log(`\n  Generating: "${cluster.title}"`);
 
     // Safety: never overwrite a cluster already in review/published
