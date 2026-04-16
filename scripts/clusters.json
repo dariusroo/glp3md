@@ -260,5 +260,60 @@
     "priority": "normal",
     "news_triggered": false,
     "status": "pending"
+  },
+  {
+    "slug": "retatrutide-weight-loss-results",
+    "title": "Retatrutide Weight Loss Results: What Clinical Trials Actually Show",
+    "primary_keyword": "retatrutide results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide dosing",
+      "retatrutide phase 2"
+    ],
+    "h2_questions": [
+      "How much weight loss does retatrutide produce in clinical trials?",
+      "How does retatrutide dosing affect weight loss outcomes?",
+      "How long does it take to see results with retatrutide?",
+      "Who were the participants in retatrutide weight loss trials?"
+    ],
+    "key_data_points": [
+      "Phase 2: 24.2% mean body weight reduction at highest dose (12 mg) over 48 weeks",
+      "Placebo group lost approximately 2.1% body weight",
+      "Dose-dependent response observed across 1 mg, 4 mg, 8 mg, 12 mg arms",
+      "Trial included adults with BMI ≥27 without diabetes",
+      "Weekly subcutaneous injection protocol"
+    ],
+    "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-cost-and-availability",
+    "title": "Retatrutide Cost and Availability: What to Know Before It Reaches the Market",
+    "primary_keyword": "retatrutide cost",
+    "secondary_keywords": [
+      "retatrutide availability",
+      "retatrutide fda approval",
+      "is retatrutide fda approved"
+    ],
+    "h2_questions": [
+      "How much will retatrutide cost when it is approved?",
+      "When will retatrutide be available to patients?",
+      "Will insurance cover retatrutide for weight loss?",
+      "How can patients prepare for legitimate access to retatrutide today?"
+    ],
+    "key_data_points": [
+      "No official list price set; retatrutide not yet commercially available",
+      "Comparable GLP-1s (semaglutide, tirzepatide) list at $900–$1,400+/month without insurance",
+      "Insurance coverage for obesity drugs remains inconsistent in the US",
+      "Eli Lilly has obesity drug pricing precedent with Zepbound (~$550/month list)",
+      "Physician-supervised waitlist programs allow patients to queue for FDA-approved access",
+      "Gray market and compounded versions carry safety and legal risks"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending"
   }
 ]
