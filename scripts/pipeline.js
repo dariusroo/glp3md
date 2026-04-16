@@ -570,6 +570,86 @@ Return ONLY a JSON array, no other text:
   return { newClusters: toAdd.length };
 }
 
+// ─── Stage 3.5: Internal Linking Engine ──────────────────────────────────────
+async function injectInternalLinks(cluster, outputPath, clusters) {
+  const linkable = clusters.filter(c =>
+    c.slug !== cluster.slug && ['review', 'published'].includes(c.status)
+  );
+  if (linkable.length === 0) return;
+
+  let html = fs.readFileSync(outputPath, 'utf8');
+
+  // Extract article body text for Claude
+  const bodyMatch = html.match(/<p class="post-meta">[\s\S]*?<\/p>([\s\S]*?)<div class="post-cta">/);
+  if (!bodyMatch) return;
+  const bodyText = bodyMatch[1];
+
+  try {
+    const linkableArticles = linkable.map(c => ({
+      title: c.title,
+      primary_keyword: c.primary_keyword,
+      url: `/blog/${c.slug}/`
+    }));
+
+    const msg = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1024,
+      messages: [{
+        role: 'user',
+        content:
+`You are an SEO specialist. Find up to 5 internal link opportunities in this article body.
+
+Article body:
+${bodyText.slice(0, 3000)}
+
+Existing articles to link to:
+${JSON.stringify(linkableArticles, null, 2)}
+
+Match natural phrases from the article body to the most relevant existing article.
+
+Return ONLY a JSON array (no other text):
+[{"anchor": "exact phrase from article body", "url": "/blog/slug/"}]
+
+Rules:
+- anchor must be an exact substring present in the article body
+- Each url used at most once
+- Only suggest links where the match is genuinely relevant
+- Return [] if no good matches exist`
+      }]
+    });
+
+    const raw = msg.content[0]?.text || '';
+    const suggestions = parseClaudeJSON(raw);
+    if (!suggestions || !Array.isArray(suggestions) || suggestions.length === 0) {
+      console.log('  🔗 Internal links: no opportunities found');
+      return;
+    }
+
+    // Inject links — split around existing <a> blocks to avoid nesting
+    let injectedCount = 0;
+    for (const { anchor, url } of suggestions) {
+      if (!anchor || !url || !html.includes(anchor)) continue;
+      const segments = html.split(/(<a[\s\S]*?<\/a>)/i);
+      let done = false;
+      for (let i = 0; i < segments.length; i++) {
+        if (/^<a/i.test(segments[i])) continue;
+        if (!done && segments[i].includes(anchor)) {
+          segments[i] = segments[i].replace(anchor, `<a href="${url}">${anchor}</a>`);
+          done = true;
+        }
+      }
+      if (done) { html = segments.join(''); injectedCount++; }
+    }
+
+    if (injectedCount > 0) {
+      fs.writeFileSync(outputPath, html, 'utf8');
+      console.log(`  🔗 Internal links injected: ${injectedCount}`);
+    }
+  } catch (e) {
+    console.error('  Internal linking error:', e.message);
+  }
+}
+
 // ─── Stage 3: Article Generation ─────────────────────────────────────────────
 async function stage3_articleGeneration() {
   console.log('\n=== STAGE 3: Article Generation ===');
@@ -724,6 +804,9 @@ No inline styles.`
       fs.mkdirSync(outputDir, { recursive: true });
       fs.writeFileSync(outputPath, html, 'utf8');
 
+      // Inject internal links
+      await injectInternalLinks(cluster, outputPath, clusters);
+
       // Mark cluster as 'review'
       const idx = clusters.findIndex(c => c.slug === cluster.slug);
       if (idx !== -1) clusters[idx].status = 'review';
@@ -824,6 +907,62 @@ async function stage5_sitemapPing() {
   }
 }
 
+// ─── Stage 6: Article Freshness Updater ──────────────────────────────────────
+async function stage6_freshnessUpdater() {
+  console.log('\n=== STAGE 6: Article Freshness Updater ===');
+  const { execSync } = require('child_process');
+  const clusters  = readJSON(CLUSTERS_PATH);
+  const published = clusters.filter(c => c.status === 'published');
+
+  if (published.length === 0) {
+    console.log('  No published articles to check');
+    return;
+  }
+
+  const threshold = daysAgo(30);
+  let updated = 0;
+
+  for (const cluster of published) {
+    const filePath = path.join(BLOG_DIR, cluster.slug, 'index.html');
+    if (!fs.existsSync(filePath)) continue;
+
+    try {
+      const gitDate = execSync(
+        `git -C "${ROOT}" log -1 --format="%ai" -- "blog/${cluster.slug}/index.html"`,
+        { encoding: 'utf8' }
+      ).trim();
+
+      if (!gitDate || new Date(gitDate) > threshold) continue;
+
+      let html = fs.readFileSync(filePath, 'utf8');
+      const todayISO  = isoDate(new Date());
+      const todayLong = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+      // Update JSON-LD dateModified
+      html = html.replace(/"dateModified":\s*"[^"]*"/, `"dateModified": "${todayISO}"`);
+
+      // Add or update last-updated paragraph below post-meta
+      const freshTag = `<p class="post-meta last-updated">Last updated: ${todayLong}</p>`;
+      if (html.includes('class="post-meta last-updated"')) {
+        html = html.replace(/<p class="post-meta last-updated">.*?<\/p>/, freshTag);
+      } else {
+        html = html.replace(
+          /(<p class="post-meta">.*?<\/p>)/,
+          `$1\n    ${freshTag}`
+        );
+      }
+
+      fs.writeFileSync(filePath, html, 'utf8');
+      updated++;
+      console.log(`  🔄 Refreshed: /blog/${cluster.slug}/`);
+    } catch (e) {
+      console.error(`  Error checking ${cluster.slug}:`, e.message);
+    }
+  }
+
+  console.log(`  Freshness check complete: ${updated} of ${published.length} articles refreshed`);
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log('🚀 glp3md content pipeline starting...');
@@ -847,6 +986,9 @@ async function main() {
     try { pingResult = await stage5_sitemapPing(); }
     catch (e) { console.error('Stage 5 fatal error:', e.message); }
   }
+
+  try { await stage6_freshnessUpdater(); }
+  catch (e) { console.error('Stage 6 fatal error:', e.message); }
 
   stage4_summary(newsResult, kwResult, genResult, pingResult);
 }
