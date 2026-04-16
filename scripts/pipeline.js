@@ -74,12 +74,19 @@ function deriveCategory(slug, newsTriggered) {
   return 'Research';
 }
 
+function readProcessedNews() {
+  const raw = readJSON(NEWS_PATH);
+  // Migrate from old array format to {urls, trials} object
+  if (Array.isArray(raw)) return { urls: raw, trials: {} };
+  return { urls: raw.urls || [], trials: raw.trials || {} };
+}
+
 // ─── Stage 1: News Monitoring ─────────────────────────────────────────────────
 async function stage1_newsMonitoring() {
   console.log('\n=== STAGE 1: News Monitoring ===');
 
-  const processedNews = readJSON(NEWS_PATH);
-  const processedUrls = new Set(processedNews.map(n => n.url));
+  const processedNews = readProcessedNews();
+  const processedUrls = new Set(processedNews.urls.map(n => n.url));
   const newItems = [];
 
   // 1a. PubMed
@@ -217,27 +224,102 @@ async function stage1_newsMonitoring() {
     console.log('  Google Alerts RSS: skipped (no GOOGLE_ALERT_RSS env vars set)');
   }
 
+  // 1e. ClinicalTrials.gov
+  let trialsMonitored = 0;
+  let trialChanges = 0;
+  const trialChangeItems = [];
+  try {
+    console.log('  Fetching ClinicalTrials.gov...');
+    const ctEndpoints = [
+      'https://clinicaltrials.gov/api/v2/studies?query.term=retatrutide&filter.overallStatus=COMPLETED&pageSize=20&format=json',
+      'https://clinicaltrials.gov/api/v2/studies?query.term=retatrutide&filter.overallStatus=ACTIVE_NOT_RECRUITING,RECRUITING&pageSize=20&format=json'
+    ];
+    const allStudies = [];
+    for (const ctUrl of ctEndpoints) {
+      const ctRes  = await fetch(ctUrl, { headers: { 'User-Agent': 'glp3md pipeline hello@glp3md.com' } });
+      const ctData = await ctRes.json();
+      allStudies.push(...(ctData?.studies || []));
+    }
+    const storedTrials = { ...processedNews.trials };
+    for (const study of allStudies) {
+      const nctId             = study.protocolSection?.identificationModule?.nctId;
+      const briefTitle        = study.protocolSection?.identificationModule?.briefTitle || '';
+      const overallStatus     = study.protocolSection?.statusModule?.overallStatus || '';
+      const primaryCompletion = study.protocolSection?.statusModule?.primaryCompletionDateStruct?.date || '';
+      const lastUpdate        = study.protocolSection?.statusModule?.lastUpdatePostDateStruct?.date || '';
+      if (!nctId) continue;
+      trialsMonitored++;
+      processedNews.trials[nctId] = overallStatus;
+      const prevStatus = storedTrials[nctId];
+      if (prevStatus && prevStatus !== overallStatus) {
+        trialChanges++;
+        const isNewlyCompleted = overallStatus === 'COMPLETED';
+        const item = {
+          url: `https://clinicaltrials.gov/study/${nctId}`,
+          title: `TRIUMPH trial ${nctId} status changed to ${overallStatus}`,
+          description: `${briefTitle} — status changed from ${prevStatus} to ${overallStatus}. Primary completion: ${primaryCompletion}`,
+          source: 'clinicaltrials',
+          priority: 'high',
+          date: lastUpdate,
+          _autoGenerate: isNewlyCompleted,
+          _triumphTitle: `TRIUMPH ${briefTitle} Phase 3 Complete: What It Means for Retatrutide`
+        };
+        newItems.push(item);
+        trialChangeItems.push(item);
+      }
+    }
+    console.log(`  🔬 ClinicalTrials.gov: ${trialsMonitored} trials monitored, ${trialChanges} status changes detected`);
+  } catch (e) {
+    console.error('  ClinicalTrials.gov error:', e.message);
+  }
+
   console.log(`\n  📰 Total new items: ${newItems.length}`);
+
+  // Always persist — captures trial status updates even on quiet news weeks
+  const updatedUrls = [
+    ...processedNews.urls,
+    ...newItems.map(i => ({ url: i.url, processedAt: new Date().toISOString() }))
+  ];
+  writeJSON(NEWS_PATH, { urls: updatedUrls, trials: processedNews.trials });
 
   let newClusters = [];
 
   if (newItems.length > 0) {
-    // Persist processed URLs before Claude call so a crash doesn't reprocess
-    const updated = [
-      ...processedNews,
-      ...newItems.map(i => ({ url: i.url, processedAt: new Date().toISOString() }))
-    ];
-    writeJSON(NEWS_PATH, updated);
+    // Newly-completed trials bypass Claude — always generate
+    const autoItems   = newItems.filter(i => i._autoGenerate);
+    const claudeItems = newItems.filter(i => !i._autoGenerate);
 
-    try {
-      console.log('  Sending to Claude for analysis...');
-      const msg = await anthropic.messages.create({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 4096,
-        messages: [{
-          role: 'user',
-          content:
-`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform. Here are recent news items about retatrutide: ${JSON.stringify(newItems, null, 2)}
+    for (const item of autoItems) {
+      const slug = item._triumphTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      newClusters.push({
+        slug,
+        title: item._triumphTitle,
+        primary_keyword: 'retatrutide clinical trial results',
+        secondary_keywords: ['retatrutide phase 3', 'TRIUMPH trial', 'retatrutide FDA approval'],
+        h2_questions: [
+          'What did this TRIUMPH trial study?',
+          'What were the key results from this trial?',
+          'What does trial completion mean for FDA approval?',
+          'When could retatrutide be available to patients?'
+        ],
+        key_data_points: [item.description],
+        source_url: item.url,
+        priority: 'high',
+        news_triggered: true,
+        status: 'pending'
+      });
+    }
+
+    if (claudeItems.length > 0) {
+      try {
+        console.log('  Sending to Claude for analysis...');
+        const msg = await anthropic.messages.create({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 4096,
+          messages: [{
+            role: 'user',
+            content:
+`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform. Here are recent news items about retatrutide: ${JSON.stringify(claudeItems, null, 2)}
 
 For each item determine if it warrants a dedicated blog post.
 New trial data, FDA milestones, Lilly announcements = YES.
@@ -263,17 +345,18 @@ Return ONLY a JSON array, no other text:
 
 Return empty array [] if no items warrant a post.
 IMPORTANT: Only include data points explicitly stated in the source. Never infer or add data from memory.`
-        }]
-      });
+          }]
+        });
 
-      const raw = msg.content[0]?.text || '';
-      const parsed = parseClaudeJSON(raw);
-      if (parsed && Array.isArray(parsed)) {
-        newClusters = parsed;
-        console.log(`  Claude identified ${newClusters.length} article briefs from news`);
+        const raw = msg.content[0]?.text || '';
+        const parsed = parseClaudeJSON(raw);
+        if (parsed && Array.isArray(parsed)) {
+          newClusters = [...newClusters, ...parsed];
+          console.log(`  Claude identified ${parsed.length} article briefs from news`);
+        }
+      } catch (e) {
+        console.error('  Claude news analysis error:', e.message);
       }
-    } catch (e) {
-      console.error('  Claude news analysis error:', e.message);
     }
   }
 
@@ -284,7 +367,7 @@ IMPORTANT: Only include data points explicitly stated in the source. Never infer
   writeJSON(CLUSTERS_PATH, [...clusters, ...toAdd]);
   if (toAdd.length > 0) console.log(`  Added ${toAdd.length} news-triggered clusters`);
 
-  return { newsItemsProcessed: newItems.length, newClusters: toAdd.length };
+  return { newsItemsProcessed: newItems.length, newClusters: toAdd.length, trialsMonitored, trialChanges, trialChangeItems };
 }
 
 // ─── Stage 2: Keyword Research ─────────────────────────────────────────────────
@@ -621,7 +704,7 @@ No inline styles.`
 }
 
 // ─── Stage 4: Summary ─────────────────────────────────────────────────────────
-function stage4_summary(newsResult, kwResult, genResult) {
+function stage4_summary(newsResult, kwResult, genResult, pingResult) {
   const all          = readJSON(CLUSTERS_PATH);
   const review       = all.filter(c => c.status === 'review');
   const highPriority = review.filter(c => c.priority === 'high');
@@ -630,12 +713,16 @@ function stage4_summary(newsResult, kwResult, genResult) {
     '',
     '=== PIPELINE COMPLETE ===',
     `📰 News items processed: ${newsResult.newsItemsProcessed}`,
+    `🔬 TRIUMPH trials monitored: ${newsResult.trialsMonitored}`,
+    `📡 Trial status changes: ${newsResult.trialChanges}` +
+      (newsResult.trialChanges ? '\n   ' + newsResult.trialChangeItems.map(i => i.title).join('\n   ') : ''),
     `🔍 New keyword clusters identified: ${kwResult.newClusters}`,
     `✅ Articles generated: ${genResult.articlesGenerated.length}`,
     `⚠️  High priority items: ${highPriority.length}` +
       (highPriority.length ? '\n   ' + highPriority.map(c => c.title).join('\n   ') : ''),
     `📋 Articles awaiting review: ${review.length}` +
       (review.length ? '\n   ' + review.map(c => c.title).join('\n   ') : ''),
+    `🗺️  Sitemap pinged: ${pingResult ? 'yes' : 'no'}`,
     '================================'
   ];
   lines.forEach(l => console.log(l));
@@ -644,16 +731,37 @@ function stage4_summary(newsResult, kwResult, genResult) {
     '=== PIPELINE COMPLETE ===',
     `Date: ${new Date().toISOString()}`,
     `News items processed: ${newsResult.newsItemsProcessed}`,
+    `TRIUMPH trials monitored: ${newsResult.trialsMonitored}`,
+    `Trial status changes: ${newsResult.trialChanges}`,
+    ...newsResult.trialChangeItems.map(i => `  - ${i.title}`),
     `New keyword clusters identified: ${kwResult.newClusters}`,
     `Articles generated: ${genResult.articlesGenerated.length}`,
     `High priority items: ${highPriority.length}`,
     ...highPriority.map(c => `  - ${c.title}`),
     `Articles awaiting review: ${review.length}`,
     ...review.map(c => `  - ${c.title}`),
+    `Sitemap pinged: ${pingResult ? 'yes' : 'no'}`,
     '================================'
   ].join('\n');
 
   fs.writeFileSync(path.join(ROOT, 'pipeline-summary.txt'), summaryText, 'utf8');
+}
+
+// ─── Stage 5: Notify Google ───────────────────────────────────────────────────
+async function stage5_sitemapPing() {
+  console.log('\n=== STAGE 5: Notify Google ===');
+  try {
+    const res = await fetch('https://www.google.com/ping?sitemap=https://www.glp3md.com/api/sitemap');
+    if (res.ok) {
+      console.log('  ✅ Google notified — sitemap ping successful');
+      return true;
+    }
+    console.log(`  ⚠️  Sitemap ping failed (${res.status}) — Google will crawl on its own schedule`);
+    return false;
+  } catch (e) {
+    console.log('  ⚠️  Sitemap ping failed — Google will crawl on its own schedule');
+    return false;
+  }
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -661,9 +769,10 @@ async function main() {
   console.log('🚀 glp3md content pipeline starting...');
   console.log(`   ${new Date().toISOString()}`);
 
-  let newsResult = { newsItemsProcessed: 0, newClusters: 0 };
+  let newsResult = { newsItemsProcessed: 0, newClusters: 0, trialsMonitored: 0, trialChanges: 0, trialChangeItems: [] };
   let kwResult   = { newClusters: 0 };
   let genResult  = { articlesGenerated: [] };
+  let pingResult = false;
 
   try { newsResult = await stage1_newsMonitoring(); }
   catch (e) { console.error('Stage 1 fatal error:', e.message); }
@@ -674,7 +783,12 @@ async function main() {
   try { genResult = await stage3_articleGeneration(); }
   catch (e) { console.error('Stage 3 fatal error:', e.message); }
 
-  stage4_summary(newsResult, kwResult, genResult);
+  if (genResult.articlesGenerated.length > 0) {
+    try { pingResult = await stage5_sitemapPing(); }
+    catch (e) { console.error('Stage 5 fatal error:', e.message); }
+  }
+
+  stage4_summary(newsResult, kwResult, genResult, pingResult);
 }
 
 main().catch(e => {
