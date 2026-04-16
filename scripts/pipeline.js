@@ -344,7 +344,7 @@ async function stage2_keywordResearch() {
 
       const webmasters = google.webmasters({ version: 'v3', auth: oauth2Client });
       const gscRes = await webmasters.searchanalytics.query({
-        siteUrl: 'https://www.glp3md.com/',
+        siteUrl: 'sc-domain:glp3md.com',
         requestBody: {
           startDate: isoDate(daysAgo(90)),
           endDate:   isoDate(new Date()),
