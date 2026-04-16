@@ -1,0 +1,14 @@
+=== PIPELINE COMPLETE ===
+Date: 2026-04-16T19:27:58.374Z
+News items processed: 10
+New keyword clusters identified: 4
+Articles generated: 5
+High priority items: 1
+  - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
+Articles awaiting review: 5
+  - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
+  - How to Spot Fake GLP-1 Drug Suppliers Online — and Why Physician Supervision Matters
+  - FDA Issues Warning Letters to Multiple Online GLP-1 Sellers for Unlawful Drug Sales
+  - Retatrutide Side Effects: What Clinical Trials Reveal About Safety
+  - Retatrutide Dosing and Weight Loss Results: What the Data Shows
+================================
