@@ -392,7 +392,7 @@ async function stage1_newsMonitoring() {
           messages: [{
             role: 'user',
             content:
-`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform. Here are recent news items about retatrutide: ${JSON.stringify(claudeItems, null, 2)}
+`You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform. Here are recent news items about retatrutide: ${JSON.stringify(claudeItems, null, 2)}
 
 For each item determine if it warrants a dedicated blog post.
 New trial data, FDA milestones, Lilly announcements = YES.
@@ -456,7 +456,7 @@ async function topUpQueue(clusters, count) {
       messages: [{
         role: 'user',
         content:
-`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform.
+`You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform.
 
 The following clinical research data is available to ground your article ideas:
 ${research}
@@ -604,7 +604,7 @@ async function stage2_keywordResearch() {
       messages: [{
         role: 'user',
         content:
-`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform that only covers legitimate FDA-approval-track access — no gray market, no compounding.
+`You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform that only covers legitimate FDA-approval-track access — no gray market, no compounding.
 
 Here are keywords: ${JSON.stringify(allKeywords, null, 2)}
 
@@ -786,7 +786,7 @@ async function stage3_articleGeneration() {
         messages: [{
           role: 'user',
           content:
-`You are a board-certified obesity medicine physician writing for glp3md.com, a physician-supervised retatrutide waitlist platform. Write a clinical blog post.
+`You are a board-certified obesity medicine physician writing for glp3md.com, a retatrutide waitlist and information platform. Write a clinical blog post.
 
 The following peer-reviewed clinical data is provided for accuracy. Use these figures when relevant — do not invent alternatives:
 ${research}
@@ -814,6 +814,9 @@ Requirements:
 - All CTA links must use https://www.glp3md.com (never http or non-www)
 - Never fabricate company names, study authors, or citation details
 - If citing a source_url, only include data explicitly stated in that source — never infer or add data from memory
+- Never describe glp3md as a "physician-supervised platform" or any variant of that phrase
+- Never promise or imply that readers will receive medication, treatment, or a prescription — retatrutide is not FDA-approved; the waitlist is for informational purposes only
+- When encouraging readers to join the waitlist, include a clear disclaimer that no promises are made about treatment or medication availability
 
 Return ONLY the article body HTML using these tags only:
 <h2>, <h3>, <p>, <ul>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>, <strong>, <em>, <a>
