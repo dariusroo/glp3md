@@ -434,9 +434,70 @@ IMPORTANT: Only include data points explicitly stated in the source. Never infer
   return { newsItemsProcessed: newItems.length, newClusters: toAdd.length, trialsMonitored, trialChanges, trialChangeItems };
 }
 
+// ─── Queue Top-Up ────────────────────────────────────────────────────────────
+async function topUpQueue(clusters, count) {
+  console.log(`  Queue top-up: requesting ${count} new article idea(s)...`);
+  const existingTitles = clusters.map(c => c.title).join('\n');
+
+  try {
+    const msg = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1024,
+      messages: [{
+        role: 'user',
+        content:
+`You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform.
+
+Generate exactly ${count} new blog post idea(s) about retatrutide that are meaningfully different from these existing articles:
+${existingTitles}
+
+Stay within these topic areas: retatrutide clinical data, dosing, safety, side effects, patient eligibility, comparisons with other GLP-1/GIP/glucagon medications, FDA regulatory pathway, obesity medicine, metabolic health.
+Do not invent trial data. No gray market or compounding topics.
+
+Return ONLY a JSON array, no other text:
+[
+  {
+    "slug": "url-friendly-slug",
+    "title": "Article title",
+    "primary_keyword": "main keyword",
+    "secondary_keywords": ["kw1", "kw2", "kw3"],
+    "h2_questions": ["Q1?", "Q2?", "Q3?", "Q4?"],
+    "key_data_points": [],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending"
+  }
+]`
+      }]
+    });
+
+    const raw = msg.content[0]?.text || '';
+    const parsed = parseClaudeJSON(raw);
+    if (!parsed || !Array.isArray(parsed)) return;
+
+    const existingSlugs = new Set(clusters.map(c => c.slug));
+    const toAdd = parsed.filter(c => c.slug && !existingSlugs.has(c.slug));
+    if (toAdd.length > 0) {
+      writeJSON(CLUSTERS_PATH, [...clusters, ...toAdd]);
+      console.log(`  Queue top-up: added ${toAdd.length} new topic(s)`);
+    }
+  } catch (e) {
+    console.error('  Queue top-up error:', e.message);
+  }
+}
+
 // ─── Stage 2: Keyword Research ─────────────────────────────────────────────────
 async function stage2_keywordResearch() {
   console.log('\n=== STAGE 2: Keyword Research ===');
+
+  // Skip expensive API calls if queue is already healthy
+  const queueCheck = readJSON(CLUSTERS_PATH);
+  const pendingCount = queueCheck.filter(c => c.status === 'pending').length;
+  if (pendingCount >= 3) {
+    console.log(`  Queue has ${pendingCount} pending articles — skipping keyword API calls`);
+    return { newClusters: 0 };
+  }
 
   const seeds = [
     'retatrutide',
@@ -571,6 +632,12 @@ Return ONLY a JSON array, no other text:
   const toAdd = newClusters.filter(c => c.slug && !existingSlugs.has(c.slug));
   writeJSON(CLUSTERS_PATH, [...clusters, ...toAdd]);
   if (toAdd.length > 0) console.log(`  Added ${toAdd.length} keyword-driven clusters`);
+
+  // Top-up: one Claude call to fill queue to 3 pending if still short
+  const updatedClusters = readJSON(CLUSTERS_PATH);
+  const stillPending = updatedClusters.filter(c => c.status === 'pending').length;
+  const topUpNeeded = Math.max(3 - stillPending, 0);
+  if (topUpNeeded > 0) await topUpQueue(updatedClusters, topUpNeeded);
 
   return { newClusters: toAdd.length };
 }
