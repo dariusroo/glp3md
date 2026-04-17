@@ -717,6 +717,14 @@ Requirements:
 - Never mention compounding, gray market, or peptide vendors
 - Never fabricate statistics — only use data provided above or well-known TRIUMPH-4 figures
 - End with one paragraph encouraging readers to join the waitlist
+- Never use first-person language (I, me, we, our physicians)
+- Never write "clinicians use reta" — only patient communities use this shorthand; write "commonly referred to as reta in patient communities"
+- Brand name is always "glp3md" — never "GLP-3 MD", "GLP3MD", or "GLP-3MD"
+- Semaglutide STEP-1 trial duration is 68 weeks, not 72
+- Tirzepatide SURMOUNT-1 mean weight loss is 20.9% at 15mg, not 22.5%
+- All CTA links must use https://www.glp3md.com (never http or non-www)
+- Never fabricate company names, study authors, or citation details
+- If citing a source_url, only include data explicitly stated in that source — never infer or add data from memory
 
 Return ONLY the article body HTML using these tags only:
 <h2>, <h3>, <p>, <ul>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>, <strong>, <em>, <a>
