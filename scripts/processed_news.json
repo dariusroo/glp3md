@@ -39,6 +39,10 @@
     {
       "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/asn-labs-716459-09092025",
       "processedAt": "2026-04-16T19:24:08.069Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT07232719",
+      "processedAt": "2026-04-17T20:46:28.093Z"
     }
   ],
   "trials": {
@@ -70,7 +74,7 @@
     "NCT06982859": "RECRUITING",
     "NCT05929079": "ACTIVE_NOT_RECRUITING",
     "NCT07226947": "RECRUITING",
-    "NCT07232719": "RECRUITING",
+    "NCT07232719": "ACTIVE_NOT_RECRUITING",
     "NCT06297603": "ACTIVE_NOT_RECRUITING",
     "NCT07165028": "RECRUITING",
     "NCT06260722": "ACTIVE_NOT_RECRUITING",

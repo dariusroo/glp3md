@@ -342,5 +342,33 @@
     "priority": "normal",
     "news_triggered": false,
     "status": "pending"
+  },
+  {
+    "slug": "triumph-trial-retatrutide-active-not-recruiting-2027",
+    "title": "TRIUMPH Trial Stops Recruiting: What the Phase 3 Retatrutide Study Closing Enrollment Means for Patients",
+    "primary_keyword": "retatrutide phase 3 trial",
+    "secondary_keywords": [
+      "TRIUMPH trial retatrutide",
+      "LY3437943 clinical trial",
+      "retatrutide obesity study",
+      "retatrutide FDA approval timeline",
+      "retatrutide waitlist"
+    ],
+    "h2_questions": [
+      "What does ACTIVE_NOT_RECRUITING mean for the TRIUMPH retatrutide trial?",
+      "When is the TRIUMPH trial expected to complete, and what happens next?",
+      "Does the trial closing enrollment affect my chances of getting retatrutide?",
+      "What is retatrutide (LY3437943) and why is the TRIUMPH trial important?",
+      "How do I get access to retatrutide when it becomes available?"
+    ],
+    "key_data_points": [
+      "TRIUMPH trial NCT07232719 status changed from RECRUITING to ACTIVE_NOT_RECRUITING on 2026-04-17",
+      "Trial full name: A Study of Retatrutide (LY3437943) in Participants With Obesity or Overweight",
+      "Primary completion date listed as July 2027"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT07232719",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "review"
   }
 ]
