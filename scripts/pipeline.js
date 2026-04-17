@@ -18,6 +18,8 @@ const BLOG_INDEX    = path.join(BLOG_DIR, 'index.html');
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+const FETCH_TIMEOUT = 30000; // 30s — prevents hung network calls from blocking the pipeline
+
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function readJSON(filePath) {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); }
@@ -94,14 +96,16 @@ async function stage1_newsMonitoring() {
     console.log('  Fetching PubMed...');
     const searchRes = await fetch(
       'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi' +
-      '?db=pubmed&term=retatrutide&reldate=7&datetype=pdat&retmode=json'
+      '?db=pubmed&term=retatrutide&reldate=7&datetype=pdat&retmode=json',
+      { timeout: FETCH_TIMEOUT }
     );
     const searchData = await searchRes.json();
     const ids = searchData?.esearchresult?.idlist || [];
 
     if (ids.length > 0) {
       const summaryRes = await fetch(
-        `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids.join(',')}&retmode=json`
+        `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids.join(',')}&retmode=json`,
+        { timeout: FETCH_TIMEOUT }
       );
       const summaryData = await summaryRes.json();
       for (const id of ids) {
@@ -126,7 +130,7 @@ async function stage1_newsMonitoring() {
     const today   = isoDate(new Date());
     const edgarRes = await fetch(
       `https://efts.sec.gov/LATEST/search-index?q=%22retatrutide%22&dateRange=custom&startdt=${startdt}&enddt=${today}&forms=8-K`,
-      { headers: { 'User-Agent': 'glp3md pipeline hello@glp3md.com' } }
+      { headers: { 'User-Agent': 'glp3md pipeline hello@glp3md.com' }, timeout: FETCH_TIMEOUT }
     );
     const edgarData = await edgarRes.json();
     const hits = edgarData?.hits?.hits || [];
@@ -162,7 +166,7 @@ async function stage1_newsMonitoring() {
       const from = isoDate(daysAgo(7));
       const newsRes = await fetch(
         `https://newsapi.org/v2/everything?q=retatrutide&language=en&sortBy=publishedAt&pageSize=10&from=${from}`,
-        { headers: { 'X-Api-Key': process.env.NEWS_API_KEY } }
+        { headers: { 'X-Api-Key': process.env.NEWS_API_KEY }, timeout: FETCH_TIMEOUT }
       );
       const newsData = await newsRes.json();
       const articles = newsData?.articles || [];
@@ -194,7 +198,7 @@ async function stage1_newsMonitoring() {
   const activeFeeds = rssFeedEnvVars.filter(v => process.env[v]);
 
   if (activeFeeds.length > 0) {
-    const parser = new Parser();
+    const parser = new Parser({ timeout: FETCH_TIMEOUT });
     for (const envVar of activeFeeds) {
       const beforeFeed = newItems.length;
       try {
@@ -229,7 +233,7 @@ async function stage1_newsMonitoring() {
   try {
     console.log('  Fetching FDA Press Releases RSS...');
     const fdaKeywords = ['retatrutide', 'ly3437943', 'lilly obesity', 'triple agonist'];
-    const fdaParser = new Parser();
+    const fdaParser = new Parser({ timeout: FETCH_TIMEOUT });
     const fdaFeed   = await fdaParser.parseURL('https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml');
     const cutoff    = daysAgo(7);
     for (const item of fdaFeed.items || []) {
@@ -259,7 +263,7 @@ async function stage1_newsMonitoring() {
   try {
     console.log('  Fetching Eli Lilly IR RSS...');
     const lillyKeywords = ['retatrutide', 'ly3437943', 'triumph', 'triple agonist obesity'];
-    const lillyParser = new Parser();
+    const lillyParser = new Parser({ timeout: FETCH_TIMEOUT });
     const lillyFeed   = await lillyParser.parseURL('https://investor.lilly.com/rss/news-releases.xml');
     const cutoff      = daysAgo(7);
     for (const item of lillyFeed.items || []) {
@@ -296,7 +300,7 @@ async function stage1_newsMonitoring() {
     ];
     const allStudies = [];
     for (const ctUrl of ctEndpoints) {
-      const ctRes  = await fetch(ctUrl, { headers: { 'User-Agent': 'glp3md pipeline hello@glp3md.com' } });
+      const ctRes  = await fetch(ctUrl, { headers: { 'User-Agent': 'glp3md pipeline hello@glp3md.com' }, timeout: FETCH_TIMEOUT });
       const ctData = await ctRes.json();
       allStudies.push(...(ctData?.studies || []));
     }
@@ -458,7 +462,8 @@ async function stage2_keywordResearch() {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', keywords: seeds })
+        body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', keywords: seeds }),
+        timeout: FETCH_TIMEOUT
       });
       const keData = await keRes.json();
       for (const kw of keData?.data || []) {
@@ -902,7 +907,7 @@ function stage4_summary(newsResult, kwResult, genResult, pingResult) {
 async function stage5_sitemapPing() {
   console.log('\n=== STAGE 5: Notify Google ===');
   try {
-    const res = await fetch('https://www.google.com/ping?sitemap=https://www.glp3md.com/api/sitemap');
+    const res = await fetch('https://www.google.com/ping?sitemap=https://www.glp3md.com/api/sitemap', { timeout: FETCH_TIMEOUT });
     if (res.ok) {
       console.log('  ✅ Google notified — sitemap ping successful');
       return true;
