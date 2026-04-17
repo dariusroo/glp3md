@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Retatrutide Phase 2 Obesity Trial — Main Paper",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    "source": "NEJM 2023; Jastreboff et al.; NCT04881760",
+    "key_data": [
+      "Phase 2, randomized, double-blind, placebo-controlled; n=338; 48-week treatment + 4-week follow-up",
+      "Doses tested: 1mg, 4mg, 8mg, 12mg once weekly subcutaneous; different initial doses (2mg vs 4mg)",
+      "Eligibility: BMI ≥30 or ≥27 with weight-related comorbidity; excluded type 2 diabetes",
+      "Mean weight loss at 48 weeks vs placebo (~2.1%): 1mg ~8.7%, 4mg ~17.3%, 8mg ~22.8%, 12mg ~24.2%",
+      "Mean weight loss at 24 weeks: 1mg ~7.2%, 4mg ~11.8–13.9%, 8mg ~16.7–17.9%, 12mg ~17.5%",
+      "≥5% weight reduction at 48 weeks: placebo 26%, 1mg 59%, 4mg 87–94%, 8mg 100%, 12mg 97%",
+      "≥10% weight reduction at 48 weeks: placebo 3%, 1mg 25%, 4mg 59–72%, 8mg 83–94%",
+      "≥20% weight reduction at 48 weeks: placebo 1%, 1mg 6%, 4mg 29–31%, 8mg 50–70%, 12mg 64%",
+      "≥25% weight reduction at 48 weeks: placebo 0%, 1mg 6%, 4mg 13–19%, 8mg 36–43%, 12mg 48%",
+      "≥30% weight reduction at 48 weeks: placebo 0%, 1mg 1%, 4mg 6–10%, 8mg 16%+",
+      "Fasting triglycerides at 24 weeks: placebo -3.1%, 12mg -34.0%",
+      "Fasting total cholesterol at 24 weeks: placebo -2.2%, 12mg -17.3%",
+      "Fasting LDL cholesterol at 24 weeks: placebo -3.6%, 8mg -15.6 to -16.9%",
+      "Most common adverse events: nausea, diarrhea, vomiting (GI; dose-dependent, peaked during titration)",
+      "Hyperesthesia/dysesthesia at 12mg: 12.9% vs 1.4% placebo (Phase 2 data)",
+      "Other AEs ≥5% in any group: hypertension, nasopharyngitis, dizziness, GERD, elevated CPK",
+      "Titration protocol: stepped escalation; 4mg and 8mg arms used either 2mg or 4mg initial dose",
+      "Trial compound name: LY3437943; Sponsor: Eli Lilly and Company; IND: 154659"
+    ]
+  },
+  {
+    "title": "Retatrutide Phase 2 — Supplementary Appendix (Tables S4–S15)",
+    "url": "https://www.nejm.org/doi/suppl/10.1056/NEJMoa2301972/suppl_file/nejmoa2301972_appendix.pdf",
+    "source": "NEJM 2023 Supplementary Appendix; nejmoa2301972_appendix.pdf",
+    "key_data": [
+      "Table S4: At week 24, ≥5% weight loss: placebo 26%, 1mg 59%, 4mg 87–94%, 8mg 100%, 12mg 97%",
+      "Table S4: At week 24, ≥10% weight loss: placebo 3%, 1mg 25%, 4mg 59–72%, 8mg 83–94%",
+      "Table S6: At week 48, ≥20% weight loss: 8mg [ID 4mg] 70%, 12mg [ID 2mg] 64%",
+      "Table S6: At week 48, ≥25% weight loss: 8mg [ID 4mg] 43%, 12mg [ID 2mg] 48%",
+      "Table S7: Subgroup — weight loss at week 48 similar across BMI <35 and ≥35 groups",
+      "Table S7: Subgroup — weight loss consistent across male and female subgroups",
+      "Table S8: Triglycerides at week 24: 4mg -28.8 to -31.1%, 8mg -29.2 to -39.3%, 12mg -34.0%",
+      "Table S8: Total cholesterol at week 24: 8mg -15.3 to -17.7%, 12mg -17.3%",
+      "Table S8: LDL at week 24: 8mg -15.6 to -16.9%, 12mg similar",
+      "Table S9: SF-36v2 quality of life scores improved at week 48 across all active dose groups",
+      "Table S10: Adverse events ≥5% in any group: hypertension (8.7% at 1mg), nasopharyngitis, GERD at 4mg",
+      "Table S14: Hyperesthesia/dysesthesia (all MedDRA terms): 12mg 12.9% vs placebo 1.4%; 8mg [ID 4mg] 14.3%",
+      "Table S15: End-of-treatment dosing: majority of 12mg arm participants reached and maintained full dose",
+      "Study design: multicenter, US sites; doses titrated over weeks 1–12 before reaching target maintenance dose",
+      "Statistical method: MMRM with dose-pooling for titration periods; hybrid estimand for primary endpoint"
+    ]
+  },
+  {
+    "title": "Retatrutide Phase 2 — Trial Protocol (LY3437943 / J1I-MC-GZBF)",
+    "url": "https://www.nejm.org/doi/suppl/10.1056/NEJMoa2301972/suppl_file/nejmoa2301972_protocol.pdf",
+    "source": "Eli Lilly Phase 2 Protocol; nejmoa2301972_protocol.pdf",
+    "key_data": [
+      "Compound: LY3437943 (retatrutide); Protocol J1I-MC-GZBF; IND 154659; Phase 2",
+      "Eligibility: BMI ≥30 kg/m² (up to ≤50), or ≥27 with comorbidity (hypertension, dyslipidemia, etc.)",
+      "Exclusion: type 2 diabetes (HbA1c ≥6.5%, fasting glucose ≥126 mg/dL, or random ≥200 mg/dL)",
+      "Exclusion: prior bariatric surgery (except liposuction); prior GLP-1RA use; body weight change >5kg in prior 3 months",
+      "Once-weekly subcutaneous injection; 48-week treatment period; 4-week safety follow-up",
+      "Primary endpoint: percent change in body weight at week 24 from baseline",
+      "Secondary endpoints: ≥5%, ≥10% weight reduction; waist circumference; cardiometabolic markers",
+      "Background therapy: diet and physical activity counseling for all participants",
+      "Mechanism: triple hormone receptor agonist — GLP-1, GIP, and glucagon receptors"
+    ]
+  },
+  {
+    "title": "TRIUMPH-4 Phase 3 Trial — Lilly Press Release",
+    "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average",
+    "source": "Eli Lilly Press Release, December 11, 2025",
+    "key_data": [
+      "Phase 3, TRIUMPH-4 trial; 68-week treatment duration",
+      "Mean weight loss at 12mg dose: 28.7% — highest ever recorded in a Phase 3 obesity trial",
+      "Titration schedule: 2mg (weeks 1–4) → 4mg (weeks 5–8) → 6mg (weeks 9–12) → 9mg (weeks 13–16) → 12mg maintenance (week 17+)",
+      "Discontinuation rates: 12.2% (9mg), 18.2% (12mg) vs 4.0% placebo; some due to perceived excessive weight loss",
+      "Dysesthesia: 8.8% (9mg), 20.9% (12mg) vs 0.7% placebo",
+      "Peer-reviewed Phase 3 publication pending as of April 2026",
+      "NDA not yet filed as of April 2026; FDA approval timeline not publicly confirmed"
+    ]
+  }
+]

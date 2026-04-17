@@ -66,6 +66,15 @@ function escapeJson(str) {
   return String(str).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 }
 
+function loadResearch() {
+  try {
+    const entries = JSON.parse(fs.readFileSync(path.join(__dirname, 'research.json'), 'utf8'));
+    return entries.map(e =>
+      `[${e.title}]\nSource: ${e.source}\n${e.key_data.map(d => `• ${d}`).join('\n')}`
+    ).join('\n\n');
+  } catch { return ''; }
+}
+
 function deriveCategory(slug, newsTriggered) {
   if (newsTriggered) return 'News';
   if (/fda|approval|regulatory/.test(slug)) return 'Regulatory';
@@ -438,6 +447,7 @@ IMPORTANT: Only include data points explicitly stated in the source. Never infer
 async function topUpQueue(clusters, count) {
   console.log(`  Queue top-up: requesting ${count} new article idea(s)...`);
   const existingTitles = clusters.map(c => c.title).join('\n');
+  const research = loadResearch();
 
   try {
     const msg = await anthropic.messages.create({
@@ -447,6 +457,9 @@ async function topUpQueue(clusters, count) {
         role: 'user',
         content:
 `You are an SEO strategist for glp3md.com, a physician-supervised retatrutide waitlist platform.
+
+The following clinical research data is available to ground your article ideas:
+${research}
 
 Generate exactly ${count} new blog post idea(s) about retatrutide that are meaningfully different from these existing articles:
 ${existingTitles}
@@ -766,6 +779,7 @@ async function stage3_articleGeneration() {
 
     try {
       // Generate article body
+      const research = loadResearch();
       const msg = await anthropic.messages.create({
         model: 'claude-sonnet-4-6',
         max_tokens: 4096,
@@ -773,6 +787,9 @@ async function stage3_articleGeneration() {
           role: 'user',
           content:
 `You are a board-certified obesity medicine physician writing for glp3md.com, a physician-supervised retatrutide waitlist platform. Write a clinical blog post.
+
+The following peer-reviewed clinical data is provided for accuracy. Use these figures when relevant — do not invent alternatives:
+${research}
 
 Title: ${cluster.title}
 Primary keyword: ${cluster.primary_keyword}
