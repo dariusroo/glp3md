@@ -754,10 +754,18 @@ Return ONLY a JSON array, no other text:
     console.error('  Claude keyword clustering error:', e.message);
   }
 
-  // Merge into clusters.json
+  // Merge into clusters.json — skip any slug that already has a published file
   const clusters = readJSON(CLUSTERS_PATH);
   const existingSlugs = new Set(clusters.map(c => c.slug));
-  const toAdd = newClusters.filter(c => c.slug && !existingSlugs.has(c.slug));
+  const toAdd = newClusters.filter(c => {
+    if (!c.slug) return false;
+    if (existingSlugs.has(c.slug)) return false;
+    if (fs.existsSync(path.join(BLOG_DIR, c.slug, 'index.html'))) {
+      console.log(`  ⚠️  Skipping cluster "${c.slug}" — blog file already exists`);
+      return false;
+    }
+    return true;
+  });
   writeJSON(CLUSTERS_PATH, [...clusters, ...toAdd]);
   if (toAdd.length > 0) console.log(`  Added ${toAdd.length} keyword-driven clusters`);
 
