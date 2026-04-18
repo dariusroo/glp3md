@@ -1131,7 +1131,9 @@ async function main() {
   stage4_summary(newsResult, kwResult, genResult, pingResult);
 }
 
-main().catch(e => {
-  console.error('Pipeline failed:', e);
-  process.exit(1);
-});
+main()
+  .then(() => process.exit(0))
+  .catch(e => {
+    console.error('Pipeline failed:', e);
+    process.exit(1);
+  });
