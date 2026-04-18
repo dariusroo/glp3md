@@ -215,5 +215,298 @@
     "priority": "high",
     "news_triggered": false,
     "status": "review"
+  },
+  {
+    "slug": "retatrutide-fda-approval-timeline",
+    "title": "Retatrutide FDA Approval: Timeline, NDA Filing, and When It Could Be Available",
+    "primary_keyword": "retatrutide FDA approval",
+    "secondary_keywords": [
+      "retatrutide availability",
+      "when will glp-3 be available",
+      "when will glp3 be fda approved",
+      "is retatrutide fda approved",
+      "is retatrutide going to be fda approved",
+      "where is retatrutide approved",
+      "weight loss drug NDA filing 2026",
+      "glp3 release date",
+      "glp3 fda approved",
+      "glp-3 fda approved",
+      "glp3 fda",
+      "when will glp 3 be available"
+    ],
+    "h2_questions": [
+      "Is retatrutide FDA approved?",
+      "When will GLP-3 be available?",
+      "Is retatrutide going to be FDA approved?",
+      "Where is retatrutide approved?",
+      "When will GLP-3 be FDA approved?",
+      "What is the NDA filing timeline for retatrutide?"
+    ],
+    "key_data_points": [
+      "Retatrutide is currently in Phase 3 TRIUMPH trials as of 2024–2025",
+      "Eli Lilly has not yet filed an NDA as of early 2025",
+      "FDA approval is projected no earlier than 2026 pending trial completion and submission",
+      "Phase 2 data showed up to 24.2% mean weight reduction at 48 weeks"
+    ],
+    "source_url": "",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 0,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide FDA approval",
+        "vol": 480,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "weight loss drug NDA filing 2026",
+        "vol": 0,
+        "cpc": "0.00"
+      }
+    ]
+  },
+  {
+    "slug": "retatrutide-side-effects",
+    "title": "Retatrutide Side Effects: What Clinical Trial Data Reveals",
+    "primary_keyword": "retatrutide side effects",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide results",
+      "ggg tri agonist",
+      "triple agonist weight loss"
+    ],
+    "h2_questions": [
+      "What are the most common retatrutide side effects?",
+      "Are retatrutide side effects worse than semaglutide or tirzepatide?",
+      "What gastrointestinal side effects does retatrutide cause?",
+      "How were side effects managed in retatrutide clinical trials?",
+      "Do retatrutide side effects decrease over time?"
+    ],
+    "key_data_points": [
+      "Most common side effects in Phase 2: nausea, vomiting, diarrhea, constipation",
+      "Side effects were predominantly mild-to-moderate and transient",
+      "Higher doses (12 mg) associated with more GI events but also greatest weight loss",
+      "Discontinuation rates due to adverse events were higher at maximum dose",
+      "No new safety signals beyond known GLP-1 class effects identified in Phase 2"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 0,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide side effects",
+        "vol": 22200,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "retatrutide results",
+        "vol": 2400,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "retatrutide weight loss",
+        "vol": 480,
+        "cpc": "1.09"
+      }
+    ]
+  },
+  {
+    "slug": "retatrutide-vs-tirzepatide",
+    "title": "Retatrutide vs Tirzepatide: How Does the Triple Agonist Stack Up?",
+    "primary_keyword": "retatrutide vs tirzepatide",
+    "secondary_keywords": [
+      "retatrutide vs semaglutide",
+      "best GLP-1 for weight loss",
+      "strongest GLP-1 drug",
+      "GLP-1 comparison 2026",
+      "GLP-1 weight loss results comparison",
+      "triple agonist weight loss",
+      "new obesity drug better than ozempic"
+    ],
+    "h2_questions": [
+      "Retatrutide vs tirzepatide: which causes more weight loss?",
+      "Retatrutide vs semaglutide: how do they compare?",
+      "What is the best GLP-1 for weight loss?",
+      "What is the strongest GLP-1 drug?",
+      "Is retatrutide better than Ozempic?",
+      "How does a triple agonist differ from a dual agonist like tirzepatide?"
+    ],
+    "key_data_points": [
+      "Retatrutide targets GLP-1, GIP, and glucagon receptors (triple agonist); tirzepatide targets GLP-1 and GIP only",
+      "Retatrutide Phase 2: up to 24.2% weight loss at 48 weeks vs tirzepatide Phase 3: up to 22.5% at 72 weeks",
+      "Direct head-to-head trials between retatrutide and tirzepatide have not been conducted",
+      "Semaglutide (Ozempic/Wegovy) achieves ~15–17% weight loss in pivotal trials",
+      "Glucagon receptor agonism in retatrutide may drive additional energy expenditure"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 0,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide vs tirzepatide",
+        "vol": 9900,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "best GLP-1 for weight loss",
+        "vol": 6600,
+        "cpc": "4.17"
+      },
+      {
+        "keyword": "retatrutide vs semaglutide",
+        "vol": 720,
+        "cpc": "0.00"
+      }
+    ]
+  },
+  {
+    "slug": "retatrutide-cost-insurance-coverage",
+    "title": "Retatrutide Cost: What to Expect When It Gets FDA Approval",
+    "primary_keyword": "retatrutide cost",
+    "secondary_keywords": [
+      "retatrutide availability",
+      "eli lilly retatrutide patient access program or expanded access",
+      "best weight loss injection 2026",
+      "new weight loss drug 2026"
+    ],
+    "h2_questions": [
+      "How much will retatrutide cost?",
+      "Will insurance cover retatrutide?",
+      "Does Eli Lilly have a retatrutide patient access program or expanded access?",
+      "How does retatrutide cost compare to Mounjaro or Wegovy?",
+      "Will retatrutide be available in 2026?"
+    ],
+    "key_data_points": [
+      "Retatrutide has no approved price as it is not yet FDA approved",
+      "Tirzepatide (Mounjaro/Zepbound) list price is approximately $1,000–$1,100/month without insurance",
+      "Semaglutide (Wegovy) list price is approximately $1,350/month without insurance",
+      "Eli Lilly expanded access or compassionate use programs for retatrutide are not publicly active as of early 2025",
+      "Insurance coverage for obesity drugs remains inconsistent across payers"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 0,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide cost",
+        "vol": 6600,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "best weight loss injection 2026",
+        "vol": 0,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "new weight loss drug 2026",
+        "vol": 0,
+        "cpc": "0.00"
+      }
+    ]
+  },
+  {
+    "slug": "retatrutide-weight-loss-results",
+    "title": "Retatrutide Weight Loss Results: What the Numbers Actually Mean",
+    "primary_keyword": "retatrutide results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide phase 3 results",
+      "triple agonist weight loss",
+      "best weight loss injection 2026",
+      "GLP-1 weight loss results comparison"
+    ],
+    "h2_questions": [
+      "What weight loss results has retatrutide shown in trials?",
+      "How much weight can you lose on retatrutide?",
+      "How do retatrutide results compare to other GLP-1 drugs?",
+      "What does 24% weight loss actually mean in real terms?",
+      "Are retatrutide results sustainable long-term?"
+    ],
+    "key_data_points": [
+      "Phase 2 primary endpoint: 24.2% mean weight reduction from baseline at 48 weeks (12 mg dose)",
+      "All doses (1 mg through 12 mg) outperformed placebo significantly",
+      "~83% of patients on 12 mg achieved ≥5% weight loss",
+      "~26% of patients on 12 mg achieved ≥25% weight loss",
+      "Phase 3 TRIUMPH trials will provide longer-duration and broader-population data"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 0,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide results",
+        "vol": 2400,
+        "cpc": "0.00"
+      },
+      {
+        "keyword": "retatrutide weight loss",
+        "vol": 480,
+        "cpc": "1.09"
+      },
+      {
+        "keyword": "retatrutide phase 3 results",
+        "vol": 320,
+        "cpc": "0.00"
+      }
+    ]
+  },
+  {
+    "slug": "what-is-retatrutide-glp-3-explained",
+    "title": "What Is Retatrutide (GLP-3)? The Triple Agonist Obesity Drug Explained",
+    "primary_keyword": "retatrutide",
+    "secondary_keywords": [
+      "glp-3",
+      "glp 3",
+      "glp3",
+      "ggg tri agonist",
+      "glp-3 rt",
+      "glp 3 rt",
+      "glp 3rt",
+      "triple agonist weight loss",
+      "glp-3 pill",
+      "glp3 pills"
+    ],
+    "h2_questions": [
+      "What is retatrutide?",
+      "Why is retatrutide called GLP-3?",
+      "Is there a GLP-3 pill?",
+      "What makes retatrutide a triple agonist?",
+      "Who is developing retatrutide?",
+      "How does the GGG tri-agonist mechanism work?"
+    ],
+    "key_data_points": [
+      "Retatrutide is an investigational once-weekly injectable drug developed by Eli Lilly",
+      "It is a triple agonist: activates GLP-1, GIP, and glucagon receptors simultaneously",
+      "Informally called 'GLP-3' in consumer media; this is not an official pharmacological classification",
+      "No oral (pill) form of retatrutide is currently in development or approved",
+      "Retatrutide is not the same molecule as GLP-1; the 'GLP-3' nickname is colloquial",
+      "INN (International Nonproprietary Name) is retatrutide; Eli Lilly has not announced a brand name"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending",
+    "ke_score": 1436312,
+    "ke_top_keywords": [
+      {
+        "keyword": "retatrutide",
+        "vol": 301000,
+        "cpc": "4.82"
+      },
+      {
+        "keyword": "triple agonist weight loss",
+        "vol": 140,
+        "cpc": "3.11"
+      }
+    ]
   }
 ]
