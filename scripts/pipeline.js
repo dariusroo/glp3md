@@ -1091,7 +1091,7 @@ function stage4_summary(newsResult, kwResult, genResult, pingResult) {
     `📡 Trial status changes: ${newsResult.trialChanges}` +
       (newsResult.trialChanges ? '\n   ' + newsResult.trialChangeItems.map(i => i.title).join('\n   ') : ''),
     `🔍 New keyword clusters identified: ${kwResult.newClusters}`,
-    kwResult.keCreditsRemaining !== null ? `💳 KE credits remaining: ${kwResult.keCreditsRemaining.toLocaleString()}` : null,
+    kwResult.keCreditsRemaining != null ? `💳 KE credits remaining: ${kwResult.keCreditsRemaining.toLocaleString()}` : null,
     `✅ Articles generated: ${genResult.articlesGenerated.length}`,
     `⚠️  High priority items: ${highPriority.length}` +
       (highPriority.length ? '\n   ' + highPriority.map(c => c.title).join('\n   ') : ''),
