@@ -1,0 +1,19 @@
+name: Test Keywords Everywhere
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-ke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Test KE API
+        env:
+          KE_API_KEY: ${{ secrets.KE_API_KEY }}
+        run: node scripts/test-ke.js
