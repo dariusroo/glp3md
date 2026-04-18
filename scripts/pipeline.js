@@ -513,8 +513,10 @@ async function stage2_keywordResearch() {
     return { newClusters: 0 };
   }
 
-  const seeds = [
-    // Retatrutide-specific
+  // Seeds split into two pools — alternated each Stage 2 call to cap credits at ~120/call
+  // Pool A: retatrutide-specific (always high intent)
+  // Pool B: broad GLP-1/obesity gateway keywords (funnel traffic)
+  const seedPoolA = [
     'retatrutide',
     'retatrutide FDA approval',
     'retatrutide NDA filing',
@@ -533,8 +535,10 @@ async function stage2_keywordResearch() {
     'retatrutide weight loss',
     'retatrutide eligibility',
     'retatrutide cardiovascular',
-    'retatrutide before and after',
-    // Broad GLP-1 / obesity intent — gateway keywords
+    'retatrutide before and after'
+  ];
+  const seedPoolB = [
+    'retatrutide',
     'best weight loss injection 2026',
     'strongest GLP-1 drug',
     'triple agonist weight loss',
@@ -544,12 +548,26 @@ async function stage2_keywordResearch() {
     'new weight loss drug 2026',
     'GLP-1 weight loss results comparison',
     'obesity drug clinical trial 2026',
-    'weight loss drug NDA filing 2026'
+    'weight loss drug NDA filing 2026',
+    'retatrutide vs tirzepatide',
+    'retatrutide vs semaglutide',
+    'retatrutide FDA approval',
+    'retatrutide weight loss',
+    'retatrutide results',
+    'retatrutide side effects',
+    'retatrutide cost',
+    'retatrutide phase 3 results'
   ];
+
+  // Alternate pools by week number so each run uses ~19 seeds instead of 30
+  const weekNum = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 7));
+  const seeds = weekNum % 2 === 0 ? seedPoolA : seedPoolB;
+  console.log(`  Seed pool: ${weekNum % 2 === 0 ? 'A (retatrutide-specific)' : 'B (broad GLP-1/obesity)'}`);
 
   let allKeywords = [...seeds];
   // keEnriched stores { keyword, vol, cpc, competition } for keywords where KE returned data
   let keEnriched = [];
+  let keCreditsRemaining = null;
 
   // 2a. Keywords Everywhere
   if (process.env.KE_API_KEY) {
@@ -593,6 +611,20 @@ async function stage2_keywordResearch() {
         .filter(e => { if (seen.has(e.keyword)) return false; seen.add(e.keyword); return true; })
         .sort((a, b) => b.vol - a.vol);
       console.log(`  Keywords Everywhere: ${keData?.data?.length || 0} seed results, ${keEnriched.length} enriched keywords`);
+
+      // Check remaining credit balance
+      try {
+        const balRes = await fetch('https://api.keywordseverywhere.com/v1/account/credits', {
+          headers: { 'Authorization': `Bearer ${process.env.KE_API_KEY}`, 'Accept': 'application/json' },
+          timeout: FETCH_TIMEOUT
+        });
+        const balData = await balRes.json();
+        const credits = balData?.data?.credits;
+        if (credits !== undefined) {
+          console.log(`  Keywords Everywhere: ${credits.toLocaleString()} credits remaining`);
+          keCreditsRemaining = credits;
+        }
+      } catch { /* balance check is non-critical */ }
     } catch (e) {
       console.error('  Keywords Everywhere error:', e.message);
     }
@@ -708,7 +740,7 @@ Return ONLY a JSON array, no other text:
   const topUpNeeded = Math.max(3 - stillPending, 0);
   if (topUpNeeded > 0) await topUpQueue(updatedClusters, topUpNeeded);
 
-  return { newClusters: toAdd.length };
+  return { newClusters: toAdd.length, keCreditsRemaining };
 }
 
 // ─── Stage 3.5: Internal Linking Engine ──────────────────────────────────────
@@ -1016,6 +1048,7 @@ function stage4_summary(newsResult, kwResult, genResult, pingResult) {
     `📡 Trial status changes: ${newsResult.trialChanges}` +
       (newsResult.trialChanges ? '\n   ' + newsResult.trialChangeItems.map(i => i.title).join('\n   ') : ''),
     `🔍 New keyword clusters identified: ${kwResult.newClusters}`,
+    kwResult.keCreditsRemaining !== null ? `💳 KE credits remaining: ${kwResult.keCreditsRemaining.toLocaleString()}` : null,
     `✅ Articles generated: ${genResult.articlesGenerated.length}`,
     `⚠️  High priority items: ${highPriority.length}` +
       (highPriority.length ? '\n   ' + highPriority.map(c => c.title).join('\n   ') : ''),
@@ -1024,7 +1057,7 @@ function stage4_summary(newsResult, kwResult, genResult, pingResult) {
     `🗺️  Sitemap pinged: ${pingResult ? 'yes' : 'no'}`,
     '================================'
   ];
-  lines.forEach(l => console.log(l));
+  lines.filter(l => l !== null).forEach(l => console.log(l));
 
   const summaryText = [
     '=== PIPELINE COMPLETE ===',
