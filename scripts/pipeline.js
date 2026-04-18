@@ -464,7 +464,8 @@ ${research}
 Generate exactly ${count} new blog post idea(s) about retatrutide that are meaningfully different from these existing articles:
 ${existingTitles}
 
-Stay within these topic areas: retatrutide clinical data, dosing, safety, side effects, patient eligibility, comparisons with other GLP-1/GIP/glucagon medications, FDA regulatory pathway, obesity medicine, metabolic health.
+Stay within these topic areas: retatrutide clinical data, dosing, safety, side effects, patient eligibility, comparisons with other GLP-1/GIP/glucagon medications, FDA regulatory pathway, NDA filing, clinical trial readouts, obesity medicine, metabolic health.
+Prioritize topics related to FDA approval, NDA filing, Phase 3 results, TRIUMPH trial, and retatrutide availability — set priority "high" for those, "normal" for all others.
 Do not invent trial data. No gray market or compounding topics.
 
 Return ONLY a JSON array, no other text:
@@ -515,15 +516,25 @@ async function stage2_keywordResearch() {
   const seeds = [
     'retatrutide',
     'retatrutide FDA approval',
+    'retatrutide NDA filing',
+    'retatrutide approval date 2026',
+    'retatrutide phase 3 results',
+    'retatrutide TRIUMPH trial',
     'retatrutide side effects',
     'retatrutide vs tirzepatide',
+    'retatrutide vs semaglutide',
     'retatrutide cost',
+    'retatrutide insurance coverage',
     'retatrutide results',
     'retatrutide dosing',
-    'retatrutide weight loss'
+    'retatrutide weight loss',
+    'retatrutide eligibility',
+    'retatrutide cardiovascular'
   ];
 
   let allKeywords = [...seeds];
+  // keEnriched stores { keyword, vol, cpc, competition } for keywords where KE returned data
+  let keEnriched = [];
 
   // 2a. Keywords Everywhere
   if (process.env.KE_API_KEY) {
@@ -541,12 +552,32 @@ async function stage2_keywordResearch() {
       });
       const keData = await keRes.json();
       for (const kw of keData?.data || []) {
-        if (kw.keyword && !allKeywords.includes(kw.keyword)) allKeywords.push(kw.keyword);
+        if (!kw.keyword) continue;
+        const entry = {
+          keyword: kw.keyword,
+          vol: kw.vol || 0,
+          cpc: kw.cpc?.value || '0',
+          competition: kw.competition || 0
+        };
+        keEnriched.push(entry);
+        if (!allKeywords.includes(kw.keyword)) allKeywords.push(kw.keyword);
         for (const rel of kw.related || []) {
-          if (rel.keyword && !allKeywords.includes(rel.keyword)) allKeywords.push(rel.keyword);
+          if (!rel.keyword) continue;
+          keEnriched.push({
+            keyword: rel.keyword,
+            vol: rel.vol || 0,
+            cpc: rel.cpc?.value || '0',
+            competition: rel.competition || 0
+          });
+          if (!allKeywords.includes(rel.keyword)) allKeywords.push(rel.keyword);
         }
       }
-      console.log(`  Keywords Everywhere: ${keData?.data?.length || 0} seed results`);
+      // Sort enriched list by volume descending, deduplicate by keyword
+      const seen = new Set();
+      keEnriched = keEnriched
+        .filter(e => { if (seen.has(e.keyword)) return false; seen.add(e.keyword); return true; })
+        .sort((a, b) => b.vol - a.vol);
+      console.log(`  Keywords Everywhere: ${keData?.data?.length || 0} seed results, ${keEnriched.length} enriched keywords`);
     } catch (e) {
       console.error('  Keywords Everywhere error:', e.message);
     }
@@ -606,22 +637,29 @@ async function stage2_keywordResearch() {
         content:
 `You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform that only covers legitimate FDA-approval-track access — no gray market, no compounding.
 
-Here are keywords: ${JSON.stringify(allKeywords, null, 2)}
+${keEnriched.length > 0
+  ? `Here are keywords with real search volume data (vol = monthly US searches, cpc = cost-per-click in USD, competition = 0–1):\n${JSON.stringify(keEnriched.slice(0, 60), null, 2)}\n\nAdditional keywords without volume data:\n${JSON.stringify(allKeywords.filter(k => !keEnriched.find(e => e.keyword === k)), null, 2)}`
+  : `Here are keywords: ${JSON.stringify(allKeywords, null, 2)}`
+}
 
-Group into article clusters. Each cluster = one article.
-Ignore any keywords related to: buying, peptides, gray market, compounding, 'for sale', 'where to buy', 'near me', 'online'.
+Group into article clusters. Each cluster = one article. Rules:
+- Ignore any keywords related to: buying, peptides, gray market, compounding, 'for sale', 'where to buy', 'near me', 'online'
+- Choose the highest-volume keyword in each cluster as the primary_keyword
+- Set priority to "high" for any cluster covering: FDA approval, NDA filing, regulatory timeline, Phase 3 readouts, TRIUMPH trial results, or retatrutide availability date
+- Set priority to "normal" for all other topics
+- Aim for topics with meaningful search volume (vol > 100) where possible
 
 Return ONLY a JSON array, no other text:
 [
   {
     "slug": "url-friendly-slug",
     "title": "Article title",
-    "primary_keyword": "main keyword",
+    "primary_keyword": "highest-volume keyword for this cluster",
     "secondary_keywords": ["kw1", "kw2", "kw3"],
     "h2_questions": ["Q1?", "Q2?", "Q3?", "Q4?"],
     "key_data_points": [],
     "source_url": "",
-    "priority": "normal",
+    "priority": "high or normal — high only for FDA/NDA/approval/Phase3/TRIUMPH topics",
     "news_triggered": false,
     "status": "pending"
   }
