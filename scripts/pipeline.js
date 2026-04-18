@@ -514,6 +514,7 @@ async function stage2_keywordResearch() {
   }
 
   const seeds = [
+    // Retatrutide-specific
     'retatrutide',
     'retatrutide FDA approval',
     'retatrutide NDA filing',
@@ -523,13 +524,27 @@ async function stage2_keywordResearch() {
     'retatrutide side effects',
     'retatrutide vs tirzepatide',
     'retatrutide vs semaglutide',
+    'retatrutide vs ozempic',
+    'retatrutide vs wegovy',
     'retatrutide cost',
     'retatrutide insurance coverage',
     'retatrutide results',
     'retatrutide dosing',
     'retatrutide weight loss',
     'retatrutide eligibility',
-    'retatrutide cardiovascular'
+    'retatrutide cardiovascular',
+    'retatrutide before and after',
+    // Broad GLP-1 / obesity intent — gateway keywords
+    'best weight loss injection 2026',
+    'strongest GLP-1 drug',
+    'triple agonist weight loss',
+    'new obesity drug better than ozempic',
+    'GLP-1 comparison 2026',
+    'best GLP-1 for weight loss',
+    'new weight loss drug 2026',
+    'GLP-1 weight loss results comparison',
+    'obesity drug clinical trial 2026',
+    'weight loss drug NDA filing 2026'
   ];
 
   let allKeywords = [...seeds];
@@ -602,18 +617,21 @@ async function stage2_keywordResearch() {
           startDate: isoDate(daysAgo(90)),
           endDate:   isoDate(new Date()),
           dimensions: ['query'],
-          rowLimit: 100
+          rowLimit: 250
         }
       });
 
-      const gscKws = (gscRes.data?.rows || [])
+      const gscRows = gscRes.data?.rows || [];
+      // Capture all queries — sorted by impressions desc, skip navigational/branded non-content queries
+      const gscKws = gscRows
+        .sort((a, b) => (b.impressions || 0) - (a.impressions || 0))
         .map(r => r.keys?.[0])
-        .filter(k => k && k.toLowerCase().includes('retatrutide'));
+        .filter(k => k && !['glp3md', 'glp 3 md', 'glp3md.com'].includes(k.toLowerCase()));
 
       for (const kw of gscKws) {
         if (!allKeywords.includes(kw)) allKeywords.push(kw);
       }
-      console.log(`  GSC: ${gscKws.length} retatrutide queries`);
+      console.log(`  GSC: ${gscKws.length} queries (all intents, sorted by impressions)`);
     } catch (e) {
       console.error('  Google Search Console error:', e.message);
     }
