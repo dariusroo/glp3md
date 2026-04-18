@@ -685,16 +685,25 @@ async function stage2_keywordResearch() {
       messages: [{
         role: 'user',
         content:
-`You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform that only covers legitimate FDA-approval-track access — no gray market, no compounding.
+(() => {
+  const questionKws = keEnriched
+    .filter(e => /^(how|what|when|why|is|can|does|will|which|where)\b/i.test(e.keyword))
+    .sort((a, b) => b.vol - a.vol)
+    .slice(0, 30);
+
+  return `You are an SEO strategist for glp3md.com, a retatrutide waitlist and information platform that only covers legitimate FDA-approval-track access — no gray market, no compounding.
 
 ${keEnriched.length > 0
   ? `Here are keywords with real search volume data (vol = monthly US searches, cpc = cost-per-click in USD, competition = 0–1):\n${JSON.stringify(keEnriched.slice(0, 60), null, 2)}\n\nAdditional keywords without volume data:\n${JSON.stringify(allKeywords.filter(k => !keEnriched.find(e => e.keyword === k)), null, 2)}`
   : `Here are keywords: ${JSON.stringify(allKeywords, null, 2)}`
 }
 
+${questionKws.length > 0 ? `The following are real search queries people type (sorted by monthly volume). Use them VERBATIM as H2 headings where they match the cluster topic — do not paraphrase:\n${questionKws.map(e => `• "${e.keyword}" (vol: ${e.vol})`).join('\n')}` : ''}
+
 Group into article clusters. Each cluster = one article. Rules:
 - Ignore any keywords related to: buying, peptides, gray market, compounding, 'for sale', 'where to buy', 'near me', 'online'
 - Choose the highest-volume keyword in each cluster as the primary_keyword
+- For h2_questions: use verbatim search queries from the list above where they fit; only invent questions if no matching query exists
 - Set priority to "high" for any cluster covering: FDA approval, NDA filing, regulatory timeline, Phase 3 readouts, TRIUMPH trial results, or retatrutide availability date
 - Set priority to "normal" for all other topics
 - Aim for topics with meaningful search volume (vol > 100) where possible
@@ -706,21 +715,39 @@ Return ONLY a JSON array, no other text:
     "title": "Article title",
     "primary_keyword": "highest-volume keyword for this cluster",
     "secondary_keywords": ["kw1", "kw2", "kw3"],
-    "h2_questions": ["Q1?", "Q2?", "Q3?", "Q4?"],
+    "h2_questions": ["verbatim search query as H2?", "Q2?", "Q3?", "Q4?"],
     "key_data_points": [],
     "source_url": "",
     "priority": "high or normal — high only for FDA/NDA/approval/Phase3/TRIUMPH topics",
     "news_triggered": false,
     "status": "pending"
   }
-]`
+]`;
+})()
       }]
     });
 
     const raw = msg.content[0]?.text || '';
     const parsed = parseClaudeJSON(raw);
     if (parsed && Array.isArray(parsed)) {
-      newClusters = parsed;
+      // Enrich each cluster with KE score and top keywords
+      newClusters = parsed.map(cluster => {
+        const allClusterKws = [cluster.primary_keyword, ...(cluster.secondary_keywords || [])];
+        const matched = allClusterKws
+          .map(kw => keEnriched.find(e => e.keyword.toLowerCase() === kw.toLowerCase()))
+          .filter(Boolean)
+          .sort((a, b) => b.vol - a.vol);
+
+        const topKw = matched[0];
+        const ke_score = topKw
+          ? Math.round(topKw.vol * parseFloat(topKw.cpc) * (1 - topKw.competition))
+          : 0;
+        const ke_top_keywords = matched.slice(0, 3).map(e => ({
+          keyword: e.keyword, vol: e.vol, cpc: e.cpc
+        }));
+
+        return { ...cluster, ke_score, ke_top_keywords };
+      });
       console.log(`  Claude identified ${newClusters.length} keyword clusters`);
     }
   } catch (e) {
@@ -839,6 +866,10 @@ async function stage3_articleGeneration() {
       if (b.priority === 'high' && a.priority !== 'high') return 1;
       if (a.news_triggered && !b.news_triggered) return -1;
       if (b.news_triggered && !a.news_triggered) return 1;
+      // Score by vol × cpc × (1 - competition) — highest commercial intent first
+      const scoreA = a.ke_score || 0;
+      const scoreB = b.ke_score || 0;
+      if (scoreB !== scoreA) return scoreB - scoreA;
       return a._idx - b._idx;
     });
 
@@ -882,6 +913,7 @@ ${research}
 Title: ${cluster.title}
 Primary keyword: ${cluster.primary_keyword}
 Secondary keywords: ${JSON.stringify(cluster.secondary_keywords)}
+${cluster.ke_top_keywords?.length ? `Top keywords by search volume (use naturally in headings and body): ${cluster.ke_top_keywords.map(k => `"${k.keyword}" (${k.vol.toLocaleString()}/mo)`).join(', ')}` : ''}
 H2 sections to cover: ${JSON.stringify(cluster.h2_questions)}
 Key data points to include: ${JSON.stringify(cluster.key_data_points)}
 Source to cite: ${cluster.source_url || 'none'}
@@ -928,10 +960,13 @@ No inline styles.`
       const category   = deriveCategory(cluster.slug, cluster.news_triggered);
       const canonical  = `https://glp3md.com/blog/${cluster.slug}/`;
 
-      // Meta description ≤155 chars
-      let metaDesc = cluster.secondary_keywords?.length
-        ? `${cluster.title} — ${cluster.secondary_keywords.slice(0, 2).join(', ')}. Physician-supervised retatrutide access at glp3md.com.`
-        : `${cluster.title}. Physician-supervised retatrutide access at glp3md.com.`;
+      // Meta description ≤155 chars — seed with top KE keywords by volume when available
+      const topKwTerms = cluster.ke_top_keywords?.length
+        ? cluster.ke_top_keywords.map(k => k.keyword)
+        : cluster.secondary_keywords?.slice(0, 2) || [];
+      let metaDesc = topKwTerms.length
+        ? `${cluster.title} — ${topKwTerms.slice(0, 2).join(', ')}. Learn more at glp3md.com.`
+        : `${cluster.title}. Learn more at glp3md.com.`;
       if (metaDesc.length > 155) metaDesc = metaDesc.slice(0, 152) + '...';
 
       // Build page HTML from template
