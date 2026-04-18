@@ -547,7 +547,7 @@ async function stage2_keywordResearch() {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', keywords: seeds }),
+        body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', kw: seeds }),
         timeout: FETCH_TIMEOUT
       });
       const keData = await keRes.json();

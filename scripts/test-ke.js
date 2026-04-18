@@ -15,7 +15,7 @@ async function main() {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
     },
-    body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', keywords: ['retatrutide'] }),
+    body: JSON.stringify({ country: 'us', currency: 'usd', dataSource: 'gkp', kw: ['retatrutide'] }),
     timeout: 30000
   });
 
