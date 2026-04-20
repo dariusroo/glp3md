@@ -945,6 +945,7 @@ Requirements:
 - Tirzepatide SURMOUNT-1 mean weight loss is 20.9% at 15mg, not 22.5%
 - All CTA links must use https://www.glp3md.com (never http or non-www)
 - Never fabricate company names, study authors, or citation details
+- Never use raw ClinicalTrials.gov status codes (e.g. ACTIVE_NOT_RECRUITING, RECRUITING, COMPLETED) — always translate to plain English (e.g. "closed enrollment", "actively enrolling", "completed")
 - If citing a source_url, only include data explicitly stated in that source — never infer or add data from memory
 - Never describe glp3md as a "physician-supervised platform" or any variant of that phrase
 - Never promise or imply that readers will receive medication, treatment, or a prescription — retatrutide is not FDA-approved; the waitlist is for informational purposes only
