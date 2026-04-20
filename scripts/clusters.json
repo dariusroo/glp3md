@@ -217,53 +217,6 @@
     "status": "review"
   },
   {
-    "slug": "retatrutide-side-effects",
-    "title": "Retatrutide Side Effects: What Clinical Trial Data Reveals",
-    "primary_keyword": "retatrutide side effects",
-    "secondary_keywords": [
-      "retatrutide weight loss",
-      "retatrutide results",
-      "ggg tri agonist",
-      "triple agonist weight loss"
-    ],
-    "h2_questions": [
-      "What are the most common retatrutide side effects?",
-      "Are retatrutide side effects worse than semaglutide or tirzepatide?",
-      "What gastrointestinal side effects does retatrutide cause?",
-      "How were side effects managed in retatrutide clinical trials?",
-      "Do retatrutide side effects decrease over time?"
-    ],
-    "key_data_points": [
-      "Most common side effects in Phase 2: nausea, vomiting, diarrhea, constipation",
-      "Side effects were predominantly mild-to-moderate and transient",
-      "Higher doses (12 mg) associated with more GI events but also greatest weight loss",
-      "Discontinuation rates due to adverse events were higher at maximum dose",
-      "No new safety signals beyond known GLP-1 class effects identified in Phase 2"
-    ],
-    "source_url": "",
-    "priority": "normal",
-    "news_triggered": false,
-    "status": "review",
-    "ke_score": 0,
-    "ke_top_keywords": [
-      {
-        "keyword": "retatrutide side effects",
-        "vol": 22200,
-        "cpc": "0.00"
-      },
-      {
-        "keyword": "retatrutide results",
-        "vol": 2400,
-        "cpc": "0.00"
-      },
-      {
-        "keyword": "retatrutide weight loss",
-        "vol": 480,
-        "cpc": "1.09"
-      }
-    ]
-  },
-  {
     "slug": "retatrutide-cost-insurance-coverage",
     "title": "Retatrutide Cost: What to Expect When It Gets FDA Approval",
     "primary_keyword": "retatrutide cost",

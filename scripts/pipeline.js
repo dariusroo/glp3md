@@ -700,8 +700,12 @@ ${keEnriched.length > 0
 
 ${questionKws.length > 0 ? `The following are real search queries people type (sorted by monthly volume). Use them VERBATIM as H2 headings where they match the cluster topic — do not paraphrase:\n${questionKws.map(e => `• "${e.keyword}" (vol: ${e.vol})`).join('\n')}` : ''}
 
+The following articles already exist on the site — do NOT generate clusters that duplicate or closely overlap these topics:
+${readJSON(CLUSTERS_PATH).filter(c => ['review','published'].includes(c.status)).map(c => `• ${c.title}`).join('\n')}
+
 Group into article clusters. Each cluster = one article. Rules:
 - Ignore any keywords related to: buying, peptides, gray market, compounding, 'for sale', 'where to buy', 'near me', 'online'
+- Do not create a cluster that duplicates or closely overlaps an existing article listed above
 - Choose the highest-volume keyword in each cluster as the primary_keyword
 - For h2_questions: use verbatim search queries from the list above where they fit; only invent questions if no matching query exists
 - Set priority to "high" for any cluster covering: FDA approval, NDA filing, regulatory timeline, Phase 3 readouts, TRIUMPH trial results, or retatrutide availability date
