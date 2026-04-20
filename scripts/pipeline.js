@@ -966,7 +966,7 @@ No inline styles.`
       const todayShort = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
       const readMin    = Math.ceil(countWords(articleBody) / 200);
       const category   = deriveCategory(cluster.slug, cluster.news_triggered);
-      const canonical  = `https://glp3md.com/blog/${cluster.slug}/`;
+      const canonical  = `https://www.glp3md.com/blog/${cluster.slug}/`;
 
       // Meta description ≤155 chars — seed with top KE keywords by volume when available
       const topKwTerms = cluster.ke_top_keywords?.length
