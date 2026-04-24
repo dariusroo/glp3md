@@ -933,7 +933,7 @@ Source to cite: ${cluster.source_url || 'none'}
 Requirements:
 - 900-1100 words
 - Clinical accuracy — reference TRIUMPH-4 data where relevant (28.7% mean weight loss, 68 weeks, Phase 3)
-- Patient-friendly prose using terms like 'reta', 'food noise', 'triple agonist'
+- Patient-friendly prose using terms like 'reta', 'food noise', 'triple agonist', 'triple G' — use 'triple G' intermittently (once per article at most) as a patient community shorthand alongside 'triple agonist', never as the primary label
 - Include one comparison table where relevant
 - Never mention compounding, gray market, or peptide vendors
 - Never fabricate statistics — only use data provided above or well-known TRIUMPH-4 figures
