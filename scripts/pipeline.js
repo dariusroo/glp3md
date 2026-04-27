@@ -1031,9 +1031,10 @@ No inline styles.`
         `<p class="post-meta">${todayLong} &nbsp;·&nbsp; ${readMin} min read</p>`);
 
       // Replace article body (between closing post-meta and opening post-cta)
+      // Use a function to avoid $ in articleBody being interpreted as capture group references
       html = html.replace(
         /(<p class="post-meta">.*?<\/p>)([\s\S]*?)(<div class="post-cta">)/,
-        `$1\n\n    ${articleBody}\n\n    $3`
+        (_, g1, _g2, g3) => `${g1}\n\n    ${articleBody}\n\n    ${g3}`
       );
 
       // Save file

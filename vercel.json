@@ -7,6 +7,11 @@
       "has": [{ "type": "host", "value": "glp3md.com" }],
       "destination": "https://www.glp3md.com/$1",
       "permanent": true
+    },
+    {
+      "source": "/blog/eli-lilly-retatrutide-expanded-access-patient-program/",
+      "destination": "/blog/eli-lilly-retatrutide-availability-expanded-access-patient-program/",
+      "permanent": true
     }
   ]
 }
