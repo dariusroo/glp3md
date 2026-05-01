@@ -1,11 +1,11 @@
 === PIPELINE COMPLETE ===
-Date: 2026-04-29T10:02:28.382Z
+Date: 2026-05-01T09:30:17.286Z
 News items processed: 2
 TRIUMPH trials monitored: 33
 Trial status changes: 0
 New keyword clusters identified: 0
 Articles generated: 1
-High priority items: 7
+High priority items: 8
   - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
   - TRIUMPH Trial Stops Recruiting: What the Phase 3 Retatrutide Study Closing Enrollment Means for Patients
   - Retatrutide FDA Approval: Expected Date, NDA Filing Status, and Regulatory Timeline
@@ -13,7 +13,8 @@ High priority items: 7
   - GLP-3 Release Date: When Will Retatrutide Be Available to Patients?
   - TRIUMPH-4 and TRIUMPH-5: What the Remaining Phase 3 Retatrutide Trials Are Testing
   - Retatrutide Availability & Expanded Access: Is There a Patient Access Program Before FDA Approval?
-Articles awaiting review: 14
+  - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
+Articles awaiting review: 15
   - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
   - How to Spot Fake GLP-1 Drug Suppliers Online — and Why Physician Supervision Matters
   - FDA Issues Warning Letters to Multiple Online GLP-1 Sellers for Unlawful Drug Sales
@@ -28,5 +29,6 @@ Articles awaiting review: 14
   - GLP-3 Release Date: When Will Retatrutide Be Available to Patients?
   - TRIUMPH-4 and TRIUMPH-5: What the Remaining Phase 3 Retatrutide Trials Are Testing
   - Retatrutide Availability & Expanded Access: Is There a Patient Access Program Before FDA Approval?
+  - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
 Sitemap pinged: no
 ================================

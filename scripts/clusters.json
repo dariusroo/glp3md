@@ -566,5 +566,53 @@
     "status": "review",
     "ke_score": 0,
     "ke_top_keywords": []
+  },
+  {
+    "slug": "lilly-q1-2026-earnings-retatrutide-update",
+    "title": "Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide",
+    "primary_keyword": "retatrutide Lilly 2026 update",
+    "secondary_keywords": [
+      "Lilly earnings retatrutide",
+      "retatrutide news 2026",
+      "retatrutide pipeline"
+    ],
+    "h2_questions": [
+      "What did Lilly's Q1 2026 earnings report say about retatrutide?",
+      "How does retatrutide factor into Lilly's 2026 revenue outlook?",
+      "What does the latest Lilly filing mean for the retatrutide timeline?"
+    ],
+    "key_data_points": [
+      "SEC 8-K filing referencing retatrutide was submitted by Lilly on 2026-04-30",
+      "Filing is categorized as a Q1 2026 sales and earnings report"
+    ],
+    "source_url": "https://efts.sec.gov/LATEST/search-index?q=%22retatrutide%22&forms=8-K&accno=0000059478-26-000043:q126lillysalesandearningsp.htm",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "review"
+  },
+  {
+    "slug": "retatrutide-surgery-level-weight-loss-patent-race",
+    "title": "Retatrutide Crosses the Surgical Weight Loss Threshold — and the Patent Race Is On",
+    "primary_keyword": "retatrutide weight loss results",
+    "secondary_keywords": [
+      "retatrutide vs bariatric surgery",
+      "retatrutide glucagon",
+      "retatrutide patent"
+    ],
+    "h2_questions": [
+      "What does it mean that retatrutide has crossed the 'surgical threshold' for weight loss?",
+      "What is the glucagon paradox and how does it relate to retatrutide?",
+      "Who is racing to own surgery-level weight loss without surgery?"
+    ],
+    "key_data_points": [
+      "PatentVest released a report titled 'The Last 20%: Retatrutide, the Glucagon Paradox, and the Race to Own Surgery-Level Weight Loss Without Surgery'",
+      "The report was published on April 29, 2026",
+      "PatentVest characterizes retatrutide as having crossed a 'surgical threshold' for weight loss",
+      "The report frames the competitive landscape as a race to achieve surgery-level weight loss without surgery"
+    ],
+    "source_url": "https://www.globenewswire.com/news-release/2026/04/29/3283979/0/en/Retatrutide-Crosses-the-Surgical-Threshold-but-the-Real-Race-Has-Just-Started.html",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
   }
 ]
