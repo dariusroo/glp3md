@@ -614,5 +614,30 @@
     "priority": "normal",
     "news_triggered": true,
     "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-raises-sales-forecast-obesity-drug-pipeline-2026",
+    "title": "Eli Lilly Raises 2026 Sales Forecast: What It Means for the Retatrutide Pipeline",
+    "primary_keyword": "retatrutide pipeline update",
+    "secondary_keywords": [
+      "Eli Lilly obesity drug",
+      "Lilly sales forecast 2026",
+      "obesity pill Lilly",
+      "weight loss drug pipeline"
+    ],
+    "h2_questions": [
+      "Why did Eli Lilly raise its full-year sales forecast?",
+      "How does Lilly's new obesity pill fit into its broader weight-loss drug portfolio?",
+      "What does Lilly's growing revenue confidence signal for retatrutide's development timeline?"
+    ],
+    "key_data_points": [
+      "Eli Lilly raised its full-year sales outlook",
+      "The forecast increase was driven by strength of its weight-loss drugs",
+      "Lilly expressed high hopes for its new obesity pill"
+    ],
+    "source_url": "https://financialpost.com/pmn/business-pmn/lilly-raises-sales-forecast-on-optimism-about-obesity-pill",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "review"
   }
 ]
