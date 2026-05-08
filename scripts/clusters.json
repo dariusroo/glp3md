@@ -389,7 +389,7 @@
     "source_url": "",
     "priority": "normal",
     "news_triggered": false,
-    "status": "pending",
+    "status": "review",
     "ke_score": 0,
     "ke_top_keywords": [
       {
@@ -639,5 +639,35 @@
     "priority": "high",
     "news_triggered": true,
     "status": "review"
+  },
+  {
+    "slug": "retatrutide-vs-tirzepatide-vs-semaglutide-weight-loss-comparison",
+    "title": "Retatrutide vs. Tirzepatide vs. Semaglutide: How the Weight Loss Numbers Stack Up",
+    "primary_keyword": "retatrutide vs tirzepatide vs semaglutide",
+    "secondary_keywords": [
+      "best GLP-1 weight loss drug",
+      "tirzepatide vs retatrutide weight loss",
+      "semaglutide comparison obesity drugs",
+      "triple agonist vs dual agonist weight loss"
+    ],
+    "h2_questions": [
+      "How much weight loss does retatrutide produce compared to tirzepatide and semaglutide?",
+      "What is the difference between a GLP-1 single agonist, dual agonist, and triple agonist?",
+      "How do the side effect profiles of retatrutide, tirzepatide, and semaglutide compare?",
+      "Is retatrutide likely to replace tirzepatide or semaglutide once it receives FDA approval?"
+    ],
+    "key_data_points": [
+      "Retatrutide 12mg: 24.2% mean weight loss at 48 weeks (Phase 2) and 28.7% at 68 weeks (TRIUMPH-4 Phase 3)",
+      "Retatrutide 8mg: 100% of participants achieved ≥5% weight loss at 48 weeks",
+      "Retatrutide 12mg: 48% of participants achieved ≥25% weight loss at 48 weeks in Phase 2",
+      "TRIUMPH-4 28.7% mean weight loss is the highest ever recorded in a Phase 3 obesity trial",
+      "Retatrutide targets GLP-1, GIP, and glucagon receptors vs tirzepatide (GLP-1 + GIP) and semaglutide (GLP-1 only)",
+      "Dysesthesia at 12mg retatrutide: 20.9% in TRIUMPH-4 vs 0.7% placebo — a side effect not prominently seen with tirzepatide or semaglutide",
+      "NDA for retatrutide not yet filed as of April 2026; tirzepatide and semaglutide already FDA-approved for obesity"
+    ],
+    "source_url": "",
+    "priority": "normal",
+    "news_triggered": false,
+    "status": "pending"
   }
 ]
