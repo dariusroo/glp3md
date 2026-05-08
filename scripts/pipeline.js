@@ -85,6 +85,25 @@ function deriveCategory(slug, newsTriggered) {
   return 'Research';
 }
 
+function buildFAQSchema(articleBody, h2Questions) {
+  if (!h2Questions?.length) return null;
+  const blocks = [...articleBody.matchAll(/<h2[^>]*>[\s\S]*?<\/h2>\s*([\s\S]*?)(?=<h2|$)/gi)];
+  const items = [];
+  for (let i = 0; i < Math.min(h2Questions.length, blocks.length); i++) {
+    const pMatch = blocks[i][1].match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+    if (!pMatch) continue;
+    const answer = pMatch[1].replace(/<[^>]+>/g, '').trim();
+    if (answer.length < 20) continue;
+    items.push({
+      '@type': 'Question',
+      'name': h2Questions[i],
+      'acceptedAnswer': { '@type': 'Answer', 'text': answer.slice(0, 500) }
+    });
+  }
+  if (!items.length) return null;
+  return { '@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': items };
+}
+
 function readProcessedNews() {
   const raw = readJSON(NEWS_PATH);
   // Migrate from old array format to {urls, trials} object
@@ -973,14 +992,27 @@ No inline styles.`
       const category   = deriveCategory(cluster.slug, cluster.news_triggered);
       const canonical  = `https://www.glp3md.com/blog/${cluster.slug}/`;
 
-      // Meta description ≤155 chars — seed with top KE keywords by volume when available
-      const topKwTerms = cluster.ke_top_keywords?.length
-        ? cluster.ke_top_keywords.map(k => k.keyword)
-        : cluster.secondary_keywords?.slice(0, 2) || [];
-      let metaDesc = topKwTerms.length
-        ? `${cluster.title} — ${topKwTerms.slice(0, 2).join(', ')}. Learn more at glp3md.com.`
-        : `${cluster.title}. Learn more at glp3md.com.`;
-      if (metaDesc.length > 155) metaDesc = metaDesc.slice(0, 152) + '...';
+      // Meta description — ask Claude for a compelling, specific description
+      let metaDesc = '';
+      try {
+        const metaMsg = await anthropic.messages.create({
+          model: 'claude-haiku-4-5-20251001',
+          max_tokens: 80,
+          messages: [{
+            role: 'user',
+            content:
+`Write a compelling meta description for this article. Lead with the most specific fact or answer. No filler phrases like "Learn more". No quotes. Under 155 characters.
+
+Title: ${cluster.title}
+Key facts: ${cluster.key_data_points.slice(0, 3).join(' | ')}`
+          }]
+        });
+        metaDesc = metaMsg.content[0]?.text?.trim() || '';
+      } catch { /* fall through to fallback */ }
+      if (!metaDesc || metaDesc.length > 155) {
+        metaDesc = (cluster.key_data_points?.[0] || cluster.title).slice(0, 152);
+        if (metaDesc.length === 152) metaDesc += '...';
+      }
 
       // Build page HTML from template
       let html = template;
@@ -1014,11 +1046,18 @@ No inline styles.`
         `$1"${escapeJson(metaDesc)}"$2`
       );
       html = html.replace(
-        /"url":\s*"https:\/\/glp3md\.com\/blog\/[^"]*"/,
+        /"url":\s*"https:\/\/(?:www\.)?glp3md\.com\/blog\/[^"]*"/,
         `"url": "${canonical}"`
       );
       html = html.replace(/"datePublished":\s*"[^"]*"/, `"datePublished": "${todayISO}"`);
       html = html.replace(/"dateModified":\s*"[^"]*"/,  `"dateModified": "${todayISO}"`);
+
+      // Inject FAQ schema alongside Article schema
+      const faqSchema = buildFAQSchema(articleBody, cluster.h2_questions);
+      if (faqSchema) {
+        const faqScript = `\n  <script type="application/ld+json">\n  ${JSON.stringify(faqSchema, null, 2)}\n  </script>`;
+        html = html.replace('</head>', `${faqScript}\n</head>`);
+      }
 
       // Update visible content
       html = html.replace(/<div class="post-eyebrow">[^<]*<\/div>/,
