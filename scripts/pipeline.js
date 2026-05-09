@@ -1103,7 +1103,7 @@ Key facts: ${cluster.key_data_points.slice(0, 3).join(' | ')}`
         `$1\n${newCard}`
       );
 
-      generated.push(cluster.title);
+      generated.push({ title: cluster.title, slug: cluster.slug });
       console.log(`  ✅ Generated: ${cluster.title}`);
       console.log(`  📁 File: /blog/${cluster.slug}/index.html`);
       console.log(`  🔍 Review before publishing`);
@@ -1119,7 +1119,7 @@ Key facts: ${cluster.key_data_points.slice(0, 3).join(' | ')}`
     console.log(`\n  Updated blog/index.html with ${generated.length} new card(s)`);
   }
 
-  return { articlesGenerated: generated };
+  return { articlesGenerated: generated.map(g => g.title), slugsGenerated: generated.map(g => g.slug) };
 }
 
 // ─── Stage 4: Summary ─────────────────────────────────────────────────────────
@@ -1168,20 +1168,57 @@ function stage4_summary(newsResult, kwResult, genResult, pingResult) {
 }
 
 // ─── Stage 5: Notify Google ───────────────────────────────────────────────────
-async function stage5_sitemapPing() {
-  console.log('\n=== STAGE 5: Notify Google ===');
+async function stage5_sitemapPing(newSlugs = []) {
+  console.log('\n=== STAGE 5: Notify Search Engines ===');
+  // Google deprecated /ping in Jan 2024 — use IndexNow (Bing/Yandex) instead
+  const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
+  let pinged = false;
+
+  // Bing sitemap ping (no auth required)
   try {
-    const res = await fetch('https://www.google.com/ping?sitemap=https://www.glp3md.com/api/sitemap', { timeout: FETCH_TIMEOUT });
-    if (res.ok) {
-      console.log('  ✅ Google notified — sitemap ping successful');
-      return true;
+    const bingRes = await fetch(
+      'https://www.bing.com/ping?sitemap=https://www.glp3md.com/api/sitemap/',
+      { method: 'GET', timeout: FETCH_TIMEOUT }
+    );
+    if (bingRes.ok) {
+      console.log('  ✅ Bing notified via sitemap ping');
+      pinged = true;
+    } else {
+      console.log(`  ⚠️  Bing ping failed (${bingRes.status})`);
     }
-    console.log(`  ⚠️  Sitemap ping failed (${res.status}) — Google will crawl on its own schedule`);
-    return false;
   } catch (e) {
-    console.log('  ⚠️  Sitemap ping failed — Google will crawl on its own schedule');
-    return false;
+    console.log('  ⚠️  Bing ping failed:', e.message);
   }
+
+  // IndexNow — submit individual URLs to Bing/Yandex/others (requires key)
+  if (INDEXNOW_KEY && newSlugs.length > 0) {
+    const urls = newSlugs.map(slug => `https://www.glp3md.com/blog/${slug}/`);
+    try {
+      const res = await fetch('https://api.indexnow.org/indexnow', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+        body: JSON.stringify({
+          host: 'www.glp3md.com',
+          key: INDEXNOW_KEY,
+          keyLocation: `https://www.glp3md.com/${INDEXNOW_KEY}.txt`,
+          urlList: urls
+        }),
+        timeout: FETCH_TIMEOUT
+      });
+      if (res.ok || res.status === 202) {
+        console.log(`  ✅ IndexNow submitted ${urls.length} URL(s):`, urls);
+        pinged = true;
+      } else {
+        console.log(`  ⚠️  IndexNow failed (${res.status})`);
+      }
+    } catch (e) {
+      console.log('  ⚠️  IndexNow failed:', e.message);
+    }
+  } else if (!INDEXNOW_KEY) {
+    console.log('  ℹ️  INDEXNOW_KEY not set — skipping IndexNow URL submission');
+  }
+
+  return pinged;
 }
 
 // ─── Stage 6: Article Freshness Updater ──────────────────────────────────────
@@ -1260,7 +1297,7 @@ async function main() {
   catch (e) { console.error('Stage 3 fatal error:', e.message); }
 
   if (genResult.articlesGenerated.length > 0) {
-    try { pingResult = await stage5_sitemapPing(); }
+    try { pingResult = await stage5_sitemapPing(genResult.slugsGenerated); }
     catch (e) { console.error('Stage 5 fatal error:', e.message); }
   }
 

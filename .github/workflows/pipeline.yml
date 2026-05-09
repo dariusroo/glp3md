@@ -43,6 +43,7 @@ jobs:
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           GOOGLE_ALERT_RSS: ${{ secrets.GOOGLE_ALERT_RSS }}
           GOOGLE_ALERT_RSS_2: ${{ secrets.GOOGLE_ALERT_RSS_2 }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node scripts/pipeline.js
 
       - name: Commit and publish generated articles
