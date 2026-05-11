@@ -718,5 +718,34 @@
     "priority": "normal",
     "news_triggered": true,
     "status": "review"
+  },
+  {
+    "slug": "retatrutide-patient-eligibility-who-qualifies",
+    "title": "Retatrutide Patient Eligibility: Who Qualifies Based on Phase 2 and Phase 3 Trial Criteria?",
+    "primary_keyword": "retatrutide patient eligibility",
+    "secondary_keywords": [
+      "who qualifies for retatrutide",
+      "retatrutide BMI requirements",
+      "retatrutide exclusion criteria",
+      "retatrutide comorbidities"
+    ],
+    "h2_questions": [
+      "What BMI do you need to qualify for retatrutide based on clinical trial criteria?",
+      "Which medical conditions were required or excluded in the retatrutide trials?",
+      "Can people with type 2 diabetes use retatrutide?",
+      "Does prior use of semaglutide or tirzepatide disqualify you from retatrutide treatment?"
+    ],
+    "key_data_points": [
+      "Phase 2 eligibility: BMI ≥30 kg/m² (up to ≤50) or ≥27 with comorbidity such as hypertension or dyslipidemia",
+      "Exclusion: type 2 diabetes defined as HbA1c ≥6.5%, fasting glucose ≥126 mg/dL, or random glucose ≥200 mg/dL",
+      "Exclusion: prior bariatric surgery (except liposuction), prior GLP-1RA use, body weight change >5kg in prior 3 months",
+      "All participants received diet and physical activity counseling as background therapy",
+      "TRIUMPH-4 Phase 3 trial: 68-week duration; 12mg dose achieved 28.7% mean weight loss",
+      "Phase 3 publication and NDA filing both pending as of April 2026"
+    ],
+    "source_url": "https://glp3md.com",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "review"
   }
 ]
