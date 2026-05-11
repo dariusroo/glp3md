@@ -1218,6 +1218,46 @@ async function stage5_sitemapPing(newSlugs = []) {
     console.log('  ℹ️  INDEXNOW_KEY not set — skipping IndexNow URL submission');
   }
 
+  // Google Indexing API — push new URLs directly to Google for immediate crawling
+  if (newSlugs.length > 0 && process.env.GSC_CLIENT_ID && process.env.GSC_CLIENT_SECRET && process.env.GSC_REFRESH_TOKEN) {
+    const urls = newSlugs.map(slug => `https://www.glp3md.com/blog/${slug}/`);
+    try {
+      const oauth2Client = new google.auth.OAuth2(
+        process.env.GSC_CLIENT_ID,
+        process.env.GSC_CLIENT_SECRET
+      );
+      oauth2Client.setCredentials({ refresh_token: process.env.GSC_REFRESH_TOKEN });
+      const { token } = await oauth2Client.getAccessToken();
+
+      let gscIndexed = 0;
+      for (const url of urls) {
+        const res = await fetch('https://indexing.googleapis.com/v3/urlNotifications:publish', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({ url, type: 'URL_UPDATED' }),
+          timeout: FETCH_TIMEOUT,
+        });
+        if (res.ok) {
+          gscIndexed++;
+        } else {
+          const err = await res.json().catch(() => ({}));
+          console.log(`  ⚠️  GSC Indexing API failed for ${url}: ${res.status} ${err?.error?.message || ''}`);
+        }
+      }
+      if (gscIndexed > 0) {
+        console.log(`  ✅ Google Indexing API submitted ${gscIndexed}/${urls.length} URL(s)`);
+        pinged = true;
+      }
+    } catch (e) {
+      console.log('  ⚠️  Google Indexing API failed:', e.message);
+    }
+  } else if (newSlugs.length > 0 && !process.env.GSC_REFRESH_TOKEN) {
+    console.log('  ℹ️  GSC credentials not set — skipping Google Indexing API');
+  }
+
   return pinged;
 }
 
