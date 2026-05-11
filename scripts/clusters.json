@@ -669,5 +669,54 @@
     "priority": "normal",
     "news_triggered": false,
     "status": "pending"
+  },
+  {
+    "slug": "retatrutide-cardiovascular-kidney-metabolic-syndrome-review",
+    "title": "Retatrutide and CKM Syndrome: What Triple Hormone Receptor Agonism Means for Heart, Kidney, and Metabolic Health",
+    "primary_keyword": "retatrutide cardiovascular kidney metabolic syndrome",
+    "secondary_keywords": [
+      "triple hormone receptor agonist",
+      "retatrutide CKM syndrome",
+      "GLP-1 kidney disease",
+      "retatrutide heart health"
+    ],
+    "h2_questions": [
+      "What is Cardiovascular-Kidney-Metabolic (CKM) Syndrome?",
+      "How does retatrutide's triple hormone receptor agonism address CKM syndrome?",
+      "What does this research mean for patients waiting for retatrutide?"
+    ],
+    "key_data_points": [
+      "A comprehensive review published May 11, 2026 in PubMed examines retatrutide's role in addressing Cardiovascular-Kidney-Metabolic (CKM) Syndrome",
+      "Retatrutide acts as a triple hormone receptor agonist"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42108533/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "review"
+  },
+  {
+    "slug": "triple-agonist-patent-battle-post-glp1-obesity-market",
+    "title": "The Triple-Agonist Patent Race: 27 Programs Competing in the Post-GLP-1 Obesity Market",
+    "primary_keyword": "triple agonist obesity drug pipeline",
+    "secondary_keywords": [
+      "retatrutide patent",
+      "GLP-1 successor drugs",
+      "triple agonist race",
+      "obesity drug competition"
+    ],
+    "h2_questions": [
+      "How many triple-agonist programs are currently in development globally?",
+      "What is the patent landscape shaping the next generation of obesity drugs?",
+      "How does retatrutide fit into the broader triple-agonist competitive race?"
+    ],
+    "key_data_points": [
+      "A PatentVest Pulse Report published May 8, 2026 maps the triple-agonist competitive landscape",
+      "Analysis covers 27 global triple-agonist programs across major pharmaceutical companies and emerging biotech platforms",
+      "The report highlights a rapidly expanding pipeline in the post-GLP-1 obesity market"
+    ],
+    "source_url": "https://www.globenewswire.com/news-release/2026/05/08/3291201/0/en/New-PatentVest-Pulse-Report-Maps-the-Triple-Agonist-Race-and-the-Emerging-Patent-Battle-Shaping-the-Post-GLP-1-Obesity-Market.html",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
   }
 ]

@@ -1,11 +1,11 @@
 === PIPELINE COMPLETE ===
-Date: 2026-05-08T09:15:52.256Z
-News items processed: 5
+Date: 2026-05-11T10:58:06.263Z
+News items processed: 6
 TRIUMPH trials monitored: 33
 Trial status changes: 0
 New keyword clusters identified: 0
 Articles generated: 1
-High priority items: 9
+High priority items: 10
   - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
   - TRIUMPH Trial Stops Recruiting: What the Phase 3 Retatrutide Study Closing Enrollment Means for Patients
   - Retatrutide FDA Approval: Expected Date, NDA Filing Status, and Regulatory Timeline
@@ -15,7 +15,8 @@ High priority items: 9
   - Retatrutide Availability & Expanded Access: Is There a Patient Access Program Before FDA Approval?
   - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
   - Eli Lilly Raises 2026 Sales Forecast: What It Means for the Retatrutide Pipeline
-Articles awaiting review: 18
+  - Retatrutide and CKM Syndrome: What Triple Hormone Receptor Agonism Means for Heart, Kidney, and Metabolic Health
+Articles awaiting review: 19
   - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
   - How to Spot Fake GLP-1 Drug Suppliers Online — and Why Physician Supervision Matters
   - FDA Issues Warning Letters to Multiple Online GLP-1 Sellers for Unlawful Drug Sales
@@ -34,5 +35,6 @@ Articles awaiting review: 18
   - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
   - Retatrutide Crosses the Surgical Weight Loss Threshold — and the Patent Race Is On
   - Eli Lilly Raises 2026 Sales Forecast: What It Means for the Retatrutide Pipeline
-Sitemap pinged: no
+  - Retatrutide and CKM Syndrome: What Triple Hormone Receptor Agonism Means for Heart, Kidney, and Metabolic Health
+Sitemap pinged: yes
 ================================
