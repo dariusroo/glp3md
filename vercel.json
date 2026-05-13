@@ -12,6 +12,31 @@
       "source": "/blog/eli-lilly-retatrutide-expanded-access-patient-program/",
       "destination": "/blog/eli-lilly-retatrutide-availability-expanded-access-patient-program/",
       "permanent": true
+    },
+    {
+      "source": "/blog/retatrutide-fda-approval-timeline/",
+      "destination": "/blog/retatrutide-fda-approval-date-timeline/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/retatrutide-side-effects/",
+      "destination": "/blog/retatrutide-side-effects-safety-profile/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/triumph-4-results-explained/",
+      "destination": "/blog/triumph-4-5-retatrutide-trial-results/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/retatrutide-phase-3-triumph-trial-results/",
+      "destination": "/blog/triumph-4-5-retatrutide-trial-results/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/retatrutide-results-real-world-data/",
+      "destination": "/blog/retatrutide-weight-loss-results/",
+      "permanent": true
     }
   ]
 }

@@ -1089,9 +1089,9 @@ Key facts: ${cluster.key_data_points.slice(0, 3).join(' | ')}`
       // Inject internal links
       await injectInternalLinks(cluster, outputPath, clusters);
 
-      // Mark cluster as 'review'
+      // Mark cluster as published
       const idx = clusters.findIndex(c => c.slug === cluster.slug);
-      if (idx !== -1) clusters[idx].status = 'review';
+      if (idx !== -1) clusters[idx].status = 'published';
       writeJSON(CLUSTERS_PATH, clusters);
 
       // Prepend card to blog/index.html
