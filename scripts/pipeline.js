@@ -856,11 +856,16 @@ Rules:
       return;
     }
 
-    // Inject links — split around existing <a> blocks to avoid nesting
+    // Inject links only into the article body (not <script> or <head> blocks)
+    const bodyMarker = /(<p class="post-meta">[\s\S]*?<\/p>)([\s\S]*?)(<div class="post-cta">)/;
+    const bodyParts = html.match(bodyMarker);
+    if (!bodyParts) return;
+
+    let body = bodyParts[2];
     let injectedCount = 0;
     for (const { anchor, url } of suggestions) {
-      if (!anchor || !url || !html.includes(anchor)) continue;
-      const segments = html.split(/(<a[\s\S]*?<\/a>)/i);
+      if (!anchor || !url || !body.includes(anchor)) continue;
+      const segments = body.split(/(<a[\s\S]*?<\/a>)/i);
       let done = false;
       for (let i = 0; i < segments.length; i++) {
         if (/^<a/i.test(segments[i])) continue;
@@ -869,10 +874,11 @@ Rules:
           done = true;
         }
       }
-      if (done) { html = segments.join(''); injectedCount++; }
+      if (done) { body = segments.join(''); injectedCount++; }
     }
 
     if (injectedCount > 0) {
+      html = html.replace(bodyMarker, (_, g1, _g2, g3) => `${g1}${body}${g3}`);
       fs.writeFileSync(outputPath, html, 'utf8');
       console.log(`  🔗 Internal links injected: ${injectedCount}`);
     }
