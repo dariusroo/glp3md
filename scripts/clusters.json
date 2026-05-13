@@ -747,5 +747,36 @@
     "priority": "high",
     "news_triggered": false,
     "status": "review"
+  },
+  {
+    "slug": "retatrutide-discontinuation-rates-dysesthesia-triumph-4-tolerability",
+    "title": "Retatrutide Tolerability in Phase 3: What TRIUMPH-4 Discontinuation Rates and Dysesthesia Data Mean for Patients",
+    "primary_keyword": "retatrutide side effects phase 3",
+    "secondary_keywords": [
+      "retatrutide dysesthesia",
+      "retatrutide discontinuation rate",
+      "TRIUMPH-4 tolerability",
+      "retatrutide 12mg safety"
+    ],
+    "h2_questions": [
+      "How do retatrutide discontinuation rates in TRIUMPH-4 compare to Phase 2 trial data?",
+      "What is dysesthesia and why does it occur more frequently at the 12mg retatrutide dose?",
+      "Did any TRIUMPH-4 participants discontinue because of excessive weight loss — and what does that tell us?",
+      "How should patients and physicians weigh the tolerability profile of retatrutide when choosing a dose?"
+    ],
+    "key_data_points": [
+      "TRIUMPH-4 Phase 3: discontinuation rates 12.2% (9mg) and 18.2% (12mg) vs 4.0% placebo at 68 weeks",
+      "TRIUMPH-4 dysesthesia: 8.8% at 9mg, 20.9% at 12mg vs 0.7% placebo",
+      "Phase 2 hyperesthesia/dysesthesia: 12.9% at 12mg and 14.3% at 8mg [ID 4mg] vs 1.4% placebo (Tables S14)",
+      "TRIUMPH-4 titration schedule: 2mg → 4mg → 6mg → 9mg → 12mg maintenance starting week 17",
+      "Some TRIUMPH-4 discontinuations attributed to perceived excessive weight loss — a novel finding in obesity pharmacotherapy",
+      "Phase 2 most common AEs: nausea, diarrhea, vomiting — GI events dose-dependent and peaked during titration",
+      "Mean weight loss at 12mg in TRIUMPH-4: 28.7% — highest recorded in any Phase 3 obesity trial",
+      "Phase 3 peer-reviewed publication and NDA filing both pending as of April 2026"
+    ],
+    "source_url": "",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "review"
   }
 ]
