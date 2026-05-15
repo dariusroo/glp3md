@@ -1,45 +1,11 @@
 === PIPELINE COMPLETE ===
-Date: 2026-05-13T10:23:26.058Z
-News items processed: 1
+Date: 2026-05-15T10:18:50.840Z
+News items processed: 4
 TRIUMPH trials monitored: 33
 Trial status changes: 0
 New keyword clusters identified: 0
 Articles generated: 1
-High priority items: 12
-  - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
-  - TRIUMPH Trial Stops Recruiting: What the Phase 3 Retatrutide Study Closing Enrollment Means for Patients
-  - Retatrutide FDA Approval: Expected Date, NDA Filing Status, and Regulatory Timeline
-  - Retatrutide Phase 3 TRIUMPH Trial Results: What the Data Shows So Far
-  - GLP-3 Release Date: When Will Retatrutide Be Available to Patients?
-  - TRIUMPH-4 and TRIUMPH-5: What the Remaining Phase 3 Retatrutide Trials Are Testing
-  - Retatrutide Availability & Expanded Access: Is There a Patient Access Program Before FDA Approval?
-  - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
-  - Eli Lilly Raises 2026 Sales Forecast: What It Means for the Retatrutide Pipeline
-  - Retatrutide and CKM Syndrome: What Triple Hormone Receptor Agonism Means for Heart, Kidney, and Metabolic Health
-  - Retatrutide Patient Eligibility: Who Qualifies Based on Phase 2 and Phase 3 Trial Criteria?
-  - Retatrutide Tolerability in Phase 3: What TRIUMPH-4 Discontinuation Rates and Dysesthesia Data Mean for Patients
-Articles awaiting review: 22
-  - New Study: Retatrutide Reduces Adipose Tissue Fibrosis Through Metabolic Reprogramming
-  - How to Spot Fake GLP-1 Drug Suppliers Online — and Why Physician Supervision Matters
-  - FDA Issues Warning Letters to Multiple Online GLP-1 Sellers for Unlawful Drug Sales
-  - Retatrutide Side Effects: What Clinical Trials Reveal About Safety
-  - Retatrutide Dosing and Weight Loss Results: What the Data Shows
-  - TRIUMPH Trial Stops Recruiting: What the Phase 3 Retatrutide Study Closing Enrollment Means for Patients
-  - Retatrutide FDA Approval: Expected Date, NDA Filing Status, and Regulatory Timeline
-  - Retatrutide Phase 3 TRIUMPH Trial Results: What the Data Shows So Far
-  - Retatrutide Cost: What to Expect When It Gets FDA Approval
-  - Retatrutide Weight Loss Results: What the Numbers Actually Mean
-  - What Is Retatrutide (GLP-3)? The Triple Agonist Obesity Drug Explained
-  - Retatrutide Results: What Clinical Trial Data Tells Us About Real-World Outcomes
-  - GLP-3 Release Date: When Will Retatrutide Be Available to Patients?
-  - TRIUMPH-4 and TRIUMPH-5: What the Remaining Phase 3 Retatrutide Trials Are Testing
-  - Retatrutide Availability & Expanded Access: Is There a Patient Access Program Before FDA Approval?
-  - Lilly Q1 2026 Earnings: What the Latest Report Reveals About Retatrutide
-  - Retatrutide Crosses the Surgical Weight Loss Threshold — and the Patent Race Is On
-  - Eli Lilly Raises 2026 Sales Forecast: What It Means for the Retatrutide Pipeline
-  - Retatrutide and CKM Syndrome: What Triple Hormone Receptor Agonism Means for Heart, Kidney, and Metabolic Health
-  - The Triple-Agonist Patent Race: 27 Programs Competing in the Post-GLP-1 Obesity Market
-  - Retatrutide Patient Eligibility: Who Qualifies Based on Phase 2 and Phase 3 Trial Criteria?
-  - Retatrutide Tolerability in Phase 3: What TRIUMPH-4 Discontinuation Rates and Dysesthesia Data Mean for Patients
+High priority items: 0
+Articles awaiting review: 0
 Sitemap pinged: yes
 ================================
