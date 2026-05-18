@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title>The Evolving Landscape of Obesity Drugs: GLP-1s, Multi-Receptor Agonists, and What's Next | glp3md</title>
+  <meta name="description" content="Multi-receptor agonists and amylin therapies are transforming obesity treatment beyond GLP-1s, according to a May 2026 Nature review." />
+  <meta property="og:title" content="The Evolving Landscape of Obesity Drugs: GLP-1s, Multi-Receptor Agonists, and What's Next">
+  <meta property="og:image" content="https://www.glp3md.com/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="glp3md — Retatrutide Waitlist">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.glp3md.com/og-image.svg">
+  <link rel="canonical" href="https://www.glp3md.com/blog/obesity-pharmacotherapy-landscape-glp1-multi-receptor-agonists/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Evolving Landscape of Obesity Drugs: GLP-1s, Multi-Receptor Agonists, and What's Next",
+    "description": "Multi-receptor agonists and amylin therapies are transforming obesity treatment beyond GLP-1s, according to a May 2026 Nature review.",
+    "url": "https://www.glp3md.com/blog/obesity-pharmacotherapy-landscape-glp1-multi-receptor-agonists/",
+    "publisher": { "@type": "Organization", "name": "glp3md", "url": "https://glp3md.com" },
+    "datePublished": "2026-05-18",
+    "dateModified": "2026-05-18"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1318;
+      --surface: #111820;
+      --border: rgba(255,255,255,0.07);
+      --accent: #4af0c4;
+      --green: #4ade80;
+      --text: #e8edf2;
+      --text-muted: #6b7f8e;
+      --text-dim: #3a4d5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 12, 16, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--green); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--accent); }
+
+    .nav-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-badge:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    /* ── ARTICLE ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .post-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .post-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .post-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.55rem;
+      color: var(--text);
+      margin: 2.5rem 0 0.75rem;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.85;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.1rem 1.25rem;
+    }
+
+    ul li, ol li {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 0.35rem;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.88rem;
+    }
+
+    .compare-table th {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+    }
+
+    .compare-table td {
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 0.75rem;
+      vertical-align: top;
+    }
+
+    .compare-table tr:last-child td { border-bottom: none; }
+
+    .compare-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    /* ── POST CTA ── */
+    .post-cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--accent);
+      border-radius: 4px;
+      padding: 2rem;
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .post-cta-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .post-cta h2 {
+      font-size: 1.6rem;
+      margin: 0 0 0.6rem;
+    }
+
+    .post-cta p {
+      font-size: 0.88rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 0.7rem 1.75rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .cta-btn:hover { opacity: 0.85; text-decoration: none; }
+
+    .disclaimer {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--green); }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How are incretin-based therapies transforming obesity treatment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Obesity pharmacotherapy has undergone a fundamental shift over the past decade. What was once a field defined by modest weight loss and limited durability has been reshaped by a class of molecules that work in concert with the body's own hormonal signaling systems. A major review published in Nature Reviews Drug Discovery on May 13, 2026 — available at https://www.nature.com/articles/s41573-026-01427-1 — provides a sweeping overview of the current obesity drug development landscape, describing i"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the current pipeline of GLP-1 and multi-receptor agonist drugs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The obesity pharmacotherapy pipeline in 2026 spans a broad spectrum of mechanisms. The Nature Reviews Drug Discovery review referenced above underscores that the field is no longer a single-drug story — it is an ecosystem of molecules at varying stages of development, each targeting different combinations of receptors or downstream pathways."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does retatrutide fit in the evolving obesity drug landscape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retatrutide (LY3437943), developed by Eli Lilly and Company, is a once-weekly subcutaneous injection that simultaneously activates GLP-1, GIP, and glucagon receptors — making it a true triple agonist. Commonly referred to as reta in patient communities, it has generated substantial clinical interest because of the consistency and magnitude of weight loss observed across both Phase 2 and Phase 3 data."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="/">glp3<span>md</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="/blog/">Blog</a>
+      <a class="nav-badge" href="/#cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="post-eyebrow">News</div>
+    <h1>The Evolving Landscape of Obesity Drugs: GLP-1s, Multi-Receptor Agonists, and What's Next</h1>
+    <p class="post-meta">May 18, 2026 &nbsp;·&nbsp; 6 min read</p>
+
+    <h2>How Are Incretin-Based Therapies Transforming Obesity Treatment?</h2>
+
+<p>Obesity pharmacotherapy has undergone a fundamental shift over the past decade. What was once a field defined by modest weight loss and limited durability has been reshaped by a class of molecules that work in concert with the body's own hormonal signaling systems. A major review published in <em>Nature Reviews Drug Discovery</em> on May 13, 2026 — available at <a href="https://www.nature.com/articles/s41573-026-01427-1">https://www.nature.com/articles/s41573-026-01427-1</a> — provides a sweeping overview of the current obesity drug development landscape, describing incretin-based therapies as actively transforming the treatment of obesity and its related comorbidities. The review covers <a href="/blog/what-is-retatrutide-glp-3-explained/">GLP-1 receptor agonists, multi-receptor agonists, and amylin receptor-based therapies</a>, illustrating how rapidly this therapeutic area is maturing.</p>
+
+<p>Incretin hormones — primarily glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP) — are released from the gut in response to food intake and regulate appetite, gastric emptying, and insulin secretion. Early GLP-1 receptor agonists like semaglutide demonstrated that targeting these pathways could produce clinically meaningful weight loss. In the landmark STEP-1 trial (68 weeks), <a href="/blog/retatrutide-surgery-level-weight-loss-patent-race/">semaglutide 2.4mg once weekly produced a mean weight loss of approximately 14.9%</a> in adults with obesity. That result was, at the time, unprecedented in pharmacotherapy. It established a new benchmark — and also set the stage for what was coming next.</p>
+
+<p>The concept of engaging <a href="/blog/triple-agonist-patent-battle-post-glp1-obesity-market/">multiple receptor pathways simultaneously</a> emerged as a logical evolution. If activating GLP-1 receptors alone produced remarkable results, what would happen when GIP receptors — and eventually glucagon receptors — were added to the equation? The answer, borne out across several development programs, has been consistent: more receptor engagement has generally translated to greater metabolic effect, including deeper weight loss, <a href="/blog/retatrutide-lipid-metabolite-profiles-obesity-type-2-diabetes/">more favorable lipid changes</a>, and improvements in patient-reported quality of life.</p>
+
+<p>Beyond simple appetite suppression, these therapies appear to reduce what patients often describe as <em>food noise</em> — the persistent, intrusive mental preoccupation with food that many individuals with obesity experience throughout the day. This phenomenon, while not yet a formal clinical endpoint, has become a central part of how patients describe their experience on these medications and is increasingly recognized as a meaningful dimension of treatment response.</p>
+
+<h2>What Is the Current Pipeline of GLP-1 and Multi-Receptor Agonist Drugs?</h2>
+
+<p>The obesity pharmacotherapy pipeline in 2026 spans a broad spectrum of mechanisms. The <em>Nature Reviews Drug Discovery</em> review referenced above underscores that the field is no longer a single-drug story — it is an <a href="/blog/eli-lilly-raises-sales-forecast-obesity-drug-pipeline-2026/">ecosystem of molecules at varying stages of development</a>, each targeting different combinations of receptors or downstream pathways.</p>
+
+<p>The following table summarizes key approved and late-stage agents, using only data from provided clinical sources:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>Mechanism</th>
+      <th>Key Trial</th>
+      <th>Mean Weight Loss</th>
+      <th>Trial Duration</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Semaglutide 2.4mg</td>
+      <td>GLP-1 receptor agonist</td>
+      <td>STEP-1</td>
+      <td>~14.9%</td>
+      <td>68 weeks</td>
+      <td>FDA approved</td>
+    </tr>
+    <tr>
+      <td>Tirzepatide 15mg</td>
+      <td>GLP-1 / GIP dual agonist</td>
+      <td>SURMOUNT-1</td>
+      <td>~20.9%</td>
+      <td>72 weeks</td>
+      <td>FDA approved</td>
+    </tr>
+    <tr>
+      <td>Retatrutide 12mg</td>
+      <td>GLP-1 / GIP / glucagon triple agonist</td>
+      <td>TRIUMPH-4 (Phase 3)</td>
+      <td>28.7%</td>
+      <td>68 weeks</td>
+      <td>Phase 3 complete; NDA not yet filed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The progression from single to dual to triple receptor agonism reflects not just incremental innovation but a meaningful step change in efficacy. Adding glucagon receptor agonism to the GLP-1/GIP framework appears to amplify energy expenditure beyond what appetite reduction alone can achieve — a mechanistic distinction that is clinically visible in the weight loss data. Amylin receptor-based therapies, such as cagrilintide in combination with semaglutide, represent yet another pathway under investigation, further broadening the landscape described in the Nature review.</p>
+
+<h2>Where Does Retatrutide Fit in the Evolving Obesity Drug Landscape?</h2>
+
+<p>Retatrutide (LY3437943), developed by Eli Lilly and Company, is a once-weekly subcutaneous injection that simultaneously activates GLP-1, GIP, and glucagon receptors — making it a true triple agonist. Commonly referred to as <em>reta</em> in patient communities, it has generated substantial clinical interest because of the consistency and magnitude of weight loss observed across both Phase 2 and Phase 3 data.</p>
+
+<p>In the Phase 2 randomized controlled trial published in <em>The New England Journal of Medicine</em> in 2023 (Jastreboff et al.; NCT04881760; n=338), retatrutide produced dose-dependent weight loss over 48 weeks. At the 8mg dose, 100% of participants achieved at least 5% weight loss, and up to 70% achieved at least 20% weight loss. At the 12mg dose, mean weight loss reached 24.2% — a figure that, at the time of publication, exceeded anything previously reported in a Phase 2 pharmacotherapy trial for obesity. Cardiometabolic markers also improved substantially: triglycerides fell by up to 34.0% at the 12mg dose at 24 weeks, and LDL cholesterol declined by 15.6–16.9% at the 8mg dose. Quality of life, measured by SF-36v2 scores, improved across all active dose groups at 48 weeks.</p>
+
+<p>The Phase 3 TRIUMPH-4 trial extended these findings over 68 weeks at the 12mg maintenance dose. The result — a mean weight loss of 28.7% — is the highest ever recorded in a Phase 3 obesity pharmacotherapy trial. To place that in context: nearly three in ten pounds of body weight, on average, lost over the course of the trial. Among participants who reached and maintained the 12mg dose, a meaningful proportion achieved weight reductions that would previously have required bariatric surgery to approach. Sometimes referred to as <em>triple G</em> in online patient communities, retatrutide's glucagon receptor component is thought to be a key driver of this deeper metabolic effect.</p>
+
+<p>Tolerability data from TRIUMPH-4 reflects the dose-dependent GI profile seen in Phase 2. Nausea, diarrhea, and vomiting were the most common adverse events, consistent with the broader incretin drug class. A notable finding specific to retatrutide is dysesthesia — an abnormal skin sensation — reported in 20.9% of participants at the 12mg dose versus 0.7% on placebo. This signal, also observed in Phase 2 (12.9% at 12mg vs. 1.4% placebo), warrants ongoing characterization in post-approval surveillance if retatrutide receives regulatory clearance. Discontinuation rates were 18.2% at 12mg versus 4.0% on placebo; notably, some discontinuations were attributed to perceived excessive weight loss, an unusual adverse event category for this drug class.</p>
+
+<p>As of April 2026, a peer-reviewed publication of the TRIUMPH-4 data is pending, and a New Drug Application has not yet been filed with the FDA. The approval timeline has not been publicly confirmed by Eli Lilly. Retatrutide is not currently FDA-approved for any indication.</p>
+
+<p>For individuals who have been following the retatrutide development program — and for those who have not yet found adequate results with existing approved therapies — staying informed is the most important step available right now. glp3md.com maintains an active waitlist for individuals who want to be among the first to receive updates as the regulatory landscape evolves. Joining the waitlist is free and takes only a few minutes at <a href="https://www.glp3md.com">https://www.glp3md.com</a>. <strong>Please note: joining the waitlist does not constitute enrollment in a clinical trial, does not guarantee access to retatrutide, and does not represent a promise of treatment, medication, or a prescription of any kind.</strong> Retatrutide remains investigational. The waitlist exists solely to keep interested individuals informed as this promising therapy moves through the regulatory process.</p>
+
+    <div class="post-cta">
+      <div class="post-cta-eyebrow">Waitlist Now Open</div>
+      <h2>Get priority access at FDA approval.</h2>
+      <p>Join the waitlist for priority access to a prescribing physician when retatrutide receives FDA approval.</p>
+      <a class="cta-btn" href="/#cta">Join the Waitlist</a>
+    </div>
+
+    <p class="disclaimer">This article is for educational purposes only and does not constitute medical advice. Retatrutide is an investigational drug and is not FDA approved as of publication. Clinical data referenced is from publicly available trial publications. Consult a qualified healthcare provider before making any treatment decisions.</p>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <a class="footer-logo" href="/">glp3<span>md</span></a>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
