@@ -749,5 +749,37 @@
     "priority": "normal",
     "news_triggered": true,
     "status": "published"
+  },
+  {
+    "slug": "retatrutide-phase-2-vs-phase-3-weight-loss-comparison",
+    "title": "Retatrutide Phase 2 vs. TRIUMPH-4 Phase 3: How the Weight Loss Data Evolved",
+    "primary_keyword": "retatrutide phase 3 results",
+    "secondary_keywords": [
+      "TRIUMPH-4 weight loss",
+      "retatrutide 28.7% weight loss",
+      "retatrutide phase 2 phase 3 comparison",
+      "retatrutide 12mg results"
+    ],
+    "h2_questions": [
+      "What did retatrutide achieve in Phase 2 at the 12mg dose?",
+      "How does TRIUMPH-4's 28.7% mean weight loss compare to Phase 2 outcomes?",
+      "Why might Phase 3 weight loss results differ from Phase 2 — and what changed in the protocol?",
+      "What do the TRIUMPH-4 discontinuation and dysesthesia rates tell us about the Phase 3 tolerability profile?",
+      "What does this data progression mean for retatrutide's NDA filing and FDA approval timeline?"
+    ],
+    "key_data_points": [
+      "Phase 2 mean weight loss at 48 weeks: 12mg ~24.2% vs placebo ~2.1% (NEJM 2023; Jastreboff et al.)",
+      "TRIUMPH-4 Phase 3 mean weight loss at 68 weeks: 28.7% at 12mg — highest ever recorded in a Phase 3 obesity trial (Lilly press release, Dec 2025)",
+      "Phase 2 ≥25% weight loss at 48 weeks: 48% of 12mg participants; ≥20%: 64%",
+      "TRIUMPH-4 titration schedule: 2mg → 4mg → 6mg → 9mg → 12mg maintenance (week 17+); Phase 2 used stepped titration reaching target by ~week 12",
+      "TRIUMPH-4 discontinuation: 18.2% at 12mg vs 4.0% placebo; some due to perceived excessive weight loss",
+      "TRIUMPH-4 dysesthesia: 20.9% at 12mg vs 0.7% placebo; Phase 2 hyperesthesia/dysesthesia: 12.9% at 12mg vs 1.4% placebo",
+      "Phase 3 treatment duration 68 weeks vs Phase 2 48 weeks — longer exposure may partly explain greater mean weight loss",
+      "Peer-reviewed Phase 3 publication pending as of April 2026; NDA not yet filed as of April 2026"
+    ],
+    "source_url": "",
+    "priority": "high",
+    "news_triggered": false,
+    "status": "published"
   }
 ]
