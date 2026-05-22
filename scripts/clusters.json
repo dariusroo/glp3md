@@ -781,5 +781,91 @@
     "priority": "high",
     "news_triggered": false,
     "status": "published"
+  },
+  {
+    "slug": "retatrutide-phase-3-triumph-1-trial-results-weight-loss",
+    "title": "Retatrutide Phase 3 TRIUMPH-1 Trial Results: Up to 85 Pounds Lost, Lilly Announces",
+    "primary_keyword": "retatrutide phase 3 trial results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "TRIUMPH-1 trial",
+      "retatrutide 12mg",
+      "Lilly triple agonist weight loss",
+      "retatrutide 28% body weight loss"
+    ],
+    "h2_questions": [
+      "What were the key results from the retatrutide TRIUMPH-1 Phase 3 trial?",
+      "How much weight did participants lose on retatrutide 12mg over 80 weeks?",
+      "How does retatrutide's weight loss compare to bariatric surgery?",
+      "What percentage of retatrutide participants achieved 30% or more body weight loss?",
+      "What happens to weight loss if patients continue retatrutide beyond 80 weeks?"
+    ],
+    "key_data_points": [
+      "Participants on 12mg retatrutide lost an average of 70.3 lbs (28.3%) over 80 weeks in TRIUMPH-1",
+      "45.3% of participants achieved ≥30% weight loss, a level long associated with bariatric surgery",
+      "People lost up to 30% of their body weight, about 85 pounds, according to Eli Lilly",
+      "Individuals with a baseline BMI ≥35 who participated in a study extension continued to lose weight beyond 80 weeks"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "published"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-clears-obesity-trial-fda-filing",
+    "title": "Eli Lilly's Retatrutide Clears Crucial Obesity Trial, Bringing FDA Filing Closer",
+    "primary_keyword": "retatrutide FDA approval",
+    "secondary_keywords": [
+      "Eli Lilly retatrutide approval",
+      "retatrutide obesity trial",
+      "retatrutide vs Ozempic",
+      "next generation weight loss drug",
+      "retatrutide how it works"
+    ],
+    "h2_questions": [
+      "What does it mean that retatrutide cleared a crucial obesity trial?",
+      "How does retatrutide work differently from existing weight loss injections and pills?",
+      "What are the next steps toward retatrutide FDA approval after the Phase 3 trial?",
+      "When could retatrutide become available to patients?",
+      "How can I get on a retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "Retatrutide cleared a crucial obesity trial, bringing Lilly one step closer to filing for approval",
+      "Retatrutide works differently from existing weight loss injections and pills",
+      "Retatrutide is administered as an injection"
+    ],
+    "source_url": "https://www.cnbc.com/2026/05/21/eli-lilly-weight-loss-drug-retatrutide-clears-obesity-trial.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-muscle-preservation-weight-loss-triple-agonist",
+    "title": "Retatrutide May Help Preserve Muscle During Weight Loss, New Research Suggests",
+    "primary_keyword": "retatrutide muscle preservation",
+    "secondary_keywords": [
+      "retatrutide side effects",
+      "GLP-1 muscle loss",
+      "retatrutide triple agonist",
+      "retatrutide vs semaglutide muscle",
+      "weight loss drug muscle sparing"
+    ],
+    "h2_questions": [
+      "Does retatrutide help preserve muscle mass during weight loss?",
+      "What makes retatrutide a triple agonist and how does that affect muscle?",
+      "How do the side effects of retatrutide compare to other GLP-1 therapies?",
+      "What did experts say about retatrutide's muscle-sparing potential?",
+      "Why does preserving muscle matter when using a weight loss drug?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as a triple-agonist GLP-1 therapy",
+      "New obesity treatment may help preserve muscle during weight loss",
+      "Retatrutide is said to reduce side effects compared to other options",
+      "Retatrutide is said to spare muscle compared to other options"
+    ],
+    "source_url": "https://www.foxnews.com/health/new-obesity-treatment-may-help-preserve-muscle-weight-loss",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
   }
 ]
