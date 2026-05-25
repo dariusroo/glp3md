@@ -837,7 +837,7 @@
     "source_url": "https://www.cnbc.com/2026/05/21/eli-lilly-weight-loss-drug-retatrutide-clears-obesity-trial.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-muscle-preservation-weight-loss-triple-agonist",
@@ -865,6 +865,80 @@
     ],
     "source_url": "https://www.foxnews.com/health/new-obesity-treatment-may-help-preserve-muscle-weight-loss",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-phase-3-triumph-1-trial-results",
+    "title": "Eli Lilly Announces Positive Phase 3 TRIUMPH-1 Trial Results for Retatrutide",
+    "primary_keyword": "retatrutide phase 3 trial results",
+    "secondary_keywords": [
+      "TRIUMPH-1 trial",
+      "retatrutide clinical trial",
+      "Eli Lilly obesity drug",
+      "retatrutide 2026"
+    ],
+    "h2_questions": [
+      "What were the results of the TRIUMPH-1 Phase 3 trial for retatrutide?",
+      "How does retatrutide compare to other obesity drugs like Zepbound and Wegovy?",
+      "What does the TRIUMPH-1 data mean for retatrutide's path to FDA approval?"
+    ],
+    "key_data_points": [
+      "Eli Lilly announced positive Phase 3 TRIUMPH-1 trial results for retatrutide on May 21, 2026",
+      "Retatrutide helped study participants lose 70 lbs over 80 weeks",
+      "Average weight reductions reached approximately 28% to 30% over the studied period",
+      "Results described as more powerful than Zepbound and Wegovy"
+    ],
+    "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/eli-lilly-lly-announces-positive-120123718.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-weight-loss-results-85-pounds-obesity-epidemic",
+    "title": "People Lost Up to 85 Pounds on Retatrutide: Is the End of the Obesity Epidemic Near?",
+    "primary_keyword": "retatrutide weight loss results",
+    "secondary_keywords": [
+      "retatrutide 85 pounds",
+      "retatrutide vs Ozempic",
+      "retatrutide vs Wegovy",
+      "new weight loss drug 2026"
+    ],
+    "h2_questions": [
+      "How much weight can people lose on retatrutide?",
+      "How does retatrutide compare to Ozempic and Wegovy?",
+      "Could retatrutide help end the obesity epidemic?"
+    ],
+    "key_data_points": [
+      "Some participants lost up to 85 pounds using retatrutide",
+      "Retatrutide described as a significant advance over drugs like Ozempic and Wegovy"
+    ],
+    "source_url": "https://reason.com/2026/05/22/is-the-end-of-the-obesity-epidemic-near-people-lost-up-to-85-pounds-using-new-weight-loss-drug/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-more-powerful-than-zepbound-wegovy-lilly-announces",
+    "title": "Eli Lilly Says Retatrutide Is More Powerful Than Zepbound and Wegovy",
+    "primary_keyword": "retatrutide vs Zepbound Wegovy",
+    "secondary_keywords": [
+      "retatrutide Eli Lilly",
+      "next generation obesity drug",
+      "retatrutide trial data",
+      "retatrutide 70 pounds"
+    ],
+    "h2_questions": [
+      "What did Eli Lilly announce about retatrutide's clinical trial results?",
+      "How does retatrutide's weight loss compare to Zepbound and Wegovy?",
+      "When could retatrutide become available after these trial results?"
+    ],
+    "key_data_points": [
+      "Eli Lilly announced retatrutide clinical trial results showing participants lost 70 lbs over 80 weeks",
+      "Retatrutide described by Eli Lilly as more powerful than Zepbound and Wegovy"
+    ],
+    "source_url": "https://www.npr.org/2026/05/22/nx-s1-5830044/eli-lilly-says-its-next-gen-obesity-drug-is-more-powerful-than-zepbound-and-wegovy",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
