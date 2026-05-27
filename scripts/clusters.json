@@ -892,7 +892,7 @@
     "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/eli-lilly-lly-announces-positive-120123718.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-weight-loss-results-85-pounds-obesity-epidemic",
@@ -938,6 +938,29 @@
       "Retatrutide described by Eli Lilly as more powerful than Zepbound and Wegovy"
     ],
     "source_url": "https://www.npr.org/2026/05/22/nx-s1-5830044/eli-lilly-says-its-next-gen-obesity-drug-is-more-powerful-than-zepbound-and-wegovy",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-results-eli-lilly",
+    "title": "Eli Lilly's Retatrutide Phase 3 Results: What the Latest Data Means for You",
+    "primary_keyword": "retatrutide phase 3 results",
+    "secondary_keywords": [
+      "retatrutide clinical trial",
+      "Eli Lilly retatrutide",
+      "retatrutide weight loss drug"
+    ],
+    "h2_questions": [
+      "What did the Phase 3 trial results show for retatrutide?",
+      "How do retatrutide's Phase 3 results compare to other GLP-1 medications?",
+      "What do these Phase 3 results mean for retatrutide's path to FDA approval?"
+    ],
+    "key_data_points": [
+      "CNBC reported strong Phase 3 results for Eli Lilly's retatrutide",
+      "Eli Lilly and Company is traded on NYSE under ticker LLY"
+    ],
+    "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/cnbc-reports-strong-phase-3-213656678.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
