@@ -916,7 +916,7 @@
     "source_url": "https://reason.com/2026/05/22/is-the-end-of-the-obesity-epidemic-near-people-lost-up-to-85-pounds-using-new-weight-loss-drug/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-more-powerful-than-zepbound-wegovy-lilly-announces",
@@ -962,6 +962,57 @@
     ],
     "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/cnbc-reports-strong-phase-3-213656678.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "lilly-retatrutide-new-data-ada-2026-scientific-sessions",
+    "title": "Lilly to Present New Retatrutide Data at ADA 2026 Scientific Sessions",
+    "primary_keyword": "retatrutide clinical trial data 2026",
+    "secondary_keywords": [
+      "retatrutide ADA 2026",
+      "Lilly retatrutide update",
+      "retatrutide obesity trials",
+      "Foundayo oral GLP-1",
+      "Mounjaro ADA 2026"
+    ],
+    "h2_questions": [
+      "What new retatrutide data is Lilly presenting at ADA's 86th Scientific Sessions?",
+      "What did the Phase 3 ACHIEVE results show about Foundayo compared to oral semaglutide?",
+      "What does the ADA 2026 presentation mean for people on the retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "Lilly will present new data on Foundayo, Mounjaro, and retatrutide at the American Diabetes Association's 86th Scientific Sessions",
+      "Phase 3 ACHIEVE results showed Foundayo, an oral GLP-1 taken without food or water restrictions, outperformed oral semaglutide and dapagliflozin in type 2 diabetes",
+      "New analyses of the ATTAIN program will also be presented highlighting Foundayo's profile",
+      "Lilly describes this as building toward 'a new era of choice in diabetes and obesity care'"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-foundayo-mounjaro-and-retatrutide",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-investor-excitement-phase-2-phase-3-trials-2026",
+    "title": "Retatrutide Named Among Breakthrough Pipelines Igniting Investor Excitement in 2026",
+    "primary_keyword": "retatrutide pipeline 2026",
+    "secondary_keywords": [
+      "retatrutide phase 3 trials",
+      "retatrutide obesity drug",
+      "GLP-1 pipeline investor",
+      "retatrutide weight loss trials"
+    ],
+    "h2_questions": [
+      "Why is retatrutide generating investor excitement in 2026?",
+      "What phase of clinical trials is retatrutide currently in?",
+      "How does retatrutide compare to other breakthrough drugs in the current pipeline?"
+    ],
+    "key_data_points": [
+      "Retatrutide is listed alongside VERVE-102, NEO100, and other drugs as a breakthrough pipeline asset igniting investor excitement",
+      "Phase 2 and Phase 3 trials are described as reshaping expectations across obesity, oncology, gene editing, autoimmune disease, and neurological disorders"
+    ],
+    "source_url": "https://www.globenewswire.com/news-release/2026/05/27/3301979/0/en/Breakthrough-Pipelines-Ignite-Investor-Excitement-Retatrutide-VERVE-102-NEO100-and-More-Set-to-Transform-Medicine.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
