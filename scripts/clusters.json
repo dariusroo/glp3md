@@ -940,7 +940,7 @@
     "source_url": "https://www.npr.org/2026/05/22/nx-s1-5830044/eli-lilly-says-its-next-gen-obesity-drug-is-more-powerful-than-zepbound-and-wegovy",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-phase-3-results-eli-lilly",
@@ -1012,6 +1012,108 @@
       "Phase 2 and Phase 3 trials are described as reshaping expectations across obesity, oncology, gene editing, autoimmune disease, and neurological disorders"
     ],
     "source_url": "https://www.globenewswire.com/news-release/2026/05/27/3301979/0/en/Breakthrough-Pipelines-Ignite-Investor-Excitement-Retatrutide-VERVE-102-NEO100-and-More-Set-to-Transform-Medicine.html",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-transcend-ckd-trial-design-baseline-characteristics",
+    "title": "TRANSCEND-CKD Trial: What the Retatrutide Chronic Kidney Disease Study Means for Patients",
+    "primary_keyword": "retatrutide chronic kidney disease trial",
+    "secondary_keywords": [
+      "TRANSCEND-CKD",
+      "retatrutide CKD",
+      "retatrutide clinical trial",
+      "GLP-1 kidney disease"
+    ],
+    "h2_questions": [
+      "What is the TRANSCEND-CKD trial and what is it studying?",
+      "Who are the patients enrolled in the TRANSCEND-CKD retatrutide trial?",
+      "Why is retatrutide being investigated for chronic kidney disease?"
+    ],
+    "key_data_points": [
+      "The trial is named TRANSCEND-CKD and is studying retatrutide in patients with chronic kidney disease",
+      "A PubMed publication describes the rationale, design, and baseline characteristics of the trial",
+      "Publication date: 2026 May 29"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41160422/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-rapid-weight-loss-risks-scientific-american",
+    "title": "Retatrutide Results Raise Questions: How Much Weight Loss Is Too Fast?",
+    "primary_keyword": "retatrutide weight loss results",
+    "secondary_keywords": [
+      "retatrutide rapid weight loss",
+      "retatrutide risks",
+      "next generation GLP-1 weight loss",
+      "retatrutide side effects"
+    ],
+    "h2_questions": [
+      "What weight loss results is retatrutide achieving in studies?",
+      "What are the risks of losing weight too rapidly on retatrutide?",
+      "How does retatrutide compare to other GLP-1 drugs in terms of speed of weight loss?"
+    ],
+    "key_data_points": [
+      "New-generation GLP-1 drugs such as retatrutide are achieving higher rates of weight loss than predecessors",
+      "Doctors warn that extreme weight loss with retatrutide needs close medical monitoring",
+      "Scientific American coverage dated 2026-05-29"
+    ],
+    "source_url": "https://www.scientificamerican.com/article/retatrutide-results-spark-questions-about-how-rapid-weight-loss-affects-the-body/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "lilly-retatrutide-ada-86th-scientific-sessions-2026",
+    "title": "Lilly to Present New Retatrutide Data at ADA 86th Scientific Sessions",
+    "primary_keyword": "retatrutide ADA Scientific Sessions 2026",
+    "secondary_keywords": [
+      "Lilly retatrutide data",
+      "ADA 2026 retatrutide",
+      "retatrutide phase 3",
+      "Lilly diabetes obesity pipeline"
+    ],
+    "h2_questions": [
+      "What retatrutide data is Lilly presenting at the ADA 86th Scientific Sessions?",
+      "What other Lilly drugs are being presented alongside retatrutide at ADA 2026?",
+      "What does the ADA presentation mean for the retatrutide approval timeline?"
+    ],
+    "key_data_points": [
+      "Lilly announced it will present new data on retatrutide at the American Diabetes Association's 86th Scientific Sessions",
+      "The event is described as building toward a new era of choice in diabetes and obesity care",
+      "New analyses of the ATTAIN program are referenced in the announcement",
+      "Phase 3 ACHIEVE results for Foundayo (oral GLP-1) are also being presented at the same sessions",
+      "Announcement date: 2026-05-28"
+    ],
+    "source_url": "https://www.prnewswire.com/news-releases/lilly-to-present-new-data-on-foundayo-mounjaro-and-retatrutide-at-the-american-diabetes-associations-86th-scientific-sessions-building-toward-a-new-era-of-choice-in-diabetes-and-obesity-care-302783855.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "super-ozempic-retatrutide-two-year-results-before-after",
+    "title": "'Super Ozempic' Retatrutide: One Man's Two-Year Before and After Results",
+    "primary_keyword": "retatrutide before and after results",
+    "secondary_keywords": [
+      "super Ozempic retatrutide",
+      "retatrutide two year results",
+      "retatrutide real world results",
+      "retatrutide weight loss pictures"
+    ],
+    "h2_questions": [
+      "What did one patient's two-year retatrutide results look like?",
+      "Why is retatrutide being called 'super Ozempic'?",
+      "What should patients know before starting retatrutide based on real-world experiences?"
+    ],
+    "key_data_points": [
+      "A man shared before and after pictures after two years of use of the medication referred to as 'super Ozempic'",
+      "The article describes the medication as a weight loss injection",
+      "Coverage published 2026-05-31"
+    ],
+    "source_url": "https://www.ladbible.com/news/us-news/man-shares-super-ozempic-before-after-pictures-570743-20260531",
     "priority": "normal",
     "news_triggered": true,
     "status": "pending"
