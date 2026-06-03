@@ -963,7 +963,7 @@
     "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/cnbc-reports-strong-phase-3-213656678.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "lilly-retatrutide-new-data-ada-2026-scientific-sessions",
@@ -1115,6 +1115,29 @@
     ],
     "source_url": "https://www.ladbible.com/news/us-news/man-shares-super-ozempic-before-after-pictures-570743-20260531",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-a-study-of-retatrutide-ly3437943-in-participants-who-have-obesity-or-overweight-phase-3-complete-what-it-means-for-retatrutide",
+    "title": "TRIUMPH A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight Phase 3 Complete: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide clinical trial results",
+    "secondary_keywords": [
+      "retatrutide phase 3",
+      "TRIUMPH trial",
+      "retatrutide FDA approval"
+    ],
+    "h2_questions": [
+      "What did this TRIUMPH trial study?",
+      "What were the key results from this trial?",
+      "What does trial completion mean for FDA approval?",
+      "When could retatrutide be available to patients?"
+    ],
+    "key_data_points": [
+      "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-04-06"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT05929066",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }

@@ -343,6 +343,26 @@
     {
       "url": "https://www.prnewswire.com/news-releases/lilly-to-present-new-data-on-foundayo-mounjaro-and-retatrutide-at-the-american-diabetes-associations-86th-scientific-sessions-building-toward-a-new-era-of-choice-in-diabetes-and-obesity-care-302783855.html",
       "processedAt": "2026-06-01T13:32:27.286Z"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42224238/",
+      "processedAt": "2026-06-03T12:38:45.571Z"
+    },
+    {
+      "url": "https://www.gbnews.com/health/weight-loss-vaccine-raid-mhra-retatrutide-tirzepatide",
+      "processedAt": "2026-06-03T12:38:45.571Z"
+    },
+    {
+      "url": "https://reason.com/2026/06/01/spiraling-out-of-control/",
+      "processedAt": "2026-06-03T12:38:45.571Z"
+    },
+    {
+      "url": "https://www.dailymail.com/health/article-15858955/GLP1-weight-loss-effect-hearing-patulous-Eustachian-tube.html",
+      "processedAt": "2026-06-03T12:38:45.571Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT05929066",
+      "processedAt": "2026-06-03T12:38:45.571Z"
     }
   ],
   "trials": {
@@ -369,7 +389,7 @@
     "NCT06859268": "ACTIVE_NOT_RECRUITING",
     "NCT06982846": "ACTIVE_NOT_RECRUITING",
     "NCT07467447": "RECRUITING",
-    "NCT05929066": "ACTIVE_NOT_RECRUITING",
+    "NCT05929066": "COMPLETED",
     "NCT07035093": "RECRUITING",
     "NCT06982859": "RECRUITING",
     "NCT05929079": "ACTIVE_NOT_RECRUITING",

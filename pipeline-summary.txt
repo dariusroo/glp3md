@@ -1,8 +1,9 @@
 === PIPELINE COMPLETE ===
-Date: 2026-06-01T13:33:39.718Z
-News items processed: 15
+Date: 2026-06-03T12:39:36.413Z
+News items processed: 5
 TRIUMPH trials monitored: 33
-Trial status changes: 0
+Trial status changes: 1
+  - TRIUMPH trial NCT05929066 status changed to COMPLETED
 New keyword clusters identified: 0
 Articles generated: 1
 High priority items: 0
