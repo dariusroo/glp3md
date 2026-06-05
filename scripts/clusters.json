@@ -990,7 +990,7 @@
     "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-foundayo-mounjaro-and-retatrutide",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-investor-excitement-phase-2-phase-3-trials-2026",
@@ -1137,6 +1137,35 @@
       "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-04-06"
     ],
     "source_url": "https://clinicaltrials.gov/study/NCT05929066",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "black-market-retatrutide-risks-unlicensed-godzilla-fat-jab",
+    "title": "Black Market Retatrutide ('Reta'): What You Need to Know About the Unlicensed 'Godzilla' Weight Loss Injection",
+    "primary_keyword": "retatrutide black market",
+    "secondary_keywords": [
+      "unlicensed retatrutide",
+      "grey market retatrutide",
+      "retatrutide side effects",
+      "retatrutide weight loss",
+      "Reta injection risks"
+    ],
+    "h2_questions": [
+      "What is retatrutide and why is it called the 'Godzilla' of fat jabs?",
+      "Why is retatrutide not yet legally available through pharmacies?",
+      "What are the reported side effects of using unlicensed retatrutide from the grey market?",
+      "How does retatrutide supercharge weight loss compared to approved GLP-1 medications?",
+      "What are the risks of sourcing retatrutide outside of official clinical or prescription channels?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as the most powerful GLP-1 ever developed but is not yet licensed",
+      "Retatrutide cannot currently be legally dispensed by a pharmacy",
+      "Retatrutide is currently only findable on the 'grey market'",
+      "The Daily Mail author reported losing two stone in six months on Mounjaro before considering retatrutide"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15871617/Disturbing-reason-risking-health-injecting-new-unlicensed-Godzilla-fat-jabs-Black-market-Reta-supercharges-weight-loss-brutal-effects.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
