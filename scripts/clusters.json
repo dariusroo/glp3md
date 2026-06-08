@@ -1039,7 +1039,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/41160422/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-rapid-weight-loss-risks-scientific-american",
@@ -1167,6 +1167,123 @@
     ],
     "source_url": "https://www.dailymail.com/health/article-15871617/Disturbing-reason-risking-health-injecting-new-unlicensed-Godzilla-fat-jabs-Black-market-Reta-supercharges-weight-loss-brutal-effects.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-triumph-1-results-weight-loss-sleep-apnea-osteoarthritis",
+    "title": "Retatrutide Phase 3 TRIUMPH-1 Results: 70 lbs Lost, Sleep Apnea Reduced, Knee Pain Cut by 73%",
+    "primary_keyword": "retatrutide phase 3 results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide sleep apnea",
+      "retatrutide knee osteoarthritis",
+      "TRIUMPH-1 trial",
+      "retatrutide 12mg"
+    ],
+    "h2_questions": [
+      "What did the TRIUMPH-1 phase 3 trial find about retatrutide weight loss?",
+      "How does retatrutide affect obstructive sleep apnea?",
+      "What are the retatrutide results for knee osteoarthritis pain?",
+      "What percentage of retatrutide patients no longer met BMI criteria for obesity?",
+      "When could retatrutide be available after these phase 3 results?"
+    ],
+    "key_data_points": [
+      "Participants on retatrutide 12mg lost an average of 70.3 lbs (28.3%) over 80 weeks",
+      "65.3% of participants achieved a BMI below 30, no longer meeting the BMI criteria for obesity",
+      "Retatrutide reduced knee osteoarthritis pain by up to 4.3 points (73.1%)",
+      "Retatrutide also demonstrated improvements in obstructive sleep apnea",
+      "Retatrutide is a triple agonist targeting GIP, GLP-1, and glucagon receptors",
+      "Results were presented as a once-weekly injection"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-drove-substantial-improvements",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-type-2-diabetes-transcend-t2d-1-trial",
+    "title": "Retatrutide Phase 3 TRANSCEND-T2D-1 Trial: What the New Type 2 Diabetes Data Shows",
+    "primary_keyword": "retatrutide type 2 diabetes",
+    "secondary_keywords": [
+      "TRANSCEND-T2D-1",
+      "retatrutide A1C",
+      "retatrutide glycaemic control",
+      "GIP GLP-1 glucagon receptor agonist",
+      "retatrutide phase 3"
+    ],
+    "h2_questions": [
+      "What is the TRANSCEND-T2D-1 trial and what did it study?",
+      "How effective is retatrutide for glycaemic control in type 2 diabetes?",
+      "How does retatrutide compare to existing type 2 diabetes treatments?",
+      "What safety findings were reported in the TRANSCEND-T2D-1 trial?",
+      "What do the phase 3 diabetes results mean for retatrutide's path to approval?"
+    ],
+    "key_data_points": [
+      "TRANSCEND-T2D-1 is a double-blind, randomised, phase 3 trial",
+      "The trial studied people with type 2 diabetes and inadequate glycaemic control with diet and exercise",
+      "Retatrutide is described as a GIP, GLP-1, and glucagon receptor agonist",
+      "Published in PubMed on June 6, 2026"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42250575/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-sleep-apnea-obesity-eli-lilly-phase-3",
+    "title": "Eli Lilly: Retatrutide May Help Sleep Apnea — New Phase 3 Data Explained",
+    "primary_keyword": "retatrutide sleep apnea",
+    "secondary_keywords": [
+      "retatrutide obesity",
+      "Eli Lilly retatrutide",
+      "retatrutide benefits",
+      "obstructive sleep apnea weight loss drug"
+    ],
+    "h2_questions": [
+      "What did Eli Lilly's phase 3 data show about retatrutide and sleep apnea?",
+      "How does weight loss from retatrutide relate to sleep apnea improvement?",
+      "What other benefits beyond weight loss did retatrutide show in trials?",
+      "How significant are these findings for people with obesity-related conditions?",
+      "What is the current status of retatrutide's development at Eli Lilly?"
+    ],
+    "key_data_points": [
+      "Retatrutide significantly reduced sleep apnea severity in adults with obesity",
+      "Retatrutide reduced knee osteoarthritis pain by up to 73.1%",
+      "Participants also experienced substantial weight loss",
+      "Findings were shared at a medical conference (referenced in source)"
+    ],
+    "source_url": "https://www.the-independent.com/life-style/health-and-families/eli-lilly-obesity-drug-retatrutide-sleep-apnea-b2991153.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-ada-2026-lilly-novo-obesity-competition",
+    "title": "Retatrutide at ADA 2026: Lilly's Triple Agonist Takes Center Stage in Obesity Race",
+    "primary_keyword": "retatrutide ADA 2026",
+    "secondary_keywords": [
+      "ADA 2026 obesity drugs",
+      "Eli Lilly ADA 2026",
+      "retatrutide vs semaglutide",
+      "obesity drug competition 2026",
+      "triple agonist obesity"
+    ],
+    "h2_questions": [
+      "What retatrutide data was presented at the American Diabetes Association 2026 congress?",
+      "How does retatrutide compare to competitors at ADA 2026?",
+      "Who else is competing in the obesity drug space alongside Eli Lilly?",
+      "What does ADA 2026 mean for the timeline of retatrutide availability?",
+      "Why is the ADA 2026 conference a turning point for GLP-1 and triple agonist drugs?"
+    ],
+    "key_data_points": [
+      "The American Diabetes Association's annual congress featured Eli Lilly and Novo Nordisk presenting obesity drug data",
+      "Several biotechs also presented obesity candidates at ADA 2026",
+      "Retatrutide was among the drugs showcased at the conference",
+      "Some competing candidates have potential to match or outperform existing drugs according to the source"
+    ],
+    "source_url": "https://www.biospace.com/Lilly-Novo-face-off-at-ADA-2026-as-others-seek-to-compete-in-obesity",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
