@@ -1064,7 +1064,7 @@
     "source_url": "https://www.scientificamerican.com/article/retatrutide-results-spark-questions-about-how-rapid-weight-loss-affects-the-body/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "lilly-retatrutide-ada-86th-scientific-sessions-2026",
@@ -1284,6 +1284,117 @@
     ],
     "source_url": "https://www.biospace.com/Lilly-Novo-face-off-at-ADA-2026-as-others-seek-to-compete-in-obesity",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-triple-agonist-type-2-diabetes-trial-blood-sugar-weight-loss",
+    "title": "Retatrutide Triple-Acting Drug Lowers Blood Sugar and Boosts Weight Loss in New Trial",
+    "primary_keyword": "retatrutide type 2 diabetes trial",
+    "secondary_keywords": [
+      "retatrutide blood sugar",
+      "retatrutide weight loss trial",
+      "triple agonist diabetes drug",
+      "retatrutide clinical trial results"
+    ],
+    "h2_questions": [
+      "What did the new retatrutide trial find for type 2 diabetes patients?",
+      "How does retatrutide's triple-acting mechanism work for blood sugar and weight loss?",
+      "What does this trial data mean for retatrutide's path to FDA approval?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as a triple-acting drug targeting type 2 diabetes",
+      "Trial reports retatrutide lowers blood sugar in type 2 diabetes patients",
+      "Trial reports retatrutide boosts weight loss in type 2 diabetes patients",
+      "Data was presented at the American Diabetes Association meeting in New Orleans",
+      "Lilly presented full data from two retatrutide trials: one in treatment-naive type 2 diabetes patients and one in patients with obesity"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42264536/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-sleep-apnea-arthritis-cardiovascular-risk-ada-2026",
+    "title": "Retatrutide Tackles Sleep Apnea, Arthritis, and Heart Risk Alongside Weight Loss, ADA 2026 Data Shows",
+    "primary_keyword": "retatrutide benefits beyond weight loss",
+    "secondary_keywords": [
+      "retatrutide sleep apnea",
+      "retatrutide arthritis",
+      "retatrutide cardiovascular risk",
+      "retatrutide ADA 2026",
+      "retatrutide obesity trial"
+    ],
+    "h2_questions": [
+      "What health benefits beyond weight loss did retatrutide show in new trial data?",
+      "How much did retatrutide reduce knee osteoarthritis pain in the trial?",
+      "What cardiovascular and metabolic improvements were seen with retatrutide?"
+    ],
+    "key_data_points": [
+      "Retatrutide improved blood sugar control in trial participants",
+      "Retatrutide reduced cardiovascular risk factors",
+      "Retatrutide cut knee osteoarthritis pain by around 70 per cent",
+      "Treatment also addressed sleep apnoea",
+      "Eli Lilly says next-gen obesity drug curbs sleep apnea among other benefits",
+      "Data presented at the American Diabetes Association 2026 Scientific Sessions in New Orleans"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15882221/Godzilla-body-weight-arthritis-heart-disease.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-doctors-prescribing-fda-unapproved-safety-concerns",
+    "title": "Doctors Prescribing Unapproved Retatrutide: What the CBS News Investigation Found",
+    "primary_keyword": "retatrutide FDA approval status",
+    "secondary_keywords": [
+      "retatrutide safety concerns",
+      "retatrutide unapproved drug",
+      "retatrutide experimental",
+      "is retatrutide legal",
+      "retatrutide side effects"
+    ],
+    "h2_questions": [
+      "Is retatrutide approved by the FDA?",
+      "Why are some doctors already prescribing retatrutide before FDA approval?",
+      "What are the safety concerns associated with taking retatrutide before it is approved?"
+    ],
+    "key_data_points": [
+      "Retatrutide has not been approved by the U.S. Food and Drug Administration",
+      "Retatrutide is still in clinical trials",
+      "A CBS News investigation found doctors and nurses are promoting and prescribing retatrutide",
+      "Retatrutide has been described as 'Ozempic on steroids'",
+      "Prescribing unapproved retatrutide could come with serious side effects according to the report"
+    ],
+    "source_url": "https://www.cbsnews.com/video/doctors-caught-promoting-unregulated-weight-loss-drug-cbs-news-finds/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-trial-retatrutide-phase-3-active-not-recruiting",
+    "title": "TRIUMPH Phase 3 Trial for Retatrutide Stops Recruiting: What It Means for FDA Approval",
+    "primary_keyword": "retatrutide TRIUMPH trial phase 3",
+    "secondary_keywords": [
+      "retatrutide phase 3 trial update",
+      "retatrutide FDA approval timeline",
+      "retatrutide LY3437943",
+      "retatrutide obesity trial 2026",
+      "retatrutide waitlist"
+    ],
+    "h2_questions": [
+      "What does the TRIUMPH trial status change to 'Active Not Recruiting' mean?",
+      "Who was eligible for the TRIUMPH retatrutide phase 3 trial?",
+      "When is the TRIUMPH trial expected to complete and what comes next for retatrutide?"
+    ],
+    "key_data_points": [
+      "The TRIUMPH trial (NCT07357415) status changed from RECRUITING to ACTIVE_NOT_RECRUITING as of June 9, 2026",
+      "The trial is a study of Retatrutide (LY3437943) in participants without type 2 diabetes who have obesity or overweight",
+      "Primary completion date is October 2028",
+      "The trial is a Phase 3 study"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT07357415",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }

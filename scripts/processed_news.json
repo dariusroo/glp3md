@@ -431,6 +431,54 @@
     {
       "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-drove-substantial-improvements",
       "processedAt": "2026-06-08T12:25:04.126Z"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42264536/",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.cbsnews.com/video/safety-concerns-over-doctors-prescribing-experimental-weight-loss-drug-not-approved-by-fda/",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-sp-500-nasdaq-end-up-as-tech-chipmakers-rebound/articleshow/131596653.cms",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.cbsnews.com/video/doctors-caught-promoting-unregulated-weight-loss-drug-cbs-news-finds/",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/lilly-shares-rise-on-hopes-that-next-gen-drug-will-extend-lead-in-weight-loss-market/articleshow/131590978.cms",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/08/novo-nordisk-eli-lilly-obesity-pills-medicare-coverage.html",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.cbsnews.com/video/doctors-prescribing-weight-loss-drug-not-yet-approved-by-fda-cbs-news-investigation-finds/",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.dailymail.com/health/article-15882221/Godzilla-body-weight-arthritis-heart-disease.html",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.siamnews.net/pr-news/ascletis-reinforces-its-differentiated-obesity-portfolio-at-american-diabetes-association-ada-2026-scientific-sessions-showcasing-asc30-clinical-data-and-exciting-preclinical-findings-from-asc37-an/",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/ascletis-reinforces-its-differentiated-obesity-portfolio-at-american-diabetes-association-ada-2026-scientific-sessions-showcasing-asc30-clinical-data-and-exciting-preclinical-findings-from-asc37-and-asc39-302793255.html",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=183641686",
+      "processedAt": "2026-06-10T11:35:24.473Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT07357415",
+      "processedAt": "2026-06-10T11:35:24.473Z"
     }
   ],
   "trials": {
@@ -466,6 +514,6 @@
     "NCT06297603": "ACTIVE_NOT_RECRUITING",
     "NCT07165028": "RECRUITING",
     "NCT06260722": "ACTIVE_NOT_RECRUITING",
-    "NCT07357415": "RECRUITING"
+    "NCT07357415": "ACTIVE_NOT_RECRUITING"
   }
 }
