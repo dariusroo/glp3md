@@ -1091,7 +1091,7 @@
     "source_url": "https://www.prnewswire.com/news-releases/lilly-to-present-new-data-on-foundayo-mounjaro-and-retatrutide-at-the-american-diabetes-associations-86th-scientific-sessions-building-toward-a-new-era-of-choice-in-diabetes-and-obesity-care-302783855.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "super-ozempic-retatrutide-two-year-results-before-after",
@@ -1394,6 +1394,32 @@
       "The trial is a Phase 3 study"
     ],
     "source_url": "https://clinicaltrials.gov/study/NCT07357415",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-triple-hormone-drug-doctors-prescribing-before-fda-approval",
+    "title": "Retatrutide: The 'Game-Changer' Triple-Hormone Drug Doctors Are Already Prescribing Before FDA Approval",
+    "primary_keyword": "retatrutide",
+    "secondary_keywords": [
+      "retatrutide FDA approval",
+      "retatrutide vs Ozempic",
+      "triple hormone weight loss drug",
+      "retatrutide online"
+    ],
+    "h2_questions": [
+      "What makes retatrutide different from Ozempic and other GLP-1 drugs?",
+      "Is it legal to prescribe or buy retatrutide before FDA approval?",
+      "What did retatrutide clinical trials show about weight loss results?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as a triple-hormone weight loss drug",
+      "Doctors are already prescribing retatrutide despite it not being FDA-approved",
+      "Online sellers are offering retatrutide without FDA approval",
+      "Clinical trials have shown impressive results according to the source"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15886913/retatrutide-weight-loss-diabetes-obesity.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
