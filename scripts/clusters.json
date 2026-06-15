@@ -1139,7 +1139,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT05929066",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "black-market-retatrutide-risks-unlicensed-godzilla-fat-jab",
@@ -1421,6 +1421,56 @@
     ],
     "source_url": "https://www.dailymail.com/health/article-15886913/retatrutide-weight-loss-diabetes-obesity.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-data-cements-lilly-obesity-market-lead-2026",
+    "title": "Retatrutide Data Cements Eli Lilly's Obesity Market Lead: What the Latest Results Mean for You",
+    "primary_keyword": "retatrutide results 2026",
+    "secondary_keywords": [
+      "Eli Lilly retatrutide data",
+      "next-generation obesity drug",
+      "retatrutide clinical data",
+      "LLY stock obesity drug"
+    ],
+    "h2_questions": [
+      "What new retatrutide data did Eli Lilly present?",
+      "How does retatrutide compare to current weight-loss drugs on the market?",
+      "What do the latest results mean for people waiting for retatrutide approval?"
+    ],
+    "key_data_points": [
+      "Eli Lilly shares rose 4% after presenting new retatrutide data",
+      "Analysts and investors expect the data to extend Lilly's dominance of the weight-loss market",
+      "Retatrutide is described as Lilly's next-generation obesity treatment"
+    ],
+    "source_url": "https://www.pharmawire.org/blog/lilly-shares-climb-as-next-generation-obesity-drug-data-cements-market-lead",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "drugmakers-race-next-wave-obesity-drugs-retatrutide",
+    "title": "The Race for the Next Wave of Obesity Drugs: Where Does Retatrutide Fit In?",
+    "primary_keyword": "next wave obesity drugs 2026",
+    "secondary_keywords": [
+      "retatrutide competition",
+      "GLP-1 market 2026",
+      "Novo Nordisk Eli Lilly obesity",
+      "new weight loss drugs"
+    ],
+    "h2_questions": [
+      "Which drugmakers are competing to challenge Novo Nordisk and Eli Lilly in obesity treatment?",
+      "Why do Eli Lilly and Novo Nordisk currently dominate the obesity drug market?",
+      "How does retatrutide position Eli Lilly against new market entrants?"
+    ],
+    "key_data_points": [
+      "Novo Nordisk and Eli Lilly currently dominate the obesity drug market",
+      "Multiple drugmakers are betting they can crack into the obesity drug market",
+      "The obesity drug market is described as a booming market"
+    ],
+    "source_url": "https://www.cnbc.com/2026/06/13/glp-1s-lilly-novo-pfizer-look-to-new-weight-loss-drugs.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
