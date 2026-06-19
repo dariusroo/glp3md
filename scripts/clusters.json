@@ -1199,7 +1199,7 @@
     "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-drove-substantial-improvements",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-phase-3-type-2-diabetes-transcend-t2d-1-trial",
@@ -1470,6 +1470,80 @@
       "The obesity drug market is described as a booming market"
     ],
     "source_url": "https://www.cnbc.com/2026/06/13/glp-1s-lilly-novo-pfizer-look-to-new-weight-loss-drugs.html",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-a-study-to-investigate-the-response-of-participants-with-type-2-diabetes-mellitus-on-once-weekly-retatrutide-to-hypoglycemia-phase-3-complete-what-it-means-for-retatrutide",
+    "title": "TRIUMPH A Study to Investigate the Response of Participants With Type 2 Diabetes Mellitus on Once-Weekly Retatrutide to Hypoglycemia Phase 3 Complete: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide clinical trial results",
+    "secondary_keywords": [
+      "retatrutide phase 3",
+      "TRIUMPH trial",
+      "retatrutide FDA approval"
+    ],
+    "h2_questions": [
+      "What did this TRIUMPH trial study?",
+      "What were the key results from this trial?",
+      "What does trial completion mean for FDA approval?",
+      "When could retatrutide be available to patients?"
+    ],
+    "key_data_points": [
+      "A Study to Investigate the Response of Participants With Type 2 Diabetes Mellitus on Once-Weekly Retatrutide to Hypoglycemia — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-05-04"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT06982846",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-unlicensed-use-risks-patient-experience",
+    "title": "The 'Godzilla' Jab: What Happens When Patients Take Unlicensed Retatrutide ('Reta')?",
+    "primary_keyword": "retatrutide risks",
+    "secondary_keywords": [
+      "unlicensed retatrutide",
+      "reta side effects",
+      "retatrutide patient experience",
+      "GLP-1 unlicensed use"
+    ],
+    "h2_questions": [
+      "What is 'Reta' and why are patients seeking unlicensed retatrutide?",
+      "What effects did the unlicensed retatrutide have on this patient's body?",
+      "Why do doctors say patients will keep taking 'Reta' despite the risks?",
+      "What are the known risks of taking retatrutide before it is officially licensed?"
+    ],
+    "key_data_points": [
+      "A GP with over 20 years of experience reported treating a patient who had been taking unlicensed retatrutide",
+      "The drug is referred to colloquially as 'Reta' and the 'Godzilla' of fat jabs",
+      "The GP described the experience with the patient as leaving her 'shaken'",
+      "The article argues patients will continue taking unlicensed retatrutide regardless of the risks"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15910209/patient-taking-unlicensed-Godzilla-fat-jabs-Reta-risks.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "can-retatrutide-extend-eli-lilly-lead-weight-loss-market",
+    "title": "Can Retatrutide Extend Eli Lilly's Lead in the Weight Loss Market?",
+    "primary_keyword": "retatrutide Eli Lilly",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "Eli Lilly LLY retatrutide",
+      "retatrutide pipeline",
+      "weight loss drug market"
+    ],
+    "h2_questions": [
+      "How could retatrutide extend Eli Lilly's position in the weight loss drug market?",
+      "What does retatrutide's development mean for Eli Lilly investors and patients?",
+      "How does retatrutide compare to other Eli Lilly weight loss treatments currently available?"
+    ],
+    "key_data_points": [
+      "The article raises the question of whether retatrutide can extend Eli Lilly's lead in the weight loss market",
+      "Eli Lilly trades on the NYSE under the ticker LLY"
+    ],
+    "source_url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3dcdebfe-1ddb-469c-93fe-795fa88a777a",
     "priority": "normal",
     "news_triggered": true,
     "status": "pending"

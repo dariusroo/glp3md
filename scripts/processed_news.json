@@ -527,6 +527,26 @@
     {
       "url": "https://www.the-independent.com/life-style/wegovy-pills-weight-loss-diet-injections-b2995784.html",
       "processedAt": "2026-06-17T12:13:11.378Z"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42318576/",
+      "processedAt": "2026-06-19T12:02:13.455Z"
+    },
+    {
+      "url": "https://www.dailymail.com/health/article-15910209/patient-taking-unlicensed-Godzilla-fat-jabs-Reta-risks.html",
+      "processedAt": "2026-06-19T12:02:13.455Z"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-eli-lilly-want-163807854.html",
+      "processedAt": "2026-06-19T12:02:13.455Z"
+    },
+    {
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3dcdebfe-1ddb-469c-93fe-795fa88a777a",
+      "processedAt": "2026-06-19T12:02:13.455Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT06982846",
+      "processedAt": "2026-06-19T12:02:13.455Z"
     }
   ],
   "trials": {
@@ -551,7 +571,7 @@
     "NCT06383390": "ACTIVE_NOT_RECRUITING",
     "NCT06662383": "ACTIVE_NOT_RECRUITING",
     "NCT06859268": "ACTIVE_NOT_RECRUITING",
-    "NCT06982846": "ACTIVE_NOT_RECRUITING",
+    "NCT06982846": "COMPLETED",
     "NCT07467447": "RECRUITING",
     "NCT05929066": "COMPLETED",
     "NCT07035093": "RECRUITING",
