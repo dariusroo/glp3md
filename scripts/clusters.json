@@ -1228,7 +1228,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42250575/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-sleep-apnea-obesity-eli-lilly-phase-3",
@@ -1545,6 +1545,35 @@
     ],
     "source_url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3dcdebfe-1ddb-469c-93fe-795fa88a777a",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "fake-retatrutide-liver-failure-warning-2026",
+    "title": "Counterfeit Retatrutide Linked to Acute Liver Failure: What You Must Know Before Buying",
+    "primary_keyword": "retatrutide liver damage",
+    "secondary_keywords": [
+      "fake retatrutide",
+      "unregistered retatrutide",
+      "retatrutide safety",
+      "counterfeit weight loss drugs"
+    ],
+    "h2_questions": [
+      "What happened to patients who used unregistered retatrutide?",
+      "Where was the counterfeit retatrutide being sold?",
+      "How can you tell if retatrutide is legitimate or fake?",
+      "What should you do if you've purchased retatrutide from an unverified source?"
+    ],
+    "key_data_points": [
+      "Six cases of acute liver toxicity were linked to an unapproved version of retatrutide in Australia",
+      "At least some patients were hospitalised with acute liver failure",
+      "One patient (Megan Hancocks) purchased a drug labelled as retatrutide in cash from a beautician",
+      "She entered acute liver failure within a week of her second dose",
+      "The drug involved is described as unregistered and unverified",
+      "A formal health alert was issued in Victoria, Australia"
+    ],
+    "source_url": "https://www.abc.net.au/news/2026-06-20/liver-failure-fake-retatrutide-health-risk/106814372",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
