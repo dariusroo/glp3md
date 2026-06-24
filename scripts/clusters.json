@@ -1256,7 +1256,7 @@
     "source_url": "https://www.the-independent.com/life-style/health-and-families/eli-lilly-obesity-drug-retatrutide-sleep-apnea-b2991153.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-ada-2026-lilly-novo-obesity-competition",
@@ -1573,6 +1573,30 @@
       "A formal health alert was issued in Victoria, Australia"
     ],
     "source_url": "https://www.abc.net.au/news/2026-06-20/liver-failure-fake-retatrutide-health-risk/106814372",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-compassionate-use-fda-79-year-old-patient",
+    "title": "Eli Lilly Granted Compassionate Use Access to Retatrutide for 79-Year-Old Patient",
+    "primary_keyword": "retatrutide compassionate use",
+    "secondary_keywords": [
+      "retatrutide FDA access",
+      "retatrutide experimental drug",
+      "Eli Lilly retatrutide",
+      "compassionate use obesity drug"
+    ],
+    "h2_questions": [
+      "What is the FDA compassionate use program and how does it apply to retatrutide?",
+      "Why did Eli Lilly and the FDA grant extraordinary access to this experimental obesity drug?",
+      "What does this compassionate use case mean for retatrutide's path to approval?"
+    ],
+    "key_data_points": [
+      "Eli Lilly and the FDA allowed a 79-year-old patient to gain extraordinary access to retatrutide through the FDA's compassionate use program",
+      "Retatrutide is described as an experimental obesity drug"
+    ],
+    "source_url": "https://www.statnews.com/2026/06/23/eli-lilly-unusual-weight-loss-drug-trial-compassionate-use-retatrutide-trump/",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
