@@ -1312,7 +1312,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42264536/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-sleep-apnea-arthritis-cardiovascular-risk-ada-2026",
@@ -1597,6 +1597,59 @@
       "Retatrutide is described as an experimental obesity drug"
     ],
     "source_url": "https://www.statnews.com/2026/06/23/eli-lilly-unusual-weight-loss-drug-trial-compassionate-use-retatrutide-trump/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-compassionate-use-fda-experimental-access-explained",
+    "title": "Retatrutide Compassionate Use: What the Trump Story Reveals About FDA Experimental Access",
+    "primary_keyword": "retatrutide compassionate use",
+    "secondary_keywords": [
+      "retatrutide FDA approval",
+      "retatrutide experimental access",
+      "Eli Lilly retatrutide",
+      "retatrutide not FDA approved"
+    ],
+    "h2_questions": [
+      "What is the FDA compassionate use program and who qualifies?",
+      "Is retatrutide FDA approved yet?",
+      "How did one person gain access to retatrutide outside a clinical trial?",
+      "What does this mean for people on the retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "Retatrutide is manufactured by Eli Lilly and is not FDA approved",
+      "One person gained access to retatrutide through an FDA program that approves experimental treatments for patients traditionally suffering from life-threatening illnesses",
+      "The FDA compassionate use program exists as a pathway for unapproved drugs"
+    ],
+    "source_url": "https://ground.news/article/white-house-bats-down-speculation-that-trump-got-access-to-eli-lilly-obesity-drug-for-compassionate-use",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-eli-lilly-final-boss-weight-loss-drug-what-we-know",
+    "title": "Why Retatrutide Is Being Called the 'Final Boss' of Weight-Loss Drugs",
+    "primary_keyword": "retatrutide weight loss drug",
+    "secondary_keywords": [
+      "Eli Lilly retatrutide",
+      "retatrutide GLP-1",
+      "retatrutide trial",
+      "best weight loss drug 2026"
+    ],
+    "h2_questions": [
+      "What makes retatrutide different from existing GLP-1 drugs?",
+      "Where is retatrutide in its clinical development?",
+      "Why is public interest in retatrutide surging right now?",
+      "How can patients get on the retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as supposedly the final boss of weight-loss drugs",
+      "Retatrutide works even better than existing GLP-1 drugs according to reporting",
+      "Eli Lilly is the manufacturer of retatrutide",
+      "Most pharmaceutical companies are developing their own GLP-1s or weight-loss drugs that work better than existing GLPs"
+    ],
+    "source_url": "https://www.celebitchy.com/983452/who_is_the_well-connected_man_who_is_on_eli_lillys_weight-loss_drug_trial/",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
