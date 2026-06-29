@@ -1341,7 +1341,7 @@
     "source_url": "https://www.dailymail.com/health/article-15882221/Godzilla-body-weight-arthritis-heart-disease.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-doctors-prescribing-fda-unapproved-safety-concerns",
@@ -1651,6 +1651,60 @@
     ],
     "source_url": "https://www.celebitchy.com/983452/who_is_the_well-connected_man_who_is_on_eli_lillys_weight-loss_drug_trial/",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-compounded-peptide-double-strength-overdose-warning",
+    "title": "Unapproved Retatrutide Peptide Found at Double Labeled Strength: Overdose Risk Explained",
+    "primary_keyword": "retatrutide peptide overdose risk",
+    "secondary_keywords": [
+      "unapproved retatrutide",
+      "compounded retatrutide safety",
+      "weight loss peptide warning",
+      "retatrutide label strength"
+    ],
+    "h2_questions": [
+      "What did testing reveal about the unapproved retatrutide peptide's strength?",
+      "Why do doctors say the overdose risk is 'enormous'?",
+      "How does this differ from pharmaceutical-grade retatrutide in development?",
+      "What should patients on a retatrutide waitlist know about unregulated peptides?"
+    ],
+    "key_data_points": [
+      "Testing revealed the product had double the strength of what was listed on its label",
+      "Doctors warned of an 'enormous' risk of overdose",
+      "The product is described as a popular unapproved weight loss peptide",
+      "The warning was reported by ABC Australia on June 26, 2026"
+    ],
+    "source_url": "https://www.abc.net.au/news/2026-06-27/double-strength-retatrutide-peptide-sparks-warning/106844372",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "next-generation-glp1-weight-loss-pills-oral-drugs-2026",
+    "title": "The Race to Oral GLP-1 Weight Loss Pills: What It Means for Retatrutide and the Future of Obesity Treatment",
+    "primary_keyword": "oral GLP-1 weight loss pills",
+    "secondary_keywords": [
+      "next generation weight loss drugs",
+      "GLP-1 oral medication",
+      "retatrutide alternatives",
+      "obesity drug pipeline 2026"
+    ],
+    "h2_questions": [
+      "Which drug companies are developing oral GLP-1-based weight loss pills?",
+      "How do oral GLP-1 drugs compare to injectable options like retatrutide?",
+      "What does increased competition in the GLP-1 space mean for patients waiting for retatrutide?",
+      "When could oral GLP-1 medications become widely available?"
+    ],
+    "key_data_points": [
+      "Multiple drug companies are developing GLP-1-based drugs that can be taken orally",
+      "The race to build next-generation weight loss pills is described as 'heating up'",
+      "The drugs are described as GLP-1-based",
+      "Reported by Gizmodo on June 26, 2026"
+    ],
+    "source_url": "https://gizmodo.com/the-race-to-build-the-next-generation-of-weight-loss-pills-is-heating-up-2000778419",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
