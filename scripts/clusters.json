@@ -1369,7 +1369,7 @@
     "source_url": "https://www.cbsnews.com/video/doctors-caught-promoting-unregulated-weight-loss-drug-cbs-news-finds/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "triumph-trial-retatrutide-phase-3-active-not-recruiting",
@@ -1705,6 +1705,59 @@
     ],
     "source_url": "https://gizmodo.com/the-race-to-build-the-next-generation-of-weight-loss-pills-is-heating-up-2000778419",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-blood-pressure-lipid-effects-meta-analysis",
+    "title": "Retatrutide's Effect on Blood Pressure and Lipid Levels: What the Latest Meta-Analysis Shows",
+    "primary_keyword": "retatrutide blood pressure lipid levels",
+    "secondary_keywords": [
+      "retatrutide clinical trial data",
+      "retatrutide cardiovascular effects",
+      "retatrutide meta-analysis",
+      "triple receptor agonist weight loss"
+    ],
+    "h2_questions": [
+      "What did the systematic review and meta-analysis find about retatrutide and blood pressure?",
+      "How does retatrutide affect lipid levels compared to other GLP-1 medications?",
+      "What do randomized controlled trials reveal about retatrutide's cardiovascular profile?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as a novel triple receptor agonist",
+      "The findings come from a systematic review and meta-analysis of randomized controlled trials",
+      "The study examined effects on both blood pressure and lipid levels"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42371360/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "illegal-retatrutide-use-liver-damage-risks",
+    "title": "Doctors Warn: Illegal Use of 'Reta' Is a 'Huge, Unregulated Human Experiment' Amid Liver Damage Concerns",
+    "primary_keyword": "retatrutide safety risks",
+    "secondary_keywords": [
+      "retatrutide liver damage",
+      "Reta weight loss drug",
+      "retatrutide illegal use",
+      "retatrutide clinical trials status"
+    ],
+    "h2_questions": [
+      "Why is using retatrutide outside of clinical trials considered dangerous?",
+      "What liver damage risks have been linked to retatrutide use?",
+      "How is retatrutide different from approved medications like Mounjaro and Ozempic?",
+      "What do doctors say about the unregulated use of 'Reta'?"
+    ],
+    "key_data_points": [
+      "Retatrutide is known colloquially as 'Reta'",
+      "The drug is still undergoing clinical trials and has not been approved by health officials",
+      "Doctors have described illegal use as a 'huge, unregulated human experiment'",
+      "The drug has been linked to liver damage",
+      "Retatrutide is described as an appetite-suppressing medication similar to Mounjaro and Ozempic"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15937761/Illegal-use-Reta-weight-loss-drug-huge-unregulated-human-experiment-warn-doctors-jab-linked-liver-damage.html",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
