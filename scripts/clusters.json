@@ -1396,7 +1396,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT07357415",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-triple-hormone-drug-doctors-prescribing-before-fda-approval",
@@ -1757,6 +1757,55 @@
       "Retatrutide is described as an appetite-suppressing medication similar to Mounjaro and Ozempic"
     ],
     "source_url": "https://www.dailymail.com/health/article-15937761/Illegal-use-Reta-weight-loss-drug-huge-unregulated-human-experiment-warn-doctors-jab-linked-liver-damage.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-learning-memory-diabetic-rats-study",
+    "title": "Retatrutide May Improve Learning and Memory in Diabetic Rats: What the New Research Shows",
+    "primary_keyword": "retatrutide cognitive effects",
+    "secondary_keywords": [
+      "retatrutide brain benefits",
+      "GLP-3 diabetes cognitive function",
+      "retatrutide learning memory",
+      "retatrutide diabetic rats study"
+    ],
+    "h2_questions": [
+      "What did the new retatrutide study on learning and memory find?",
+      "How might retatrutide affect the brain in people with diabetes?",
+      "What does this research mean for retatrutide's future clinical applications?"
+    ],
+    "key_data_points": [
+      "Study published July 1, 2026 in PubMed examined effects of retatrutide on learning and memory",
+      "Study used streptozotocin-induced diabetic male rats as the model"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42385950/",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "man-dies-unapproved-retatrutide-reta-uk-warning",
+    "title": "Urgent Warning: Man Dies After Taking Unapproved 'Reta' Weight-Loss Drug, 76 Others Seriously Injured",
+    "primary_keyword": "unapproved retatrutide danger",
+    "secondary_keywords": [
+      "Reta weight loss drug death",
+      "counterfeit retatrutide safety",
+      "unapproved GLP-1 drug risks",
+      "retatrutide black market warning"
+    ],
+    "h2_questions": [
+      "What is the unapproved drug 'Reta' and how is it different from pharmaceutical-grade retatrutide?",
+      "What serious side effects and injuries have been reported from unapproved 'Reta'?",
+      "How can patients safely access retatrutide and avoid dangerous counterfeit versions?"
+    ],
+    "key_data_points": [
+      "A UK patient died after taking an unapproved drug referred to as 'Reta', nicknamed the 'Godzilla' of weight-loss jabs",
+      "76 additional people suffered serious side effects after taking the unapproved drug",
+      "The Daily Mail reported the story on June 30, 2026"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-15940951/man-dies-unapproved-weight-loss-drug-Reta-76-injuries.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
