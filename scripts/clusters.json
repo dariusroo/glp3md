@@ -1495,7 +1495,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT06982846",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-unlicensed-use-risks-patient-experience",
@@ -1807,6 +1807,110 @@
     ],
     "source_url": "https://www.dailymail.com/health/article-15940951/man-dies-unapproved-weight-loss-drug-Reta-76-injuries.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-death-report-unapproved-weight-loss-jab-fact-check",
+    "title": "Retatrutide Death Report: Fact-Checking Claims About the Unapproved Weight Loss Jab",
+    "primary_keyword": "retatrutide death",
+    "secondary_keywords": [
+      "retatrutide unapproved",
+      "retatrutide safety",
+      "retatrutide side effects",
+      "unapproved weight loss jab"
+    ],
+    "h2_questions": [
+      "Has someone died after taking retatrutide?",
+      "Is retatrutide currently approved for use?",
+      "What are the known risks of taking unapproved weight loss injections?",
+      "Where does the retatrutide death claim come from and is it verified?"
+    ],
+    "key_data_points": [
+      "A fact-check article published July 9, 2026 addresses claims of a death linked to retatrutide",
+      "Retatrutide is described as an unapproved weight loss jab in the source headline"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42425580/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "trump-fda-expanded-access-retatrutide-eli-lilly",
+    "title": "Is Trump Receiving Retatrutide? Democratic Lawmakers Question FDA Expanded Access Mystery",
+    "primary_keyword": "Trump retatrutide",
+    "secondary_keywords": [
+      "FDA expanded access retatrutide",
+      "Eli Lilly weight loss drug",
+      "retatrutide unapproved use",
+      "retatrutide 2026"
+    ],
+    "h2_questions": [
+      "What is the FDA expanded access program and how does retatrutide fit in?",
+      "Why are Democratic lawmakers questioning whether Trump is receiving an unapproved obesity drug?",
+      "What has Eli Lilly said about the mystery drug recipient?",
+      "What does this mean for retatrutide's path to approval?"
+    ],
+    "key_data_points": [
+      "Democratic lawmakers have questioned whether President Trump is the anonymous 79-year-old receiving a still-unapproved obesity drug via an FDA program",
+      "The drug in question is identified as an Eli Lilly weight-loss drug",
+      "The story was published July 8, 2026 by FactCheck.org"
+    ],
+    "source_url": "https://www.factcheck.org/2026/07/democratic-lawmakers-question-if-trump-is-mystery-drug-recipient/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "obesity-drugs-weight-loss-quality-of-life-bmj-review",
+    "title": "Do Weight Loss Drugs Like Mounjaro and Wegovy Actually Improve Quality of Life? BMJ Review Findings",
+    "primary_keyword": "weight loss drugs quality of life",
+    "secondary_keywords": [
+      "retatrutide vs Wegovy",
+      "obesity drug side effects",
+      "GLP-1 quality of life",
+      "Mounjaro quality of life"
+    ],
+    "h2_questions": [
+      "What did the BMJ review find about obesity drugs and quality of life?",
+      "How many trials were included in the review?",
+      "What side effects were linked to higher weight loss in the study?",
+      "How might retatrutide compare to existing drugs like Wegovy and Mounjaro?"
+    ],
+    "key_data_points": [
+      "A BMJ review analyzed 262 trials of weight loss drugs including Mounjaro and Wegovy",
+      "The review found most obesity drugs cause no meaningful improvement in quality of life",
+      "Higher weight loss was linked to increased side effects and muscle wastage according to the review",
+      "Despite substantial weight loss, most obesity drugs did not meaningfully improve quality of life or heart health"
+    ],
+    "source_url": "https://britbrief.co.uk/health/public/weight-loss-drugs-fail-to-boost-quality-of-life.html",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "weight-loss-drug-market-competition-2026-developers",
+    "title": "Weight Loss Drug Market 2026: Where Does Retatrutide Fit as Competition Heats Up?",
+    "primary_keyword": "weight loss drug market 2026",
+    "secondary_keywords": [
+      "retatrutide competition",
+      "Eli Lilly obesity drug pipeline",
+      "GLP-1 drug market",
+      "Novo Nordisk competition"
+    ],
+    "h2_questions": [
+      "Which companies are competing in the weight loss drug market in 2026?",
+      "How does retatrutide fit into the broader competitive landscape?",
+      "Who currently dominates the obesity drug market?",
+      "What does increased competition mean for retatrutide's timeline and access?"
+    ],
+    "key_data_points": [
+      "The weight-loss drug market is described as booming as of July 2026",
+      "Biotech firms are racing to capture share of a fast-growing sector dominated by Novo Nordisk and other established players",
+      "The Reuters factbox was published July 7, 2026"
+    ],
+    "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/factbox-weight-loss-drug-developers-161224841.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
