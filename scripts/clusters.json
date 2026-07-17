@@ -1599,7 +1599,7 @@
     "source_url": "https://www.statnews.com/2026/06/23/eli-lilly-unusual-weight-loss-drug-trial-compassionate-use-retatrutide-trump/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-compassionate-use-fda-experimental-access-explained",
@@ -1911,6 +1911,34 @@
     ],
     "source_url": "https://finance.yahoo.com/sectors/healthcare/articles/factbox-weight-loss-drug-developers-161224841.html",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-trial-retatrutide-insulin-secretion-active-not-recruiting",
+    "title": "TRIUMPH Trial Update: Retatrutide Insulin Secretion & Sensitivity Study Completes Enrollment",
+    "primary_keyword": "retatrutide TRIUMPH trial",
+    "secondary_keywords": [
+      "retatrutide type 2 diabetes",
+      "retatrutide insulin secretion",
+      "retatrutide insulin sensitivity",
+      "NCT06982859",
+      "retatrutide phase 3 trial"
+    ],
+    "h2_questions": [
+      "What is the TRIUMPH trial studying about retatrutide?",
+      "What does 'Active, Not Recruiting' mean for the TRIUMPH trial?",
+      "When will the TRIUMPH trial results be available?",
+      "What does this trial mean for people with Type 2 Diabetes waiting for retatrutide?"
+    ],
+    "key_data_points": [
+      "Trial NCT06982859 status changed from RECRUITING to ACTIVE_NOT_RECRUITING",
+      "The study evaluates the effect of retatrutide on insulin secretion and insulin sensitivity",
+      "Participants are adults with Type 2 Diabetes Mellitus",
+      "Primary completion is expected in December 2026"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT06982859",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }

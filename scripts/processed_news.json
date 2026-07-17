@@ -759,6 +759,10 @@
     {
       "url": "https://www.medicalnewstoday.com/articles/obesity-drugs-linked-to-weight-loss-not-improvements-quality-of-life",
       "processedAt": "2026-07-15T09:57:13.335Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT06982859",
+      "processedAt": "2026-07-17T09:51:58.356Z"
     }
   ],
   "trials": {
@@ -787,7 +791,7 @@
     "NCT07467447": "RECRUITING",
     "NCT05929066": "COMPLETED",
     "NCT07035093": "RECRUITING",
-    "NCT06982859": "RECRUITING",
+    "NCT06982859": "ACTIVE_NOT_RECRUITING",
     "NCT05929079": "ACTIVE_NOT_RECRUITING",
     "NCT07226947": "RECRUITING",
     "NCT07232719": "ACTIVE_NOT_RECRUITING",
