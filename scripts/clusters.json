@@ -1679,7 +1679,7 @@
     "source_url": "https://www.abc.net.au/news/2026-06-27/double-strength-retatrutide-peptide-sparks-warning/106844372",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "next-generation-glp1-weight-loss-pills-oral-drugs-2026",
@@ -1938,6 +1938,36 @@
       "Primary completion is expected in December 2026"
     ],
     "source_url": "https://clinicaltrials.gov/study/NCT06982859",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-trial-retatrutide-obesity-chronic-low-back-pain-active-not-recruiting",
+    "title": "TRIUMPH Trial Update: Retatrutide Phase 3 Study for Obesity and Chronic Low Back Pain Stops Recruiting",
+    "primary_keyword": "retatrutide TRIUMPH trial",
+    "secondary_keywords": [
+      "retatrutide phase 3",
+      "retatrutide chronic low back pain",
+      "retatrutide obesity trial",
+      "LY3437943 trial",
+      "NCT07035093"
+    ],
+    "h2_questions": [
+      "What is the TRIUMPH trial and what is it studying?",
+      "What does 'Active, Not Recruiting' mean for the retatrutide TRIUMPH trial?",
+      "When is the TRIUMPH trial expected to complete and what happens next?",
+      "How does this trial milestone affect retatrutide's path to FDA approval?",
+      "Can I still join the TRIUMPH trial for retatrutide?"
+    ],
+    "key_data_points": [
+      "Trial NCT07035093 status changed from RECRUITING to ACTIVE_NOT_RECRUITING",
+      "Study full name: A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight and Chronic Low Back Pain",
+      "Trial is Phase 3",
+      "Primary completion date is September 2027",
+      "Status change recorded July 23, 2026"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT07035093",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"

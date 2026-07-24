@@ -775,6 +775,26 @@
     {
       "url": "https://finance.yahoo.com/markets/stocks/articles/claude-ai-disagrees-president-trump-220248271.html",
       "processedAt": "2026-07-22T10:21:00.448Z"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42493254/",
+      "processedAt": "2026-07-24T10:11:34.418Z"
+    },
+    {
+      "url": "https://tim.blog/2026/07/22/dr-andrew-huberman-protocols-transcript/",
+      "processedAt": "2026-07-24T10:11:34.418Z"
+    },
+    {
+      "url": "https://www.yahoo.com/news/science/articles/fda-panel-review-popular-peptides-110714234.html",
+      "processedAt": "2026-07-24T10:11:34.418Z"
+    },
+    {
+      "url": "https://www.cbc.ca/news/health/fda-peptides-review-popularity-9.7279082",
+      "processedAt": "2026-07-24T10:11:34.418Z"
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT07035093",
+      "processedAt": "2026-07-24T10:11:34.418Z"
     }
   ],
   "trials": {
@@ -802,7 +822,7 @@
     "NCT06982846": "COMPLETED",
     "NCT07467447": "RECRUITING",
     "NCT05929066": "COMPLETED",
-    "NCT07035093": "RECRUITING",
+    "NCT07035093": "ACTIVE_NOT_RECRUITING",
     "NCT06982859": "ACTIVE_NOT_RECRUITING",
     "NCT05929079": "ACTIVE_NOT_RECRUITING",
     "NCT07226947": "RECRUITING",
