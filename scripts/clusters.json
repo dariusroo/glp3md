@@ -1731,7 +1731,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42371360/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "illegal-retatrutide-use-liver-damage-risks",
@@ -1968,6 +1968,113 @@
       "Status change recorded July 23, 2026"
     ],
     "source_url": "https://clinicaltrials.gov/study/NCT07035093",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-triumph-2-triumph-3-results-2026",
+    "title": "Retatrutide Phase 3 Results: TRIUMPH-2 and TRIUMPH-3 Trials Deliver Significant Weight Loss and A1C Improvements",
+    "primary_keyword": "retatrutide phase 3 results",
+    "secondary_keywords": [
+      "TRIUMPH-2 trial",
+      "TRIUMPH-3 trial",
+      "retatrutide weight loss",
+      "triple agonist obesity drug",
+      "retatrutide type 2 diabetes"
+    ],
+    "h2_questions": [
+      "What did the TRIUMPH-2 trial show for retatrutide in adults with obesity and type 2 diabetes?",
+      "What were the TRIUMPH-3 results for patients with severe obesity and cardiovascular disease?",
+      "How do these Phase 3 results compare to earlier retatrutide trial data?",
+      "What do these results mean for people on the retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "In TRIUMPH-2, adults with obesity or overweight and type 2 diabetes lost up to an average of 49.6 lbs (20.8%) at 80 weeks",
+      "TRIUMPH-3 enrolled adults with severe obesity and established cardiovascular disease, with or without type 2 diabetes",
+      "These represent the fourth and fifth positive Phase 3 readouts for retatrutide",
+      "Retatrutide is described as a triple-G (triple agonist) drug"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-fda-filing-early-2027-eli-lilly",
+    "title": "Eli Lilly to File Retatrutide for FDA Approval in Early 2027: What It Means for Patients",
+    "primary_keyword": "retatrutide FDA approval 2027",
+    "secondary_keywords": [
+      "retatrutide FDA filing",
+      "Eli Lilly retatrutide approval",
+      "retatrutide biologics license application",
+      "when will retatrutide be available"
+    ],
+    "h2_questions": [
+      "When will Eli Lilly file retatrutide for FDA approval?",
+      "What is a biologics license application and what does it mean for retatrutide?",
+      "What timeline should patients expect after the Q1 2027 FDA filing?",
+      "Why should you join the retatrutide waitlist now?"
+    ],
+    "key_data_points": [
+      "Eli Lilly announced it will file for FDA approval of retatrutide in the first quarter of 2027",
+      "Lilly will submit a biologics license application (BLA) to the FDA",
+      "The filing announcement followed positive Phase 3 trial results"
+    ],
+    "source_url": "https://www.europesays.com/ie/601993/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-22-6-percent-weight-loss-phase-3-cardiovascular",
+    "title": "Retatrutide Hits 22.6% Weight Loss in Phase 3 Trials: What the Cardiovascular Data Shows",
+    "primary_keyword": "retatrutide weight loss results",
+    "secondary_keywords": [
+      "retatrutide 22.6% weight loss",
+      "retatrutide cardiovascular outcomes",
+      "triple-G drug obesity",
+      "retatrutide phase 3 obesity"
+    ],
+    "h2_questions": [
+      "What weight loss percentage did retatrutide achieve in Phase 3 trials?",
+      "Did retatrutide meet its primary endpoints in the Phase 3 obesity trials?",
+      "What does the cardiovascular risk data show for retatrutide?",
+      "How does 22.6% weight loss compare to other GLP-1 medications?"
+    ],
+    "key_data_points": [
+      "Retatrutide hit 22.6% weight loss in Phase 3 obesity trials",
+      "The drug met the primary endpoints of a pair of Phase 3 obesity trials",
+      "The peak weight loss fell short of previous trials conducted in different patient populations",
+      "The trials failed to prove the medication reduces cardiovascular risk"
+    ],
+    "source_url": "https://biztoc.com/x/586808f410bfa8ab",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-56-pounds-average-weight-loss-80-weeks",
+    "title": "Retatrutide Helped Patients Lose an Average of 56 Pounds: Breaking Down the 80-Week Data",
+    "primary_keyword": "retatrutide 56 pounds weight loss",
+    "secondary_keywords": [
+      "retatrutide average weight loss",
+      "retatrutide 80 weeks results",
+      "how much weight can you lose on retatrutide",
+      "retatrutide vs Zepbound"
+    ],
+    "h2_questions": [
+      "How much weight did people lose on retatrutide in the clinical trials?",
+      "How long does it take to see results on retatrutide?",
+      "What patient population achieved the 56-pound average weight loss?",
+      "When could retatrutide be available after the FDA filing?"
+    ],
+    "key_data_points": [
+      "Participants lost an average of nearly 56 pounds after 80 weeks on retatrutide",
+      "Eli Lilly announced it would file for FDA approval following these study results",
+      "Eli Lilly is the maker of Mounjaro and Zepbound"
+    ],
+    "source_url": "https://biztoc.com/x/49ba3fc30110c0fd",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
