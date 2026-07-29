@@ -1759,7 +1759,7 @@
     "source_url": "https://www.dailymail.com/health/article-15937761/Illegal-use-Reta-weight-loss-drug-huge-unregulated-human-experiment-warn-doctors-jab-linked-liver-damage.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-learning-memory-diabetic-rats-study",
@@ -2076,6 +2076,35 @@
     ],
     "source_url": "https://biztoc.com/x/49ba3fc30110c0fd",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "asc37-once-monthly-glp-1-triple-agonist-superior-weight-loss-mouse-model",
+    "title": "ASC37: Once-Monthly Triple Agonist Shows 88% Greater Weight Loss Than Tirzepatide in Mouse Study",
+    "primary_keyword": "GLP-1 GIPR GCGR triple agonist weight loss",
+    "secondary_keywords": [
+      "ASC37 retatrutide comparison",
+      "once monthly GLP-1 injection",
+      "triple peptide agonist obesity",
+      "Ascletis weight loss drug",
+      "retatrutide alternatives 2026"
+    ],
+    "h2_questions": [
+      "What is ASC37 and how does it differ from existing GLP-1 medications?",
+      "What did the diet-induced obese mouse model study show about ASC37?",
+      "How does ASC37 compare to tirzepatide in preclinical results?",
+      "What does once-monthly dosing mean for patients waiting for better obesity treatments?",
+      "What are the next steps for ASC37 in clinical development?"
+    ],
+    "key_data_points": [
+      "ASC37 demonstrated statistically significant 88% greater relative body weight reduction compared to tirzepatide in a diet-induced obese (DIO) mouse model",
+      "ASC37 is a GLP-1R/GIPR/GCGR triple peptide agonist administered subcutaneously once monthly",
+      "Both a once-monthly subcutaneous formulation and an oral formulation are planned for regulatory submission",
+      "The drug is developed by Ascletis"
+    ],
+    "source_url": "https://www.prnewswire.com/news-releases/ascletis-announces-once-monthly-subcutaneously-administered-glp-1rgiprgcgr-triple-peptide-agonist-asc37-demonstrated-superior-weight-loss-in-a-diet-induced-obese-mouse-model-302835122.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
