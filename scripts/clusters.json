@@ -1808,7 +1808,7 @@
     "source_url": "https://www.dailymail.com/health/article-15940951/man-dies-unapproved-weight-loss-drug-Reta-76-injuries.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-death-report-unapproved-weight-loss-jab-fact-check",
@@ -2105,6 +2105,52 @@
     ],
     "source_url": "https://www.prnewswire.com/news-releases/ascletis-announces-once-monthly-subcutaneously-administered-glp-1rgiprgcgr-triple-peptide-agonist-asc37-demonstrated-superior-weight-loss-in-a-diet-induced-obese-mouse-model-302835122.html",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-a-study-of-retatrutide-ly3437943-in-participants-with-type-2-diabetes-mellitus-who-have-obesity-or-overweight-phase-3-complete-what-it-means-for-retatrutide",
+    "title": "TRIUMPH A Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight Phase 3 Complete: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide clinical trial results",
+    "secondary_keywords": [
+      "retatrutide phase 3",
+      "TRIUMPH trial",
+      "retatrutide FDA approval"
+    ],
+    "h2_questions": [
+      "What did this TRIUMPH trial study?",
+      "What were the key results from this trial?",
+      "What does trial completion mean for FDA approval?",
+      "When could retatrutide be available to patients?"
+    ],
+    "key_data_points": [
+      "A Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-06-16"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT05929079",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "triumph-a-study-of-retatrutide-ly3437943-in-participants-with-obesity-and-cardiovascular-disease-phase-3-complete-what-it-means-for-retatrutide",
+    "title": "TRIUMPH A Study of Retatrutide (LY3437943) in Participants With Obesity and Cardiovascular Disease Phase 3 Complete: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide clinical trial results",
+    "secondary_keywords": [
+      "retatrutide phase 3",
+      "TRIUMPH trial",
+      "retatrutide FDA approval"
+    ],
+    "h2_questions": [
+      "What did this TRIUMPH trial study?",
+      "What were the key results from this trial?",
+      "What does trial completion mean for FDA approval?",
+      "When could retatrutide be available to patients?"
+    ],
+    "key_data_points": [
+      "A Study of Retatrutide (LY3437943) in Participants With Obesity and Cardiovascular Disease — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-04-16"
+    ],
+    "source_url": "https://clinicaltrials.gov/study/NCT05882045",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
