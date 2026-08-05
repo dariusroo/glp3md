@@ -1885,7 +1885,7 @@
     "source_url": "https://www.factcheck.org/2026/07/democratic-lawmakers-question-if-trump-is-mystery-drug-recipient/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "obesity-drugs-weight-loss-quality-of-life-bmj-review",
@@ -2150,6 +2150,33 @@
       "A Study of Retatrutide (LY3437943) in Participants With Obesity and Cardiovascular Disease — status changed from ACTIVE_NOT_RECRUITING to COMPLETED. Primary completion: 2026-04-16"
     ],
     "source_url": "https://clinicaltrials.gov/study/NCT05882045",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-early-access-before-fda-approval",
+    "title": "Eli Lilly Offering Early Access to Retatrutide Before FDA Approval: What Patients Need to Know",
+    "primary_keyword": "retatrutide early access",
+    "secondary_keywords": [
+      "retatrutide FDA approval",
+      "Eli Lilly retatrutide",
+      "next-gen obesity drug early access",
+      "retatrutide waitlist"
+    ],
+    "h2_questions": [
+      "What is Eli Lilly's early access program for retatrutide?",
+      "Who qualifies for early access to retatrutide before FDA approval?",
+      "How does retatrutide early access differ from waiting for full FDA approval?",
+      "How can patients get on a retatrutide waitlist for early access?"
+    ],
+    "key_data_points": [
+      "Eli Lilly announced it would allow a limited number of patients early access to retatrutide before U.S. FDA approval",
+      "The early access program is described as available to 'a limited number of patients'",
+      "Retatrutide is characterized as a next-generation obesity drug",
+      "The announcement was made on August 3, 2026"
+    ],
+    "source_url": "https://wixx.com/2026/08/03/eli-lilly-to-offer-early-access-to-next-gen-obesity-drug-to-some-patients/",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
