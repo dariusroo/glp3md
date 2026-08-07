@@ -1966,7 +1966,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT06982859",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "triumph-trial-retatrutide-obesity-chronic-low-back-pain-active-not-recruiting",
@@ -2177,6 +2177,61 @@
       "The announcement was made on August 3, 2026"
     ],
     "source_url": "https://wixx.com/2026/08/03/eli-lilly-to-offer-early-access-to-next-gen-obesity-drug-to-some-patients/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-early-access-retatrutide-before-fda-approval",
+    "title": "Eli Lilly to Offer Early Access to Retatrutide Before FDA Approval",
+    "primary_keyword": "retatrutide early access",
+    "secondary_keywords": [
+      "retatrutide before FDA approval",
+      "triple G weight loss drug",
+      "reta drug access",
+      "retatrutide expanded access"
+    ],
+    "h2_questions": [
+      "What is Eli Lilly's early access program for retatrutide?",
+      "Who qualifies for early access to retatrutide before FDA approval?",
+      "How does retatrutide compare to Ozempic and Mounjaro for weight loss?",
+      "When is retatrutide expected to receive FDA approval?"
+    ],
+    "key_data_points": [
+      "Eli Lilly said it would allow a limited number of patients to have early access to retatrutide before U.S. FDA approval",
+      "Retatrutide is also known as 'reta' and the 'Triple G' weight loss drug",
+      "Retatrutide has been shown to produce dramatically greater weight loss than Ozempic and Mounjaro",
+      "Retatrutide is described as an experimental drug that delivers a triple receptor mechanism"
+    ],
+    "source_url": "https://us.headtopics.com/news/eli-lilly-to-offer-early-access-to-next-gen-obesity-drug-to-86272482",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-q2-2026-earnings-obesity-drugs-revenue-growth",
+    "title": "Eli Lilly Q2 2026 Earnings: Obesity Drug Revenue Surges as Retatrutide Pipeline Advances",
+    "primary_keyword": "Eli Lilly retatrutide 2026",
+    "secondary_keywords": [
+      "Eli Lilly obesity drug revenue",
+      "Mounjaro revenue 2026",
+      "Zepbound sales 2026",
+      "Lilly GLP-1 earnings"
+    ],
+    "h2_questions": [
+      "How did Eli Lilly's obesity drugs perform in Q2 2026?",
+      "What does Eli Lilly's revenue growth mean for the retatrutide launch timeline?",
+      "How much revenue did Mounjaro and Zepbound generate in Q2 2026?",
+      "Did Eli Lilly raise its 2026 sales forecast and what does that signal?"
+    ],
+    "key_data_points": [
+      "Mounjaro revenue jumped 91% to $9.9 billion in Q2 2026",
+      "Zepbound brought in $4.9 billion in Q2 2026",
+      "Eli Lilly beat Wall Street estimates for Q2 2026",
+      "Eli Lilly raised its full-year 2026 sales forecast",
+      "Eli Lilly stock soared on strong demand for weight loss drugs"
+    ],
+    "source_url": "https://qz.com/eli-lilly-earnings-q2-2026-revenue-forecast-weight-loss-080526",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
