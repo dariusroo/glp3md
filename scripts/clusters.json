@@ -1996,7 +1996,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT07035093",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-phase-3-triumph-2-triumph-3-results-2026",
@@ -2233,6 +2233,82 @@
     ],
     "source_url": "https://qz.com/eli-lilly-earnings-q2-2026-revenue-forecast-weight-loss-080526",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-compassionate-use-us-2026",
+    "title": "Retatrutide Opens to Compassionate Use in the US: What It Means for Patients",
+    "primary_keyword": "retatrutide compassionate use",
+    "secondary_keywords": [
+      "retatrutide availability",
+      "retatrutide US access",
+      "retatrutide before FDA approval",
+      "retatrutide waitlist"
+    ],
+    "h2_questions": [
+      "What is compassionate use and how does it apply to retatrutide?",
+      "Who qualifies for retatrutide compassionate use in the US?",
+      "How does the Trump speculation connect to retatrutide's compassionate use opening?",
+      "Is compassionate use the same as FDA approval for retatrutide?",
+      "How can patients on the retatrutide waitlist pursue compassionate use access?"
+    ],
+    "key_data_points": [
+      "Retatrutide has opened to compassionate use in the US as of August 2026",
+      "Speculation that Trump took retatrutide preceded the compassionate use announcement"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42567543/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-fda-filing-delayed-early-2027",
+    "title": "Retatrutide FDA Filing Pushed to Early 2027: What the Delay Means for Cost and Coverage",
+    "primary_keyword": "retatrutide FDA approval date",
+    "secondary_keywords": [
+      "retatrutide 2027",
+      "retatrutide insurance coverage",
+      "retatrutide cost",
+      "retatrutide filing delay"
+    ],
+    "h2_questions": [
+      "When will Lilly file retatrutide with the FDA?",
+      "What does a 2027 FDA filing mean for when patients can access retatrutide?",
+      "Will insurance cover retatrutide and when will we know?",
+      "How much will retatrutide cost once approved?",
+      "What should patients on the retatrutide waitlist do while they wait for the FDA filing?"
+    ],
+    "key_data_points": [
+      "Lilly will not file retatrutide with the FDA until early 2027",
+      "No price or coverage decision can be pointed to as of August 2026"
+    ],
+    "source_url": "https://www.medicaldaily.com/retatrutide-fda-filing-2027-cost-coverage-questions-476937",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-q2-2026-earnings-retatrutide-pipeline",
+    "title": "Eli Lilly Posts 48% Revenue Growth in Q2 2026: What It Signals for the Retatrutide Pipeline",
+    "primary_keyword": "Eli Lilly retatrutide pipeline 2026",
+    "secondary_keywords": [
+      "Eli Lilly Q2 2026 earnings",
+      "Lilly cardiometabolic revenue",
+      "retatrutide development update",
+      "LLY stock retatrutide"
+    ],
+    "h2_questions": [
+      "What drove Eli Lilly's 48% revenue growth in Q2 2026?",
+      "What did the Q2 2026 earnings call reveal about the retatrutide timeline?",
+      "How does Lilly's financial performance affect retatrutide's development and launch plans?"
+    ],
+    "key_data_points": [
+      "Eli Lilly reported 48% revenue growth in Q2 2026",
+      "Revenue growth was driven primarily by continued demand for cardiometabolic medications"
+    ],
+    "source_url": "https://www.marketbeat.com/instant-alerts/eli-lilly-and-company-q2-earnings-call-highlights-2026-08-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
