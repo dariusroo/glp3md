@@ -2024,7 +2024,7 @@
     "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-22-6-percent-weight-loss-phase-3-cardiovascular",
@@ -2309,6 +2309,31 @@
     ],
     "source_url": "https://www.marketbeat.com/instant-alerts/eli-lilly-and-company-q2-earnings-call-highlights-2026-08-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-q2-2026-earnings-retatrutide-pipeline-update",
+    "title": "Eli Lilly Posts Blowout Q2 2026 Results and Raises Outlook: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide 2026 update",
+    "secondary_keywords": [
+      "Eli Lilly earnings 2026",
+      "LLY Q2 results",
+      "retatrutide pipeline",
+      "retatrutide news"
+    ],
+    "h2_questions": [
+      "What did Eli Lilly report in its Q2 2026 earnings?",
+      "How does Lilly's raised outlook affect the retatrutide development timeline?",
+      "What does Lilly's blowout growth mean for patients waiting for retatrutide?"
+    ],
+    "key_data_points": [
+      "Eli Lilly reported second-quarter revenue results on August 5, 2026",
+      "Eli Lilly raised its financial outlook following the Q2 2026 report",
+      "Wall Street described the quarter as 'blowout' growth"
+    ],
+    "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-posts-blowout-085111847.html",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
