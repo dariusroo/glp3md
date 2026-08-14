@@ -2051,7 +2051,7 @@
     "source_url": "https://biztoc.com/x/586808f410bfa8ab",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-56-pounds-average-weight-loss-80-weeks",
@@ -2334,6 +2334,63 @@
     ],
     "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-posts-blowout-085111847.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-sues-six-companies-illegal-retatrutide-black-market",
+    "title": "Eli Lilly Files Six Lawsuits to Shut Down Illegal Retatrutide Black Market",
+    "primary_keyword": "retatrutide black market",
+    "secondary_keywords": [
+      "retatrutide lawsuits",
+      "Eli Lilly retatrutide",
+      "retatrutide compounding",
+      "illegal retatrutide"
+    ],
+    "h2_questions": [
+      "Why is Eli Lilly suing companies over retatrutide if it isn't approved yet?",
+      "Who is Eli Lilly suing and what types of companies are involved?",
+      "Is it safe to buy retatrutide from compounding pharmacies or peptide sellers?",
+      "What does Eli Lilly's crackdown mean for people waiting for retatrutide?"
+    ],
+    "key_data_points": [
+      "Eli Lilly filed six lawsuits on August 12, 2026 against U.S. companies accused of illegally selling black-market versions of retatrutide",
+      "Retatrutide has not been approved by any regulatory agency for human use",
+      "The six defendants include four peptide sellers, a California med spa, and a compounding pharmacy",
+      "Lilly called on online platforms, payment companies, and regulators to shut down the illegal retatrutide black market",
+      "Lilly described the situation as a 'public health crisis'",
+      "Lilly has been warning consumers not to take knockoff versions for almost two years",
+      "Lilly called the six lawsuits the beginning of a concerted effort to crack down on a vast illicit market"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-calls-online-platforms-payment-companies-and-regulators",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-side-effects-first-users-godzilla-shot",
+    "title": "Retatrutide Side Effects: What First Users Are Reporting About the 'Godzilla Shot'",
+    "primary_keyword": "retatrutide side effects",
+    "secondary_keywords": [
+      "retatrutide reta",
+      "retatrutide Godzilla shot",
+      "retatrutide user experience",
+      "retatrutide weight loss drug"
+    ],
+    "h2_questions": [
+      "Why is retatrutide called the 'Godzilla shot'?",
+      "What side effects are early retatrutide users reporting?",
+      "How does retatrutide compare to other GLP-1 weight loss drugs in terms of tolerability?",
+      "Should you wait for FDA-approved retatrutide rather than black-market versions?"
+    ],
+    "key_data_points": [
+      "Retatrutide has gained the nickname 'the Godzilla shot' among users",
+      "Some users are also referring to retatrutide as 'reta'",
+      "First users have described at least one side effect as 'genuinely unbearable'",
+      "One user reported the side effect was so severe they said 'my soul left my body'"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-16031841/retatrutide-weight-loss-effects.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
