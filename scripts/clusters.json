@@ -2077,7 +2077,7 @@
     "source_url": "https://biztoc.com/x/49ba3fc30110c0fd",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "asc37-once-monthly-glp-1-triple-agonist-superior-weight-loss-mouse-model",
@@ -2391,6 +2391,88 @@
     ],
     "source_url": "https://www.dailymail.com/health/article-16031841/retatrutide-weight-loss-effects.html",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-lawsuits-retatrutide-black-market",
+    "title": "Eli Lilly Files Six Lawsuits to Shut Down Black-Market Retatrutide Sales",
+    "primary_keyword": "retatrutide black market",
+    "secondary_keywords": [
+      "eli lilly retatrutide lawsuits",
+      "retatrutide illegal sales",
+      "retatrutide experimental drug",
+      "retatrutide obesity medicine"
+    ],
+    "h2_questions": [
+      "Why is Eli Lilly suing over retatrutide?",
+      "What is retatrutide and why is it not yet approved?",
+      "Where is black-market retatrutide being sold?",
+      "What are the risks of buying unapproved retatrutide?"
+    ],
+    "key_data_points": [
+      "Eli Lilly filed six new lawsuits targeting black-market sales of retatrutide",
+      "Retatrutide is described as a still-experimental obesity medicine",
+      "Lilly states retatrutide has delivered powerful results in its research"
+    ],
+    "source_url": "https://biztoc.com/x/cc269d55f404fc7f",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-unapproved-sold-medical-spas-clinics",
+    "title": "Unapproved Retatrutide Is Being Sold at Medical Spas Nationwide — What You Need to Know",
+    "primary_keyword": "retatrutide unapproved drug",
+    "secondary_keywords": [
+      "retatrutide medical spas",
+      "retatrutide clinics",
+      "retatrutide safety risks",
+      "retatrutide not FDA approved",
+      "retatrutide poison control"
+    ],
+    "h2_questions": [
+      "Is retatrutide approved anywhere in the world?",
+      "Why are medical spas and clinics selling unapproved retatrutide?",
+      "How dangerous is unapproved retatrutide from med spas?",
+      "What does the 265 percent rise in poison center exposures mean for patients?"
+    ],
+    "key_data_points": [
+      "Retatrutide is not approved anywhere in the world",
+      "Clinics and med spas are selling retatrutide despite lack of approval",
+      "Poison center exposures related to retatrutide rose 265 percent in early 2026"
+    ],
+    "source_url": "https://www.medicaldaily.com/retatrutide-unapproved-obesity-drug-medical-spas-clinics-risk-477315",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-vials-fail-identity-testing-brooklyn-smoke-shop",
+    "title": "Lab Tests Expose Fake Retatrutide: Four Vials From Brooklyn Smoke Shop Fail Identity Testing",
+    "primary_keyword": "retatrutide fake vials",
+    "secondary_keywords": [
+      "retatrutide lab testing",
+      "retatrutide counterfeit",
+      "retatrutide purity",
+      "peptide safety testing",
+      "retatrutide smoke shop"
+    ],
+    "h2_questions": [
+      "What did independent lab testing find in the retatrutide vials?",
+      "Where were the failed retatrutide vials purchased?",
+      "What are the dangers of counterfeit retatrutide products?",
+      "How can patients verify they are getting real retatrutide?"
+    ],
+    "key_data_points": [
+      "Four sealed vials purchased at a Brooklyn smoke shop were independently lab tested",
+      "The independent lab could not confirm the presence of retatrutide or NAD+ in any of the four samples",
+      "Purity and quantity of contents were indeterminate in all four vials",
+      "Testing was conducted and published by Peptide Critic",
+      "Findings were published on August 13, 2026"
+    ],
+    "source_url": "https://www.prnewswire.com/news-releases/four-vials-bought-at-brooklyn-smoke-shop-fail-identity-testing-302851353.html",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
