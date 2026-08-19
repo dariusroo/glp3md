@@ -2129,7 +2129,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT05929079",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "triumph-a-study-of-retatrutide-ly3437943-in-participants-with-obesity-and-cardiovascular-disease-phase-3-complete-what-it-means-for-retatrutide",
@@ -2472,6 +2472,56 @@
       "Findings were published on August 13, 2026"
     ],
     "source_url": "https://www.prnewswire.com/news-releases/four-vials-bought-at-brooklyn-smoke-shop-fail-identity-testing-302851353.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-cardiovascular-risk-biomarkers-obesity-diabetes",
+    "title": "Retatrutide Improves Cardiovascular Risk Biomarkers in Adults With Obesity and Type 2 Diabetes",
+    "primary_keyword": "retatrutide cardiovascular benefits",
+    "secondary_keywords": [
+      "retatrutide obesity",
+      "retatrutide type 2 diabetes",
+      "retatrutide clinical data",
+      "retatrutide heart health"
+    ],
+    "h2_questions": [
+      "What cardiovascular risk biomarkers did retatrutide improve in the study?",
+      "Did retatrutide show cardiovascular benefits in people without type 2 diabetes too?",
+      "What does this research mean for people waiting for retatrutide approval?"
+    ],
+    "key_data_points": [
+      "Study examined retatrutide-associated improvements in cardiovascular risk biomarkers",
+      "Study population included adults with obesity with or without type 2 diabetes",
+      "Published in PubMed on August 17, 2026"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42608321/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-uk-growth-2026",
+    "title": "Eli Lilly's Growth Story Continues: UK Retatrutide News Adds New Chapter",
+    "primary_keyword": "Eli Lilly retatrutide UK",
+    "secondary_keywords": [
+      "Eli Lilly LLY retatrutide",
+      "retatrutide UK approval",
+      "Eli Lilly revenue growth",
+      "retatrutide availability"
+    ],
+    "h2_questions": [
+      "What did Eli Lilly announce about retatrutide in the UK?",
+      "How does Eli Lilly's Q2 2026 performance relate to retatrutide's rollout?",
+      "What does Eli Lilly's growth trajectory mean for retatrutide's timeline?"
+    ],
+    "key_data_points": [
+      "Eli Lilly reported 48% revenue growth in Q2 2026",
+      "A UK-related retatrutide development was described as additional good news following the Q2 earnings report",
+      "Article published August 16, 2026"
+    ],
+    "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-growth-story-101834928.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
