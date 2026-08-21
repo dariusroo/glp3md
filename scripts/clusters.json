@@ -2152,7 +2152,7 @@
     "source_url": "https://clinicaltrials.gov/study/NCT05882045",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-retatrutide-early-access-before-fda-approval",
@@ -2523,6 +2523,31 @@
     ],
     "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-growth-story-101834928.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-retatrutide-next-trillion-dollar-opportunity",
+    "title": "Eli Lilly's Next $1 Trillion Opportunity: What It Means for Retatrutide",
+    "primary_keyword": "retatrutide Eli Lilly",
+    "secondary_keywords": [
+      "retatrutide pipeline",
+      "Eli Lilly GLP-1",
+      "retatrutide waitlist",
+      "Eli Lilly stock forecast"
+    ],
+    "h2_questions": [
+      "Why are analysts calling retatrutide Eli Lilly's next trillion-dollar opportunity?",
+      "What does Eli Lilly's pipeline look like beyond current GLP-1 drugs?",
+      "How does this investor confidence affect the retatrutide timeline for patients?"
+    ],
+    "key_data_points": [
+      "Eli Lilly described as the first pharmaceutical company ever valued above $1 trillion",
+      "Analysts argue the market is still undervaluing Eli Lilly's pipeline",
+      "Retatrutide is identified as a key component of Eli Lilly's next growth opportunity"
+    ],
+    "source_url": "https://247wallst.com/investing/2026/08/19/stock-forecast-the-market-is-sleeping-on-eli-lillys-next-1-trillion-opportunity/",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
