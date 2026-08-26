@@ -2206,7 +2206,7 @@
     "source_url": "https://us.headtopics.com/news/eli-lilly-to-offer-early-access-to-next-gen-obesity-drug-to-86272482",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-q2-2026-earnings-obesity-drugs-revenue-growth",
@@ -2548,6 +2548,90 @@
     ],
     "source_url": "https://247wallst.com/investing/2026/08/19/stock-forecast-the-market-is-sleeping-on-eli-lillys-next-1-trillion-opportunity/",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-biologic-classification-fda-dispute-exclusivity-delay",
+    "title": "Retatrutide Biologic vs. Small Molecule Dispute: How an Amino Acid Fight Could Delay Cheaper Generics by Years",
+    "primary_keyword": "retatrutide biologic classification",
+    "secondary_keywords": [
+      "retatrutide exclusivity",
+      "retatrutide generic",
+      "retatrutide FDA",
+      "retatrutide cost",
+      "Eli Lilly retatrutide"
+    ],
+    "h2_questions": [
+      "What is the dispute between Eli Lilly and the FDA over retatrutide's classification?",
+      "What is the difference between a biologic and a small molecule drug, and why does it matter for retatrutide?",
+      "How long could cheaper retatrutide competition be delayed depending on the court ruling?",
+      "What does this mean for patients currently on the retatrutide waitlist?"
+    ],
+    "key_data_points": [
+      "A federal court fight is underway over whether retatrutide counts as a biologic",
+      "If classified as a biologic, patients could wait 12 years for cheaper competition",
+      "If classified as a small molecule drug, the exclusivity period would be five years",
+      "The dispute centers on an amino acid classification question between Eli Lilly and the FDA"
+    ],
+    "source_url": "https://www.medicaldaily.com/retatrutide-biologic-classification-dispute-exclusivity-cost-477677",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "eli-lilly-sues-six-companies-black-market-retatrutide",
+    "title": "Eli Lilly Files Six Lawsuits Against Companies Selling Unauthorized Retatrutide — What It Means for Patients",
+    "primary_keyword": "Eli Lilly retatrutide lawsuit",
+    "secondary_keywords": [
+      "black market retatrutide",
+      "compounded retatrutide",
+      "illegal retatrutide",
+      "retatrutide safety",
+      "GLP-1 counterfeit"
+    ],
+    "h2_questions": [
+      "Why is Eli Lilly suing six companies over retatrutide?",
+      "What risks do patients face from unauthorized or black-market versions of retatrutide?",
+      "How does this legal action affect the availability of compounded retatrutide?",
+      "What should patients on the retatrutide waitlist know about sourcing the drug safely?"
+    ],
+    "key_data_points": [
+      "Eli Lilly filed six lawsuits on August 12, 2026 against US companies",
+      "The companies are accused of illegally selling black-market versions of an unapproved drug",
+      "Novo Nordisk was noted as being clear of involvement in this legal action",
+      "The lawsuits are part of broader GLP-1 market competition dynamics"
+    ],
+    "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-suing-six-190400861.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "counterfeit-peptide-liver-damage-warning-retatrutide-safety",
+    "title": "Counterfeit Peptide Warning: Liver Damage Cases Highlight the Danger of Unregulated GLP-1 Alternatives",
+    "primary_keyword": "counterfeit peptide liver damage",
+    "secondary_keywords": [
+      "fake retatrutide danger",
+      "compounded GLP-1 safety",
+      "black market peptide risk",
+      "retatrutide safety",
+      "GLP-1 hospitalization"
+    ],
+    "h2_questions": [
+      "What is causing acute liver damage in counterfeit peptide users?",
+      "How many cases of liver toxicity have been reported and where?",
+      "Why are doctors warning about a contaminated batch of counterfeit peptides?",
+      "How can patients waiting for retatrutide protect themselves from unsafe alternatives?"
+    ],
+    "key_data_points": [
+      "Doctors are warning of a possible contaminated batch of counterfeit peptides",
+      "Seven cases of liver toxicity have been reported in Victoria, Australia",
+      "Cases have resulted in hospitalisations",
+      "The warning was issued on August 24, 2026"
+    ],
+    "source_url": "https://www.abc.net.au/news/2026-08-24/contaminated-peptide-tests-liver-damage-hospitalisations/107070478",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
