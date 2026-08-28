@@ -2234,7 +2234,7 @@
     "source_url": "https://qz.com/eli-lilly-earnings-q2-2026-revenue-forecast-weight-loss-080526",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-compassionate-use-us-2026",
@@ -2632,6 +2632,84 @@
     ],
     "source_url": "https://www.abc.net.au/news/2026-08-24/contaminated-peptide-tests-liver-damage-hospitalisations/107070478",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-black-market-eli-lilly-payment-processors-enforcement",
+    "title": "Eli Lilly Targets Payment Processors and Social Platforms to Combat Black-Market Retatrutide Sales",
+    "primary_keyword": "retatrutide black market",
+    "secondary_keywords": [
+      "retatrutide FDA enforcement",
+      "retatrutide unapproved",
+      "buy retatrutide safely",
+      "retatrutide Eli Lilly"
+    ],
+    "h2_questions": [
+      "Why is retatrutide being sold on the black market?",
+      "What is Eli Lilly doing to stop unauthorized retatrutide sales?",
+      "Why has FDA enforcement stalled on black-market retatrutide?",
+      "What are the risks of buying retatrutide from unregulated sources?"
+    ],
+    "key_data_points": [
+      "Eli Lilly is pressuring credit card companies and social media platforms to cut off retatrutide sellers",
+      "FDA enforcement has stalled at the warning-letter stage",
+      "Retatrutide is currently unapproved for sale"
+    ],
+    "source_url": "https://www.medicaldaily.com/retatrutide-black-market-payment-processors-enforcement-gap-477686",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-black-market-dangers-doctors-alarmed",
+    "title": "Doctors Alarmed by Growing Black Market for Retatrutide: What Patients Need to Know",
+    "primary_keyword": "retatrutide unapproved black market",
+    "secondary_keywords": [
+      "retatrutide safety",
+      "retatrutide risks",
+      "unapproved obesity drugs",
+      "retatrutide doctors warning"
+    ],
+    "h2_questions": [
+      "What is driving demand for black-market retatrutide?",
+      "What do doctors say about the risks of unapproved retatrutide?",
+      "How is retatrutide being sold without FDA approval?",
+      "What is the safe and legal way to access retatrutide?"
+    ],
+    "key_data_points": [
+      "A massive black market for unapproved retatrutide has alarmed doctors",
+      "Medical professionals warn that 'promising isn't the same as proven'",
+      "Demand for unapproved obesity drugs is described as potentially dangerous"
+    ],
+    "source_url": "https://futurism.com/health-medicine/massive-black-market-obesity-drugs-glp1s-retatrutide",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "black-market-peptides-high-dose-risk-testing",
+    "title": "Lab Testing Reveals High-Dose Risks in Black-Market Peptides Including Unapproved GLP-1 Drugs",
+    "primary_keyword": "black market peptides risk",
+    "secondary_keywords": [
+      "unapproved peptides danger",
+      "black market GLP-1",
+      "retatrutide peptide safety",
+      "unregulated weight loss drugs"
+    ],
+    "h2_questions": [
+      "What did lab testing reveal about black-market peptides?",
+      "Why are people buying unapproved peptides on social media?",
+      "What high-dose risks were found in unapproved peptide products?",
+      "How does this affect people seeking retatrutide?"
+    ],
+    "key_data_points": [
+      "A chemical testing lab has begun testing unapproved peptides due to booming demand",
+      "New testing revealed high-dose risks in black-market peptide products",
+      "Demand for unapproved peptides is booming on social media"
+    ],
+    "source_url": "https://www.abc.net.au/news/2026-08-28/black-market-peptides-dangerous-doses/107059092",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
