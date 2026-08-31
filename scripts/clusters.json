@@ -2260,7 +2260,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42567543/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-fda-filing-delayed-early-2027",
@@ -2710,6 +2710,29 @@
     ],
     "source_url": "https://www.abc.net.au/news/2026-08-28/black-market-peptides-dangerous-doses/107059092",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-trial-data-peptides-til-analysis",
+    "title": "Retatrutide Phase 3 Trial Data: What the Latest Landmark Results Mean for Patients",
+    "primary_keyword": "retatrutide phase 3 trials",
+    "secondary_keywords": [
+      "retatrutide clinical trial results",
+      "retatrutide multi-receptor",
+      "retatrutide 2026 data"
+    ],
+    "h2_questions": [
+      "What did the landmark Phase 3 retatrutide trials find?",
+      "Why is multi-receptor metabolic research significant for retatrutide?",
+      "When will retatrutide Phase 3 data impact patient access and availability?"
+    ],
+    "key_data_points": [
+      "Peptides TIL has officially added Retatrutide to its public analytical repository in response to scientific momentum surrounding multi-receptor metabolic research",
+      "The coverage is described as responding to 'extraordinary scientific momentum' surrounding Phase 3 trials"
+    ],
+    "source_url": "https://apnews.com/press-release/getnews/press-release-057c882a404347efbfc8520c4eb7482f",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
