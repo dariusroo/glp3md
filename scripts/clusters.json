@@ -2286,7 +2286,7 @@
     "source_url": "https://www.medicaldaily.com/retatrutide-fda-filing-2027-cost-coverage-questions-476937",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-q2-2026-earnings-retatrutide-pipeline",
@@ -2732,6 +2732,32 @@
       "The coverage is described as responding to 'extraordinary scientific momentum' surrounding Phase 3 trials"
     ],
     "source_url": "https://apnews.com/press-release/getnews/press-release-057c882a404347efbfc8520c4eb7482f",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-outperforms-tirzepatide-mounjaro-major-review",
+    "title": "Retatrutide Outperforms Mounjaro (Tirzepatide) for Weight Loss, Major Review Finds",
+    "primary_keyword": "retatrutide vs tirzepatide weight loss",
+    "secondary_keywords": [
+      "retatrutide vs Mounjaro",
+      "retatrutide weight loss results",
+      "best GLP-1 weight loss injection",
+      "retatrutide review 2026"
+    ],
+    "h2_questions": [
+      "What did the major review find about retatrutide vs tirzepatide?",
+      "How much weight can patients lose with tirzepatide (Mounjaro)?",
+      "Why is retatrutide being called the 'Godzilla' weight loss injection?",
+      "When will retatrutide be available compared to Mounjaro?"
+    ],
+    "key_data_points": [
+      "Tirzepatide (Mounjaro) can help patients shed more than a fifth of their body weight after around 17 months",
+      "A major review found retatrutide outperforms tirzepatide for weight loss",
+      "Tirzepatide has been nicknamed 'King Kong' while retatrutide is being called 'Godzilla' in reference to their relative potency"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-16092637/King-Kong-weight-loss-jab-Mounjaro-set-lose-crown-new-Godzilla-injection-retatrutide-outperforms-major-review-finds.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
