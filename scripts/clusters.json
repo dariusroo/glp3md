@@ -2335,7 +2335,7 @@
     "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-posts-blowout-085111847.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-sues-six-companies-illegal-retatrutide-black-market",
@@ -2758,6 +2758,80 @@
       "Tirzepatide has been nicknamed 'King Kong' while retatrutide is being called 'Godzilla' in reference to their relative potency"
     ],
     "source_url": "https://www.dailymail.com/health/article-16092637/King-Kong-weight-loss-jab-Mounjaro-set-lose-crown-new-Godzilla-injection-retatrutide-outperforms-major-review-finds.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "fda-glp1-import-alert-fraudulent-compounded-semaglutide-warning",
+    "title": "FDA Issues Import Alert on GLP-1 Ingredients and Warns of Fraudulent Compounded Semaglutide Vials",
+    "primary_keyword": "FDA GLP-1 import alert",
+    "secondary_keywords": [
+      "compounded semaglutide fraud",
+      "fake pharmacy semaglutide",
+      "GLP-1 safety warning",
+      "FDA compounded GLP-1"
+    ],
+    "h2_questions": [
+      "What is the FDA's new import alert on GLP-1 ingredients?",
+      "How can patients identify fraudulent compounded semaglutide vials?",
+      "What does the FDA crackdown on fake GLP-1 pharmacies mean for patients waiting for approved drugs like retatrutide?"
+    ],
+    "key_data_points": [
+      "FDA has issued an import alert on GLP-1 ingredients citing quality concerns",
+      "FDA warns of fraudulent compounded semaglutide vials carrying false pharmacy names",
+      "FDA is screening GLP-1 ingredients at the border"
+    ],
+    "source_url": "https://www.medicaldaily.com/fda-glp1-import-alert-compounded-semaglutide-fraudulent-labels-478119",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "fda-warning-letters-unapproved-retatrutide-peptide-vendors-2026",
+    "title": "FDA Issues Multiple Warning Letters to Peptide Vendors Selling Unapproved Drugs Including Retatrutide",
+    "primary_keyword": "FDA warning letters peptide vendors",
+    "secondary_keywords": [
+      "unapproved retatrutide peptides",
+      "FDA misbranded peptides",
+      "illegal retatrutide online",
+      "FDA enforcement GLP-1 peptides"
+    ],
+    "h2_questions": [
+      "Which peptide companies received FDA warning letters in August 2026?",
+      "Why is the FDA cracking down on vendors selling unapproved peptides like retatrutide?",
+      "What are the risks of purchasing retatrutide from unregulated peptide suppliers?"
+    ],
+    "key_data_points": [
+      "FDA issued warning letters to Peptide Partners LLC, TXP Innovations LLC dba Tex Peptides, Peak Performance Peptides, Royal Peptides LLC, and NuScience Peptides LLC on 08/24/2026",
+      "All warning letters cite violations related to unapproved new drugs and misbranding",
+      "Warning letters were published on September 1, 2026"
+    ],
+    "source_url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "china-unapproved-retatrutide-peptides-us-customs-fraud",
+    "title": "Chinese Manufacturers Shipping Unapproved Retatrutide Peptides Into US Homes via Customs Fraud",
+    "primary_keyword": "unapproved retatrutide from China",
+    "secondary_keywords": [
+      "illegal retatrutide peptides",
+      "retatrutide customs fraud",
+      "Chinese retatrutide suppliers",
+      "retatrutide safety risks"
+    ],
+    "h2_questions": [
+      "How are Chinese manufacturers smuggling unapproved retatrutide peptides into the United States?",
+      "What are the health and legal risks of buying retatrutide from overseas suppliers?",
+      "Why is waiting for FDA-approved retatrutide the safest option for patients?"
+    ],
+    "key_data_points": [
+      "Chinese chemical manufacturers linked to fentanyl precursors are shipping unapproved retatrutide peptides into U.S. homes via customs fraud",
+      "The report draws a connection between illicit fentanyl supply networks and unapproved peptide shipments"
+    ],
+    "source_url": "https://www.foxnews.com/opinion/china-found-new-illicit-drug-market-america-must-shut-down",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
