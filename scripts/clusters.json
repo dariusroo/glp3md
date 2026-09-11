@@ -2445,7 +2445,7 @@
     "source_url": "https://www.medicaldaily.com/retatrutide-unapproved-obesity-drug-medical-spas-clinics-risk-477315",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-vials-fail-identity-testing-brooklyn-smoke-shop",
@@ -2832,6 +2832,58 @@
       "The report draws a connection between illicit fentanyl supply networks and unapproved peptide shipments"
     ],
     "source_url": "https://www.foxnews.com/opinion/china-found-new-illicit-drug-market-america-must-shut-down",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-legal-battle-eli-lilly-rfk-7th-circuit",
+    "title": "Eli Lilly vs. RFK Jr.: The Retatrutide Legal Battle Heading to the 7th Circuit Court of Appeals",
+    "primary_keyword": "retatrutide legal status",
+    "secondary_keywords": [
+      "retatrutide FDA regulations",
+      "retatrutide Eli Lilly",
+      "weight loss drug regulations 2026",
+      "retatrutide availability"
+    ],
+    "h2_questions": [
+      "What is the legal dispute between Eli Lilly and RFK Jr. over retatrutide?",
+      "What does the 7th Circuit Court of Appeals case mean for retatrutide access?",
+      "How could this regulatory battle affect when retatrutide becomes available to patients?"
+    ],
+    "key_data_points": [
+      "The case is being heard in front of the 7th Circuit Court of Appeals",
+      "The dispute is framed as Eli Lilly vs. RFK Jr.",
+      "The case centers on rules around retatrutide"
+    ],
+    "source_url": "https://reason.com/2026/09/10/can-a-new-weight-loss-treatment-escape-the-legal-and-regulatory-thicket/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "black-market-retatrutide-risks-dangers-whatsapp-dealers",
+    "title": "Black Market Retatrutide: The Dangers of Sourcing 'Reta' Outside Legal Channels",
+    "primary_keyword": "black market retatrutide",
+    "secondary_keywords": [
+      "retatrutide risks",
+      "retatrutide side effects",
+      "retatrutide vs Mounjaro",
+      "illegal retatrutide"
+    ],
+    "h2_questions": [
+      "What is driving people to source retatrutide through black market channels?",
+      "What are the documented risks and side effects of unregulated retatrutide?",
+      "How does black market retatrutide differ from legally prescribed weight loss injections?"
+    ],
+    "key_data_points": [
+      "Retatrutide is described as a triple-action peptide drug",
+      "Retatrutide is colloquially referred to as 'reta'",
+      "The Daily Mail account describes obtaining retatrutide via a dealer on WhatsApp",
+      "The author reported side effects serious enough to result in an A&E (emergency room) visit",
+      "The author switched from Mounjaro to black market retatrutide"
+    ],
+    "source_url": "https://www.dailymail.com/lifestyle/fitness-wellbeing/article-16117121/Mounjaro-black-market-reta-fat-jabs-Shona-Sibary-weight-loss.html",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
