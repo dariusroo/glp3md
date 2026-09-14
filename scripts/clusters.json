@@ -2474,7 +2474,7 @@
     "source_url": "https://www.prnewswire.com/news-releases/four-vials-bought-at-brooklyn-smoke-shop-fail-identity-testing-302851353.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-cardiovascular-risk-biomarkers-obesity-diabetes",
@@ -2885,6 +2885,59 @@
     ],
     "source_url": "https://www.dailymail.com/lifestyle/fitness-wellbeing/article-16117121/Mounjaro-black-market-reta-fat-jabs-Shona-Sibary-weight-loss.html",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-black-market-uk-what-to-know",
+    "title": "Retatrutide on the Black Market: What 'Reta' Users Are Saying and Why It Matters",
+    "primary_keyword": "retatrutide black market UK",
+    "secondary_keywords": [
+      "reta weight loss",
+      "retatrutide vs Mounjaro",
+      "buy retatrutide UK",
+      "retatrutide side effects"
+    ],
+    "h2_questions": [
+      "What is 'reta' and why are people calling it the Godzilla of weight-loss shots?",
+      "What are the risks of sourcing retatrutide outside of clinical or approved channels?",
+      "How does retatrutide compare to Mounjaro and other approved GLP-1 drugs?",
+      "Why are people turning to unofficial sources while waiting for retatrutide approval?"
+    ],
+    "key_data_points": [
+      "The Daily Mail published a first-person account of someone using retatrutide sourced via an unsolicited package delivered to their mailbox",
+      "The article frames retatrutide as surpassing Mounjaro in perceived potency, using the nickname 'reta'",
+      "The piece was published September 10, 2026"
+    ],
+    "source_url": "https://www.dailymail.com/health/article-16121525/retatrutide-weight-loss-uk-black-market.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "obesity-drug-pipeline-2036-retatrutide-emerging-therapies",
+    "title": "The Obesity Drug Pipeline Through 2036: Where Does Retatrutide Fit Among 7 Emerging Therapies?",
+    "primary_keyword": "retatrutide obesity drug pipeline",
+    "secondary_keywords": [
+      "obesity market 2036",
+      "GLP-1 pipeline",
+      "new weight loss drugs",
+      "retatrutide approval timeline"
+    ],
+    "h2_questions": [
+      "What does 27% CAGR growth in the obesity market mean for patients waiting on new drugs like retatrutide?",
+      "Which 7 emerging therapies are expected to drive obesity market growth through 2036?",
+      "How does retatrutide stack up against other pipeline candidates such as enicepatide and elecoglipron?",
+      "What does explosive market growth signal about the future availability of retatrutide?"
+    ],
+    "key_data_points": [
+      "The obesity treatment market is projected to grow at a 27% CAGR through 2036 according to DelveInsight",
+      "7 promising emerging therapies are cited as key growth drivers",
+      "Named pipeline candidates include RGT-075 (Regor Therapeutics), MET-002o (D&D Pharmatech/Pfizer), enicepatide (CT-388; Roche/Carmot Therapeutics), and elecoglipron (AstraZeneca)",
+      "Report published September 10, 2026 via PR Newswire"
+    ],
+    "source_url": "https://www.prnewswire.com/news-releases/obesity-market-set-for-explosive-27-cagr-growth-by-2036-fueled-by-7-promising-emerging-therapies--delveinsight-302874670.html",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
