@@ -2499,7 +2499,7 @@
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42608321/",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-retatrutide-uk-growth-2026",
@@ -2938,6 +2938,89 @@
     ],
     "source_url": "https://www.prnewswire.com/news-releases/obesity-market-set-for-explosive-27-cagr-growth-by-2036-fueled-by-7-promising-emerging-therapies--delveinsight-302874670.html",
     "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-triumph-2-results-easd-2026-weight-loss-type-2-diabetes",
+    "title": "Retatrutide TRIUMPH-2 Trial Results: What the EASD 2026 Data Means for Obesity and Type 2 Diabetes",
+    "primary_keyword": "retatrutide TRIUMPH-2 results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide type 2 diabetes",
+      "retatrutide EASD 2026",
+      "triple hormone receptor agonist",
+      "retatrutide A1C"
+    ],
+    "h2_questions": [
+      "What did the TRIUMPH-2 trial find about retatrutide for obesity and type 2 diabetes?",
+      "What is retatrutide and how does it work as a triple hormone receptor agonist?",
+      "What other retatrutide data is Lilly presenting at EASD 2026?",
+      "When could retatrutide become available and how can I join a waitlist?"
+    ],
+    "key_data_points": [
+      "Pivotal results from TRIUMPH-2 showed retatrutide delivered substantial weight loss in people with obesity and type 2 diabetes",
+      "TRIUMPH-2 also showed A1C improvements in participants with obesity and type 2 diabetes",
+      "Retatrutide is described as an investigational triple hormone receptor agonist",
+      "Lilly is presenting retatrutide data at EASD 2026 alongside Foundayo and eloraTZP data"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-foundayo-retatrutide-and-eloratzp-easd",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "cagrilintide-retatrutide-combination-therapy-weight-loss-study",
+    "title": "Cagrilintide + Retatrutide Combination: What New Research Shows About Enhanced Weight Loss",
+    "primary_keyword": "cagrilintide retatrutide combination",
+    "secondary_keywords": [
+      "retatrutide combination therapy",
+      "retatrutide weight loss research",
+      "retatrutide metabolic outcomes",
+      "obesity treatment combination"
+    ],
+    "h2_questions": [
+      "What did the cagrilintide and retatrutide combination study find?",
+      "What metabolic outcomes were improved with the combination therapy?",
+      "How does combining cagrilintide with retatrutide compare to either drug alone?",
+      "What does this research mean for the future of retatrutide treatment?"
+    ],
+    "key_data_points": [
+      "Study found cagrilintide and retatrutide combination therapy enhances weight loss compared to individual agents in obese male rats",
+      "Combination therapy also improved metabolic outcomes in the study population",
+      "Study was conducted in obese male rats",
+      "Published on PubMed September 15, 2026"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42744908/",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "unapproved-retatrutide-peptide-torn-oesophagus-tga-warning",
+    "title": "TGA Warning: Patient Suffers Torn Oesophagus After Using Unapproved Peptide Labelled as Retatrutide",
+    "primary_keyword": "unapproved retatrutide peptide danger",
+    "secondary_keywords": [
+      "fake retatrutide",
+      "retatrutide safety",
+      "TGA retatrutide warning",
+      "unregulated weight loss peptides",
+      "retatrutide side effects"
+    ],
+    "h2_questions": [
+      "What happened to the patient who used an unapproved peptide labelled as retatrutide?",
+      "Why is the TGA warning the public about unapproved retatrutide peptides?",
+      "How can you tell if a retatrutide product is legitimate or counterfeit?",
+      "What is the safe and legal way to access retatrutide when it becomes available?"
+    ],
+    "key_data_points": [
+      "Australia's Therapeutic Goods Administration (TGA) issued a warning about an unapproved weight-loss peptide labelled as retatrutide",
+      "A patient suffered a torn oesophagus after using the unapproved peptide",
+      "The peptide involved was unapproved and labelled as retatrutide",
+      "Warning was reported September 13-14, 2026"
+    ],
+    "source_url": "https://www.abc.net.au/news/2026-09-14/tga-peptide-warning-retatrutide-torn-oesophagus/107143510",
+    "priority": "high",
     "news_triggered": true,
     "status": "pending"
   }
