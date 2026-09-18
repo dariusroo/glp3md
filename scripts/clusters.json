@@ -2524,7 +2524,7 @@
     "source_url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-lly-growth-story-101834928.html",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "eli-lilly-retatrutide-next-trillion-dollar-opportunity",
@@ -3020,6 +3020,31 @@
       "Warning was reported September 13-14, 2026"
     ],
     "source_url": "https://www.abc.net.au/news/2026-09-14/tga-peptide-warning-retatrutide-torn-oesophagus/107143510",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-renal-fibrosis-semaglutide-tirzepatide-comparison",
+    "title": "Retatrutide vs. Semaglutide vs. Tirzepatide: New Study Compares Effects on Renal Fibrosis",
+    "primary_keyword": "retatrutide renal fibrosis",
+    "secondary_keywords": [
+      "retatrutide vs semaglutide",
+      "retatrutide vs tirzepatide",
+      "GLP-1 kidney protection",
+      "incretin therapy kidney disease"
+    ],
+    "h2_questions": [
+      "What did the new study find about retatrutide and renal fibrosis?",
+      "How does retatrutide compare to semaglutide and tirzepatide for kidney health?",
+      "What are UUO and aged mouse models and why do they matter for human kidney disease research?"
+    ],
+    "key_data_points": [
+      "Study directly compared semaglutide, tirzepatide, and retatrutide on renal fibrosis outcomes",
+      "Research used both UUO (unilateral ureteral obstruction) and aged mouse models",
+      "Published September 18, 2026 in PubMed"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42630988/",
     "priority": "high",
     "news_triggered": true,
     "status": "pending"
