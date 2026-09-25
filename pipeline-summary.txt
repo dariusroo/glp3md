@@ -1,6 +1,6 @@
 === PIPELINE COMPLETE ===
-Date: 2026-09-23T13:16:59.302Z
-News items processed: 7
+Date: 2026-09-25T13:12:29.321Z
+News items processed: 2
 TRIUMPH trials monitored: 32
 Trial status changes: 0
 New keyword clusters identified: 0
