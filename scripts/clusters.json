@@ -3103,5 +3103,19 @@
     "priority": "normal",
     "news_triggered": true,
     "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-results-nejm-lancet-easd-2026",
+    "title": "Retatrutide Phase 3 Results Published: TRIUMPH-1 in NEJM, TRIUMPH-2 in The Lancet",
+    "primary_keyword": "retatrutide phase 3 results",
+    "secondary_keywords": [
+      "retatrutide NEJM",
+      "TRIUMPH-1 results",
+      "TRIUMPH-2 results",
+      "retatrutide Lancet",
+      "retatrutide EASD 2026"
+    ],
+    "status": "published",
+    "priority": "high"
   }
 ]
