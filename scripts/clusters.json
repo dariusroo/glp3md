@@ -2685,7 +2685,7 @@
     "source_url": "https://futurism.com/health-medicine/massive-black-market-obesity-drugs-glp1s-retatrutide",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "black-market-peptides-high-dose-risk-testing",
@@ -3046,6 +3046,61 @@
     ],
     "source_url": "https://pubmed.ncbi.nlm.nih.gov/42630988/",
     "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-triumph-2-phase-3-trial-obesity-type-2-diabetes-results",
+    "title": "Retatrutide TRIUMPH-2 Phase 3 Trial Results: Weight Loss and A1C Reduction in Adults with Obesity and Type 2 Diabetes",
+    "primary_keyword": "retatrutide TRIUMPH-2 trial results",
+    "secondary_keywords": [
+      "retatrutide type 2 diabetes",
+      "retatrutide weight loss results",
+      "retatrutide phase 3 trial",
+      "retatrutide 12mg",
+      "triple agonist obesity"
+    ],
+    "h2_questions": [
+      "What is the TRIUMPH-2 trial and who was it designed for?",
+      "How much weight did participants lose with retatrutide 12mg over 80 weeks?",
+      "What happened to participants with a baseline BMI of 35 or higher?",
+      "How many participants no longer met the BMI criteria for obesity after treatment?",
+      "What does the TRIUMPH-2 data mean for people waiting for retatrutide?"
+    ],
+    "key_data_points": [
+      "Participants with obesity and type 2 diabetes taking retatrutide 12mg lost an average of 49.6 lbs (20.8%) over 80 weeks",
+      "More than half of participants taking retatrutide 12mg no longer met the BMI criteria for obesity",
+      "Participants with a baseline BMI of 35 or higher taking retatrutide 12mg lost up to an even greater amount (exact figure not specified in source)",
+      "The trial was a double-blind, parallel-group, randomised, placebo-controlled phase 3 study",
+      "Results were presented at EASD 2026 in Milan"
+    ],
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-substantial-weight",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "easd-2026-retatrutide-diabetes-results-milan",
+    "title": "EASD 2026 Milan: Retatrutide Diabetes Data Headlines Opening of Major Diabetes Conference",
+    "primary_keyword": "retatrutide EASD 2026",
+    "secondary_keywords": [
+      "EASD 2026 Milan",
+      "retatrutide diabetes results",
+      "retatrutide clinical data 2026",
+      "GLP-1 conference 2026"
+    ],
+    "h2_questions": [
+      "What is EASD 2026 and why does it matter for retatrutide?",
+      "What retatrutide data was scheduled to be presented at EASD 2026?",
+      "How does retatrutide compare to other obesity and diabetes drugs discussed at EASD 2026?",
+      "What does the EASD 2026 retatrutide presentation mean for its path to approval?"
+    ],
+    "key_data_points": [
+      "EASD 2026 opened in Milan with retatrutide diabetes results featured as a leading presentation",
+      "Retatrutide diabetes results were among the headline data points at the conference opening"
+    ],
+    "source_url": "https://www.medicaldaily.com/easd-2026-retatrutide-mounjaro-wegovy-pill-data-preview-479203",
+    "priority": "normal",
     "news_triggered": true,
     "status": "pending"
   }
