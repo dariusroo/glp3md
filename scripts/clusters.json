@@ -2734,7 +2734,7 @@
     "source_url": "https://apnews.com/press-release/getnews/press-release-057c882a404347efbfc8520c4eb7482f",
     "priority": "high",
     "news_triggered": true,
-    "status": "pending"
+    "status": "published"
   },
   {
     "slug": "retatrutide-outperforms-tirzepatide-mounjaro-major-review",
@@ -3117,5 +3117,180 @@
     ],
     "status": "published",
     "priority": "high"
+  },
+  {
+    "slug": "retatrutide-phase-3-trial-results-25-percent-weight-loss",
+    "title": "Retatrutide Phase 3 Trial Results: Triple-Action Jab Delivers Up to 25% Weight Loss",
+    "primary_keyword": "retatrutide trial results",
+    "secondary_keywords": [
+      "retatrutide weight loss",
+      "retatrutide phase 3",
+      "triple hormone receptor agonist",
+      "retatrutide clinical trial"
+    ],
+    "h2_questions": [
+      "What did the retatrutide Phase 3 trial results show?",
+      "How does retatrutide's 25% weight loss compare to other GLP-1 drugs?",
+      "When could retatrutide be available after these trial results?"
+    ],
+    "key_data_points": [
+      "Retatrutide can cause weight loss of up to 25% according to trial results",
+      "Retatrutide is described as a triple-action drug targeting three metabolic receptors"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42823062/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-triple-hormone-receptor-agonist-obesity-treatment",
+    "title": "Retatrutide as a Triple Hormone Receptor Agonist: What the Latest Research Says About Obesity Treatment",
+    "primary_keyword": "retatrutide triple hormone receptor agonist",
+    "secondary_keywords": [
+      "retatrutide obesity treatment",
+      "GLP-1 GIP glucagon agonist",
+      "retatrutide mechanism",
+      "retatrutide for obesity"
+    ],
+    "h2_questions": [
+      "What makes retatrutide a triple hormone receptor agonist?",
+      "How does targeting three receptors improve obesity treatment outcomes?",
+      "What does the latest peer-reviewed research say about retatrutide's effectiveness?"
+    ],
+    "key_data_points": [
+      "Retatrutide is classified as a triple hormone receptor agonist",
+      "Published in PubMed as a treatment study for obesity"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42814954/",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-lowest-dose-weight-loss-12-percent-fda-submission",
+    "title": "'Triple-G' Drug Retatrutide: Even the Lowest Dose Produces 12.7% Weight Loss — FDA Submission Expected Early Next Year",
+    "primary_keyword": "retatrutide lowest dose weight loss",
+    "secondary_keywords": [
+      "retatrutide FDA approval",
+      "triple-G drug",
+      "retatrutide dosage",
+      "retatrutide GLP-1 GIP glucagon"
+    ],
+    "h2_questions": [
+      "How much weight did patients lose on retatrutide's lowest dose?",
+      "What is the 'Triple-G' drug and how does it work?",
+      "When is retatrutide expected to be submitted to the FDA for approval?"
+    ],
+    "key_data_points": [
+      "Even on the lowest dose, trial patients lost 12.7% of their body weight",
+      "The lowest dose resulted in patients losing nearly 30 pounds",
+      "Retatrutide targets three metabolic receptors: GLP-1, GIP, and glucagon",
+      "FDA submission is expected early next year",
+      "The drug is nearing the end of clinical trials"
+    ],
+    "source_url": "https://nypost.com/2026/10/01/health/even-on-the-lowest-dose-of-triple-g-drug-patients-lost-nearly-30-pounds/",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-phase-3-full-data-fda-battle",
+    "title": "Lilly Releases Full Phase 3 Retatrutide Data: What It Means for FDA Approval",
+    "primary_keyword": "retatrutide phase 3 data",
+    "secondary_keywords": [
+      "retatrutide FDA submission",
+      "retatrutide Eli Lilly",
+      "retatrutide full trial data",
+      "next-gen obesity drug"
+    ],
+    "h2_questions": [
+      "What did Lilly's full Phase 3 retatrutide data reveal?",
+      "How does retatrutide compare to other next-generation obesity drugs?",
+      "What is the timeline for retatrutide's FDA approval process?"
+    ],
+    "key_data_points": [
+      "Lilly has released full Phase 3 retatrutide data",
+      "Retatrutide is positioned as a next-generation obesity drug"
+    ],
+    "source_url": "https://slashdot.org/firehose.pl?op=view&id=185908574",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-type-2-diabetes-60-pounds-weight-loss-trial",
+    "title": "Retatrutide Helps People With Type 2 Diabetes Lose Up to 60 Pounds in Trial — Record Weight Loss Data Explained",
+    "primary_keyword": "retatrutide type 2 diabetes weight loss",
+    "secondary_keywords": [
+      "retatrutide 23 percent weight loss",
+      "retatrutide diabetes trial",
+      "Eli Lilly retatrutide results",
+      "retatrutide 80 weeks"
+    ],
+    "h2_questions": [
+      "How much weight did Type 2 diabetes patients lose on retatrutide?",
+      "What does 23% body weight loss mean in real-world terms?",
+      "How long did the retatrutide trial last and what were the outcomes?"
+    ],
+    "key_data_points": [
+      "People with Type 2 diabetes lost up to 60 pounds on retatrutide",
+      "Weight loss reached approximately 23% of body weight",
+      "Trial results were measured over 80 weeks",
+      "Data reported by NBC News and Bloomberg"
+    ],
+    "source_url": "https://www.newser.com/story/397336/eli-lilly-diabetes-drug-spurs-record-weight-loss-in-trials.html",
+    "priority": "high",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "retatrutide-208-percent-weight-loss-ozempic-mounjaro-comparison",
+    "title": "Retatrutide vs. Ozempic and Mounjaro: New Data Shows 20.8% Weight Loss — How Does It Compare?",
+    "primary_keyword": "retatrutide vs Ozempic Mounjaro",
+    "secondary_keywords": [
+      "retatrutide weight loss percentage",
+      "retatrutide 20.8 percent",
+      "retatrutide comparison",
+      "retatrutide EASD"
+    ],
+    "h2_questions": [
+      "How does retatrutide's 20.8% weight loss compare to Ozempic and Mounjaro?",
+      "What was presented about retatrutide at the EASD conference in Milan?",
+      "Is retatrutide more effective than existing GLP-1 drugs?"
+    ],
+    "key_data_points": [
+      "Retatrutide associated with 20.8% weight loss according to data reported",
+      "Retatrutide positioned as a new challenge to Ozempic and Mounjaro",
+      "Data presented at a conference starting from Milan"
+    ],
+    "source_url": "https://www.irishdentist.ie/diabetes-and-obesity-the-revolution-of-new-drugs-retatrutide-loses-20-8-of-its-weight-the-new-challenge-to-ozempic-and-mounjaro-starts-from-milan/22485/",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
+  },
+  {
+    "slug": "glp1-gastrointestinal-side-effects-retatrutide-pipeline",
+    "title": "GLP-1 Drug Side Effects: What Retatrutide's Pipeline Profile Means for Gastrointestinal Tolerability",
+    "primary_keyword": "retatrutide side effects",
+    "secondary_keywords": [
+      "GLP-1 gastrointestinal side effects",
+      "retatrutide tolerability",
+      "GIP GLP-1 dual agonist side effects",
+      "retatrutide adverse effects"
+    ],
+    "h2_questions": [
+      "What gastrointestinal side effects are associated with GLP-1 receptor agonists?",
+      "How does retatrutide compare to approved therapies in terms of side effect profile?",
+      "What does expert review say about pipeline agents like retatrutide and GI tolerability?"
+    ],
+    "key_data_points": [
+      "Review covers gastrointestinal adverse effects of GLP-1 receptor agonists and dual GIP/GLP-1 receptor agonists",
+      "Review includes approved therapies, oral formulations, and pipeline agents",
+      "Published as a narrative expert review"
+    ],
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42808923/",
+    "priority": "normal",
+    "news_triggered": true,
+    "status": "pending"
   }
 ]
